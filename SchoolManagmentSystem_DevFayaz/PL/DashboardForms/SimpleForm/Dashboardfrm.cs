@@ -75,5 +75,11 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm
             Classfrm classfrm = new Classfrm("10th");
             Showusercontrolforms(classfrm);
         }
+
+        private void btnteachers_Click(object sender, EventArgs e)
+        {
+            Teacherfrm teacherfrm = new Teacherfrm();
+            Showusercontrolforms(teacherfrm);
+        }
     }
 }

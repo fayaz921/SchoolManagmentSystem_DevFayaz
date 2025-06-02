@@ -56,6 +56,7 @@
     <Compile Include="BL\BLAdmission.cs" />
     <Compile Include="BL\BLClass.cs" />
     <Compile Include="BL\BLStudent.cs" />
+    <Compile Include="BL\BLTeachers.cs" />
     <Compile Include="BL\BLUserinfo.cs" />
     <Compile Include="Custom Classes\ClassSendMail.cs" />
     <Compile Include="Custom Classes\OTP_Generator.cs" />
@@ -63,11 +64,12 @@
     <Compile Include="Enums\AdmissionEnum.cs" />
     <Compile Include="Enums\ClassEnums.cs" />
     <Compile Include="Enums\Role.cs" />
+    <Compile Include="Enums\TeacherEnums.cs" />
     <Compile Include="Enums\UserEnums.cs" />
     <Compile Include="MODELS\AdmissionModel.cs" />
     <Compile Include="MODELS\ClassModel.cs" />
-    <Compile Include="MODELS\SectionModel.cs" />
     <Compile Include="MODELS\StudentsModel.cs" />
+    <Compile Include="MODELS\TeachersModel.cs" />
     <Compile Include="MODELS\UserinfoModel.cs" />
     <Compile Include="PL\AuthenticationForms\SimpleForm\Authenticationfrm.cs">
       <SubType>Form</SubType>
@@ -123,6 +125,12 @@
     <Compile Include="PL\DashboardForms\UserControlForms\Classfrm.Designer.cs">
       <DependentUpon>Classfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Teacherfrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Teacherfrm.Designer.cs">
+      <DependentUpon>Teacherfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PL\AuthenticationForms\SimpleForm\Authenticationfrm.resx">
@@ -151,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Classfrm.resx">
       <DependentUpon>Classfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Teacherfrm.resx">
+      <DependentUpon>Teacherfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

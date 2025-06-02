@@ -39,6 +39,7 @@
             this.btnclass8th = new System.Windows.Forms.ToolStripMenuItem();
             this.btnclass9th = new System.Windows.Forms.ToolStripMenuItem();
             this.btnclass10th = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnteachers = new Guna.UI2.WinForms.Guna2Button();
             this.Classmenustrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,44 +119,65 @@
             // btnclass5th
             // 
             this.btnclass5th.Name = "btnclass5th";
-            this.btnclass5th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass5th.Size = new System.Drawing.Size(169, 40);
             this.btnclass5th.Text = "5th";
             this.btnclass5th.Click += new System.EventHandler(this.btnclass5th_Click);
             // 
             // btnclass6th
             // 
             this.btnclass6th.Name = "btnclass6th";
-            this.btnclass6th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass6th.Size = new System.Drawing.Size(169, 40);
             this.btnclass6th.Text = "6th";
             this.btnclass6th.Click += new System.EventHandler(this.btnclass6th_Click);
             // 
             // btnclass7th
             // 
             this.btnclass7th.Name = "btnclass7th";
-            this.btnclass7th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass7th.Size = new System.Drawing.Size(169, 40);
             this.btnclass7th.Text = "7th";
             this.btnclass7th.Click += new System.EventHandler(this.btnclass7th_Click);
             // 
             // btnclass8th
             // 
             this.btnclass8th.Name = "btnclass8th";
-            this.btnclass8th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass8th.Size = new System.Drawing.Size(169, 40);
             this.btnclass8th.Text = "8th";
             this.btnclass8th.Click += new System.EventHandler(this.btnclass8th_Click);
             // 
             // btnclass9th
             // 
             this.btnclass9th.Name = "btnclass9th";
-            this.btnclass9th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass9th.Size = new System.Drawing.Size(169, 40);
             this.btnclass9th.Text = "9th";
             this.btnclass9th.Click += new System.EventHandler(this.btnclass9th_Click);
             // 
             // btnclass10th
             // 
             this.btnclass10th.Name = "btnclass10th";
-            this.btnclass10th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass10th.Size = new System.Drawing.Size(169, 40);
             this.btnclass10th.Text = "10th";
             this.btnclass10th.Click += new System.EventHandler(this.btnclass10th_Click);
+            // 
+            // btnteachers
+            // 
+            this.btnteachers.BackColor = System.Drawing.Color.Transparent;
+            this.btnteachers.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.btnteachers.BorderRadius = 15;
+            this.btnteachers.BorderThickness = 3;
+            this.btnteachers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnteachers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnteachers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnteachers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnteachers.FillColor = System.Drawing.SystemColors.MenuText;
+            this.btnteachers.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btnteachers.ForeColor = System.Drawing.Color.White;
+            this.btnteachers.Location = new System.Drawing.Point(467, 7);
+            this.btnteachers.Name = "btnteachers";
+            this.btnteachers.Size = new System.Drawing.Size(211, 55);
+            this.btnteachers.TabIndex = 14;
+            this.btnteachers.Text = "Teachers";
+            this.btnteachers.UseTransparentBackground = true;
+            this.btnteachers.Click += new System.EventHandler(this.btnteachers_Click);
             // 
             // Dashboardfrm
             // 
@@ -163,6 +185,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1946, 883);
+            this.Controls.Add(this.btnteachers);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnadmissionform);
             this.Controls.Add(this.flowLayoutPaneldashboard);
@@ -192,5 +215,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnclass8th;
         private System.Windows.Forms.ToolStripMenuItem btnclass9th;
         private System.Windows.Forms.ToolStripMenuItem btnclass10th;
+        private Guna.UI2.WinForms.Guna2Button btnteachers;
     }
 }
