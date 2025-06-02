@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{137D0721-ED1B-4986-8F50-1E6F750E1469}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SchoolManagmentSystem_DevFayaz</RootNamespace>
+    <AssemblyName>SchoolManagmentSystem_DevFayaz</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidation">
+      <HintPath>D:\C# Practice\FayazCRUDProjectUsingThreeLayerARC\packages\FluentValidation.11.11.0\lib\net8.0\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\C# Practice\FayazCRUDProjectUsingThreeLayerARC\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\BLAdmission.cs" />
+    <Compile Include="BL\BLClass.cs" />
+    <Compile Include="BL\BLStudent.cs" />
+    <Compile Include="BL\BLUserinfo.cs" />
+    <Compile Include="Custom Classes\ClassSendMail.cs" />
+    <Compile Include="Custom Classes\OTP_Generator.cs" />
+    <Compile Include="DL\DataAccessLayer.cs" />
+    <Compile Include="Enums\AdmissionEnum.cs" />
+    <Compile Include="Enums\ClassEnums.cs" />
+    <Compile Include="Enums\Role.cs" />
+    <Compile Include="Enums\UserEnums.cs" />
+    <Compile Include="MODELS\AdmissionModel.cs" />
+    <Compile Include="MODELS\ClassModel.cs" />
+    <Compile Include="MODELS\SectionModel.cs" />
+    <Compile Include="MODELS\StudentsModel.cs" />
+    <Compile Include="MODELS\UserinfoModel.cs" />
+    <Compile Include="PL\AuthenticationForms\SimpleForm\Authenticationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\SimpleForm\Authenticationfrm.Designer.cs">
+      <DependentUpon>Authenticationfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\UserControlForms\EmailVerification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\UserControlForms\EmailVerification.Designer.cs">
+      <DependentUpon>EmailVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\UserControlForms\Loginform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\UserControlForms\Loginform.Designer.cs">
+      <DependentUpon>Loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\UserControlForms\Signupform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\UserControlForms\Signupform.Designer.cs">
+      <DependentUpon>Signupform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\UserControlForms\RoleVerification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\UserControlForms\RoleVerification.Designer.cs">
+      <DependentUpon>RoleVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\UserControlForms\UpdatePasswordform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\AuthenticationForms\UserControlForms\UpdatePasswordform.Designer.cs">
+      <DependentUpon>UpdatePasswordform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\DashboardForms\SimpleForm\Dashboardfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\SimpleForm\Dashboardfrm.Designer.cs">
+      <DependentUpon>Dashboardfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Admissionfrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Admissionfrm.Designer.cs">
+      <DependentUpon>Admissionfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Classfrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Classfrm.Designer.cs">
+      <DependentUpon>Classfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\AuthenticationForms\SimpleForm\Authenticationfrm.resx">
+      <DependentUpon>Authenticationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AuthenticationForms\UserControlForms\EmailVerification.resx">
+      <DependentUpon>EmailVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AuthenticationForms\UserControlForms\Loginform.resx">
+      <DependentUpon>Loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AuthenticationForms\UserControlForms\RoleVerification.resx">
+      <DependentUpon>RoleVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AuthenticationForms\UserControlForms\Signupform.resx">
+      <DependentUpon>Signupform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AuthenticationForms\UserControlForms\UpdatePasswordform.resx">
+      <DependentUpon>UpdatePasswordform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\SimpleForm\Dashboardfrm.resx">
+      <DependentUpon>Dashboardfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Admissionfrm.resx">
+      <DependentUpon>Admissionfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Classfrm.resx">
+      <DependentUpon>Classfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\LOGINGIFVIDEO-ezgif.com-video-to-gif-converter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laptoptyping-ezgif.com-video-to-gif-converter.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
