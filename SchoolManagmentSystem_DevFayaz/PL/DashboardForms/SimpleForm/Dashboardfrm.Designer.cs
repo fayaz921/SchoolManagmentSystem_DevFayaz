@@ -40,14 +40,17 @@
             this.btnclass9th = new System.Windows.Forms.ToolStripMenuItem();
             this.btnclass10th = new System.Windows.Forms.ToolStripMenuItem();
             this.btnteachers = new Guna.UI2.WinForms.Guna2Button();
+            this.btnemployes = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.Classmenustrip.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPaneldashboard
             // 
-            this.flowLayoutPaneldashboard.Location = new System.Drawing.Point(12, 68);
+            this.flowLayoutPaneldashboard.Location = new System.Drawing.Point(12, 107);
             this.flowLayoutPaneldashboard.Name = "flowLayoutPaneldashboard";
-            this.flowLayoutPaneldashboard.Size = new System.Drawing.Size(1928, 883);
+            this.flowLayoutPaneldashboard.Size = new System.Drawing.Size(1928, 844);
             this.flowLayoutPaneldashboard.TabIndex = 0;
             // 
             // btnadmissionform
@@ -63,7 +66,7 @@
             this.btnadmissionform.FillColor = System.Drawing.SystemColors.MenuText;
             this.btnadmissionform.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadmissionform.ForeColor = System.Drawing.Color.White;
-            this.btnadmissionform.Location = new System.Drawing.Point(12, 7);
+            this.btnadmissionform.Location = new System.Drawing.Point(30, 21);
             this.btnadmissionform.Name = "btnadmissionform";
             this.btnadmissionform.Size = new System.Drawing.Size(222, 55);
             this.btnadmissionform.TabIndex = 11;
@@ -77,7 +80,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(1851, 7);
+            this.button1.Location = new System.Drawing.Point(1814, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 71);
             this.button1.TabIndex = 12;
@@ -94,12 +97,12 @@
             this.Classmenustrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.Classmenustrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.classToolStripMenuItem});
-            this.Classmenustrip.Location = new System.Drawing.Point(251, 9);
+            this.Classmenustrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.Classmenustrip.Location = new System.Drawing.Point(292, 23);
             this.Classmenustrip.Name = "Classmenustrip";
             this.Classmenustrip.Size = new System.Drawing.Size(202, 53);
             this.Classmenustrip.TabIndex = 13;
             this.Classmenustrip.Text = "menuStrip1";
-            this.Classmenustrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.Classmenustrip_ItemClicked);
             // 
             // classToolStripMenuItem
             // 
@@ -171,7 +174,7 @@
             this.btnteachers.FillColor = System.Drawing.SystemColors.MenuText;
             this.btnteachers.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.btnteachers.ForeColor = System.Drawing.Color.White;
-            this.btnteachers.Location = new System.Drawing.Point(467, 7);
+            this.btnteachers.Location = new System.Drawing.Point(523, 21);
             this.btnteachers.Name = "btnteachers";
             this.btnteachers.Size = new System.Drawing.Size(211, 55);
             this.btnteachers.TabIndex = 14;
@@ -179,17 +182,47 @@
             this.btnteachers.UseTransparentBackground = true;
             this.btnteachers.Click += new System.EventHandler(this.btnteachers_Click);
             // 
+            // btnemployes
+            // 
+            this.btnemployes.BackColor = System.Drawing.Color.Transparent;
+            this.btnemployes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.btnemployes.BorderRadius = 15;
+            this.btnemployes.BorderThickness = 3;
+            this.btnemployes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnemployes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnemployes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnemployes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnemployes.FillColor = System.Drawing.SystemColors.MenuText;
+            this.btnemployes.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btnemployes.ForeColor = System.Drawing.Color.White;
+            this.btnemployes.Location = new System.Drawing.Point(800, 21);
+            this.btnemployes.Name = "btnemployes";
+            this.btnemployes.Size = new System.Drawing.Size(211, 55);
+            this.btnemployes.TabIndex = 15;
+            this.btnemployes.Text = "Employees";
+            this.btnemployes.UseTransparentBackground = true;
+            this.btnemployes.Click += new System.EventHandler(this.btnemployes_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.btnadmissionform);
+            this.guna2Panel1.Controls.Add(this.button1);
+            this.guna2Panel1.Controls.Add(this.Classmenustrip);
+            this.guna2Panel1.Controls.Add(this.btnemployes);
+            this.guna2Panel1.Controls.Add(this.btnteachers);
+            this.guna2Panel1.Location = new System.Drawing.Point(12, 7);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1922, 90);
+            this.guna2Panel1.TabIndex = 13;
+            // 
             // Dashboardfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1946, 883);
-            this.Controls.Add(this.btnteachers);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnadmissionform);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.flowLayoutPaneldashboard);
-            this.Controls.Add(this.Classmenustrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.Classmenustrip;
             this.Name = "Dashboardfrm";
@@ -198,6 +231,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Classmenustrip.ResumeLayout(false);
             this.Classmenustrip.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -216,5 +250,7 @@
         private System.Windows.Forms.ToolStripMenuItem btnclass9th;
         private System.Windows.Forms.ToolStripMenuItem btnclass10th;
         private Guna.UI2.WinForms.Guna2Button btnteachers;
+        private Guna.UI2.WinForms.Guna2Button btnemployes;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }

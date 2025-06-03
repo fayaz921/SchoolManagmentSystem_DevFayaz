@@ -1,4 +1,5 @@
-﻿using SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm;
+﻿using SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms;
+using SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm;
 using System;
 using System.Collections.Generic;
 using System.Linq;

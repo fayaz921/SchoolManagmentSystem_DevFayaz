@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace SchoolManagmentSystem_DevFayaz.Enums
 {
-    public enum Role
+    public enum EmployeEnums
     {
-        Admin,
-        Employee,
-        Teacher,
-        Student
+        Select,
+        Insert,
+        Update,
+        Delete
     }
 }

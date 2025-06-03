@@ -44,7 +44,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                     userinfomodel.User_Email = txtemail.Text;
                     userinfomodel.User_Password = txtpassword.Text;
                     userinfomodel.User_Image = filepath;
-                    userinfomodel.User_Role = Convert.ToInt32(Role.Employee);
+                    userinfomodel.User_Role = Convert.ToInt32(Role.Employee | Role.Teacher | Role.Student);
                     userinfomodel.User_Status = Convert.ToInt32(txtuserstatus.Text);
                     userinfomodel.User_OTP = Convert.ToInt32(txtuserotp.Text);
                     BLUserinfo bLUserinfo = new BLUserinfo();

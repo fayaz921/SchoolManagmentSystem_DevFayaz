@@ -34,11 +34,6 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm
             Showusercontrolforms(admissionfrm);
         }
 
-        private void Classmenustrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void btnclass5th_Click(object sender, EventArgs e)
         {
             Classfrm classfrm = new Classfrm("5th");
@@ -80,6 +75,12 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm
         {
             Teacherfrm teacherfrm = new Teacherfrm();
             Showusercontrolforms(teacherfrm);
+        }
+
+        private void btnemployes_Click(object sender, EventArgs e)
+        {
+            Employefrm employefrm = new Employefrm();
+            Showusercontrolforms(employefrm);
         }
     }
 }
