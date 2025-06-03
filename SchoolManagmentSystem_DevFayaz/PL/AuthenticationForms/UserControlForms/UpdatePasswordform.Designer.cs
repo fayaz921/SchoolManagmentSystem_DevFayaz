@@ -36,6 +36,9 @@
             this.txtnewpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtconfirmpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtotp = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,14 +53,14 @@
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Black;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Location = new System.Drawing.Point(20, 30);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(94, 56);
             this.guna2Button1.TabIndex = 24;
-            this.guna2Button1.Text = "<=";
+            this.guna2Button1.Text = "🔙";
             this.guna2Button1.UseTransparentBackground = true;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
@@ -69,7 +72,7 @@
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(596, 163);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(498, 166);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(759, 77);
             this.guna2CustomGradientPanel2.TabIndex = 23;
@@ -79,7 +82,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Stencil", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(155, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(443, 52);
@@ -90,6 +93,9 @@
             // 
             this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
             this.guna2CustomGradientPanel1.BorderThickness = 8;
+            this.guna2CustomGradientPanel1.Controls.Add(this.panel3);
+            this.guna2CustomGradientPanel1.Controls.Add(this.panel1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.panel2);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnupdatepassword);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtnewpassword);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtconfirmpassword);
@@ -98,7 +104,7 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(596, 163);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(498, 166);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(759, 683);
             this.guna2CustomGradientPanel1.TabIndex = 22;
@@ -128,20 +134,22 @@
             // 
             this.txtnewpassword.BackColor = System.Drawing.Color.Transparent;
             this.txtnewpassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtnewpassword.BorderRadius = 15;
-            this.txtnewpassword.BorderThickness = 2;
+            this.txtnewpassword.BorderThickness = 0;
             this.txtnewpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtnewpassword.DefaultText = "";
             this.txtnewpassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtnewpassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtnewpassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtnewpassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtnewpassword.FillColor = System.Drawing.Color.Black;
             this.txtnewpassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtnewpassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtnewpassword.ForeColor = System.Drawing.Color.White;
             this.txtnewpassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtnewpassword.Location = new System.Drawing.Point(209, 271);
             this.txtnewpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtnewpassword.Name = "txtnewpassword";
+            this.txtnewpassword.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtnewpassword.PlaceholderText = "New Password";
             this.txtnewpassword.SelectedText = "";
             this.txtnewpassword.Size = new System.Drawing.Size(286, 60);
@@ -151,20 +159,22 @@
             // 
             this.txtconfirmpassword.BackColor = System.Drawing.Color.Transparent;
             this.txtconfirmpassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtconfirmpassword.BorderRadius = 15;
-            this.txtconfirmpassword.BorderThickness = 2;
+            this.txtconfirmpassword.BorderThickness = 0;
             this.txtconfirmpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtconfirmpassword.DefaultText = "";
             this.txtconfirmpassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtconfirmpassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtconfirmpassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtconfirmpassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtconfirmpassword.FillColor = System.Drawing.Color.Black;
             this.txtconfirmpassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtconfirmpassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtconfirmpassword.ForeColor = System.Drawing.Color.White;
             this.txtconfirmpassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtconfirmpassword.Location = new System.Drawing.Point(209, 381);
             this.txtconfirmpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtconfirmpassword.Name = "txtconfirmpassword";
+            this.txtconfirmpassword.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtconfirmpassword.PlaceholderText = "Confirm Password";
             this.txtconfirmpassword.SelectedText = "";
             this.txtconfirmpassword.Size = new System.Drawing.Size(286, 60);
@@ -174,24 +184,50 @@
             // 
             this.txtotp.BackColor = System.Drawing.Color.Transparent;
             this.txtotp.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtotp.BorderRadius = 15;
-            this.txtotp.BorderThickness = 2;
+            this.txtotp.BorderThickness = 0;
             this.txtotp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtotp.DefaultText = "";
             this.txtotp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtotp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtotp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtotp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtotp.FillColor = System.Drawing.Color.Black;
             this.txtotp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtotp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtotp.ForeColor = System.Drawing.Color.White;
             this.txtotp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtotp.Location = new System.Drawing.Point(209, 150);
             this.txtotp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtotp.Name = "txtotp";
+            this.txtotp.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtotp.PlaceholderText = "OTP";
             this.txtotp.SelectedText = "";
             this.txtotp.Size = new System.Drawing.Size(286, 60);
             this.txtotp.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel2.Location = new System.Drawing.Point(209, 199);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(286, 11);
+            this.panel2.TabIndex = 37;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel1.Location = new System.Drawing.Point(209, 320);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(286, 11);
+            this.panel1.TabIndex = 38;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel3.Location = new System.Drawing.Point(209, 430);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(286, 11);
+            this.panel3.TabIndex = 39;
             // 
             // UpdatePasswordform
             // 
@@ -220,5 +256,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txtnewpassword;
         private Guna.UI2.WinForms.Guna2TextBox txtconfirmpassword;
         private Guna.UI2.WinForms.Guna2TextBox txtotp;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

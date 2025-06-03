@@ -57,7 +57,7 @@
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(105, 98);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(265, 148);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1331, 77);
             this.guna2CustomGradientPanel2.TabIndex = 13;
@@ -71,7 +71,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Stencil", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(585, 15);
+            this.label1.Location = new System.Drawing.Point(554, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(250, 52);
             this.label1.TabIndex = 12;
@@ -100,7 +100,7 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(105, 168);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(265, 218);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1331, 616);
             this.guna2CustomGradientPanel1.TabIndex = 12;

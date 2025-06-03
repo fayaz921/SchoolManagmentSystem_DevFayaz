@@ -82,5 +82,16 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm
             Employefrm employefrm = new Employefrm();
             Showusercontrolforms(employefrm);
         }
+
+        private void btnloginfrm_Click(object sender, EventArgs e)
+        {
+            Dashboardfrm dashboardfrm = (Dashboardfrm)this.FindForm();
+            dashboardfrm.Controls.Clear();
+            Authenticationfrm authfrm = new Authenticationfrm();
+            authfrm.ShowDialog();
+            authfrm.Showloginform();
+            dashboardfrm.Close();
+          
+        }
     }
 }

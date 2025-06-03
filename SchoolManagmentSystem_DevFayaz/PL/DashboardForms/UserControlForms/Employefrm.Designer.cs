@@ -31,6 +31,10 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.txtdateofjoining = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.Txtemail = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtemployecnic = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -41,10 +45,6 @@
             this.DDLqualification = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblteacherid = new System.Windows.Forms.Label();
             this.btnsubmit = new Guna.UI2.WinForms.Guna2Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.Txtemail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtdateofjoining = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +59,7 @@
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(105, 98);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(213, 153);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1446, 77);
             this.guna2CustomGradientPanel2.TabIndex = 15;
@@ -104,10 +104,73 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(105, 168);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(213, 223);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1446, 616);
             this.guna2CustomGradientPanel1.TabIndex = 14;
+            // 
+            // txtdateofjoining
+            // 
+            this.txtdateofjoining.BackColor = System.Drawing.Color.Transparent;
+            this.txtdateofjoining.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.txtdateofjoining.BorderThickness = 2;
+            this.txtdateofjoining.Checked = true;
+            this.txtdateofjoining.FillColor = System.Drawing.Color.Black;
+            this.txtdateofjoining.FocusedColor = System.Drawing.Color.Black;
+            this.txtdateofjoining.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtdateofjoining.ForeColor = System.Drawing.SystemColors.Control;
+            this.txtdateofjoining.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.txtdateofjoining.Location = new System.Drawing.Point(862, 421);
+            this.txtdateofjoining.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtdateofjoining.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtdateofjoining.Name = "txtdateofjoining";
+            this.txtdateofjoining.Size = new System.Drawing.Size(244, 36);
+            this.txtdateofjoining.TabIndex = 42;
+            this.txtdateofjoining.Value = new System.DateTime(2025, 5, 22, 16, 20, 35, 315);
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(863, 376);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(180, 27);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "DATEOFJOINING";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel3.Location = new System.Drawing.Point(219, 453);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(286, 11);
+            this.panel3.TabIndex = 39;
+            // 
+            // Txtemail
+            // 
+            this.Txtemail.BackColor = System.Drawing.Color.Transparent;
+            this.Txtemail.BorderColor = System.Drawing.Color.Transparent;
+            this.Txtemail.BorderThickness = 0;
+            this.Txtemail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Txtemail.DefaultText = "";
+            this.Txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Txtemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Txtemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Txtemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Txtemail.FillColor = System.Drawing.Color.Black;
+            this.Txtemail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Txtemail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Txtemail.ForeColor = System.Drawing.Color.White;
+            this.Txtemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Txtemail.Location = new System.Drawing.Point(219, 404);
+            this.Txtemail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Txtemail.Name = "Txtemail";
+            this.Txtemail.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.Txtemail.PlaceholderText = "Email";
+            this.Txtemail.SelectedText = "";
+            this.Txtemail.Size = new System.Drawing.Size(286, 60);
+            this.Txtemail.TabIndex = 38;
             // 
             // panel2
             // 
@@ -278,69 +341,6 @@
             this.btnsubmit.Text = "Submit";
             this.btnsubmit.UseTransparentBackground = true;
             this.btnsubmit.Click += new System.EventHandler(this.btnsubmit_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(219, 453);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(286, 11);
-            this.panel3.TabIndex = 39;
-            // 
-            // Txtemail
-            // 
-            this.Txtemail.BackColor = System.Drawing.Color.Transparent;
-            this.Txtemail.BorderColor = System.Drawing.Color.Transparent;
-            this.Txtemail.BorderThickness = 0;
-            this.Txtemail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Txtemail.DefaultText = "";
-            this.Txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Txtemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Txtemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Txtemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Txtemail.FillColor = System.Drawing.Color.Black;
-            this.Txtemail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Txtemail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Txtemail.ForeColor = System.Drawing.Color.White;
-            this.Txtemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Txtemail.Location = new System.Drawing.Point(219, 404);
-            this.Txtemail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Txtemail.Name = "Txtemail";
-            this.Txtemail.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.Txtemail.PlaceholderText = "Email";
-            this.Txtemail.SelectedText = "";
-            this.Txtemail.Size = new System.Drawing.Size(286, 60);
-            this.Txtemail.TabIndex = 38;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(863, 376);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 27);
-            this.label5.TabIndex = 40;
-            this.label5.Text = "DATEOFJOINING";
-            // 
-            // txtdateofjoining
-            // 
-            this.txtdateofjoining.BackColor = System.Drawing.Color.Transparent;
-            this.txtdateofjoining.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.txtdateofjoining.BorderThickness = 2;
-            this.txtdateofjoining.Checked = true;
-            this.txtdateofjoining.FillColor = System.Drawing.Color.Black;
-            this.txtdateofjoining.FocusedColor = System.Drawing.Color.Black;
-            this.txtdateofjoining.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtdateofjoining.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtdateofjoining.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.txtdateofjoining.Location = new System.Drawing.Point(862, 421);
-            this.txtdateofjoining.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtdateofjoining.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txtdateofjoining.Name = "txtdateofjoining";
-            this.txtdateofjoining.Size = new System.Drawing.Size(244, 36);
-            this.txtdateofjoining.TabIndex = 42;
-            this.txtdateofjoining.Value = new System.DateTime(2025, 5, 22, 16, 20, 35, 315);
             // 
             // Employefrm
             // 
