@@ -94,30 +94,34 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
         {
             try
             {
+                if (Validations())
+                {
 
-                StudentsModel students = new StudentsModel();
-                students.Student_Name = txtStdName.Text;
-                students.Father_Name = txtFname.Text;
-                students.Roll_Number = CurrentYear + Rollnumber;
-                students.Dob = txtDOB.Value.Date;
-                students.Gender = DDLGender.SelectedIndex;
-                students.DomicileFront = DomicileFront;
-                students.DomicileBack = DomicileBack;
-                students.StudentFormBImage = FormBimage;
-                int Stdid = BLStudent.Insert(students);
-                AdmissionModel admissionModel = new AdmissionModel();
-                admissionModel.Form_Number = Formno;
-                admissionModel.Admission_Date = DateTime.Now;
-                admissionModel.Student_Id = Stdid;
-                BLAdmission.Insert(admissionModel);
-                ClassModel classModel = new ClassModel();
-                classModel.ClassName = DDLclass.Text;
-                classModel.Section = Convert.ToChar(DDLSection.Text);
-                classModel.Section_Strength = Stdstrength;
-                classModel.Student_Id = Stdid;
-                BLClass.Insert(classModel);
 
-                MessageBox.Show("Admission successful", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    StudentsModel students = new StudentsModel();
+                    students.Student_Name = txtStdName.Text;
+                    students.Father_Name = txtFname.Text;
+                    students.Roll_Number = CurrentYear + Rollnumber;
+                    students.Dob = txtDOB.Value.Date;
+                    students.Gender = DDLGender.SelectedIndex;
+                    students.DomicileFront = DomicileFront;
+                    students.DomicileBack = DomicileBack;
+                    students.StudentFormBImage = FormBimage;
+                    int Stdid = BLStudent.Insert(students);
+                    AdmissionModel admissionModel = new AdmissionModel();
+                    admissionModel.Form_Number = Formno;
+                    admissionModel.Admission_Date = DateTime.Now;
+                    admissionModel.Student_Id = Stdid;
+                    BLAdmission.Insert(admissionModel);
+                    ClassModel classModel = new ClassModel();
+                    classModel.ClassName = DDLclass.Text;
+                    classModel.Section = Convert.ToChar(DDLSection.Text);
+                    classModel.Section_Strength = Stdstrength;
+                    classModel.Student_Id = Stdid;
+                    BLClass.Insert(classModel);
+
+                    MessageBox.Show("Admission successful", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {
@@ -130,31 +134,56 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
         string FormBimage;
         private void PicBoxDomicilFrontImage_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            try
             {
-                DomicileFront = openFileDialog.FileName;
-                PicBoxDomicilFrontImage.Image = new Bitmap(DomicileFront);
+
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    DomicileFront = openFileDialog.FileName;
+                    PicBoxDomicilFrontImage.Image = new Bitmap(DomicileFront);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("" + ex.Message);
             }
         }
 
         private void PicBoxDomicileBack_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            try
             {
-                DomicileBack = openFileDialog.FileName;
-                PicBoxDomicileBackImage.Image = new Bitmap(DomicileBack);
+
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    DomicileBack = openFileDialog.FileName;
+                    PicBoxDomicileBackImage.Image = new Bitmap(DomicileBack);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("" + ex.Message);
             }
         }
 
         private void PicBoxFormBImage_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            try
             {
-                FormBimage = openFileDialog.FileName;
-                PicBoxFormBImage.Image = new Bitmap(FormBimage);
+
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    FormBimage = openFileDialog.FileName;
+                    PicBoxFormBImage.Image = new Bitmap(FormBimage);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("" + ex.Message);
             }
         }
 
@@ -171,14 +200,14 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                 txtStdName.BorderColor = Color.Green;
                 isvalid = true;
             }
-            if(string.IsNullOrEmpty(txtFCNIC.Text))
+            if (string.IsNullOrEmpty(txtFCNIC.Text))
             {
                 txtFCNIC.BorderColor = Color.Red;
                 isvalid = false;
             }
             else
             {
-                txtFCNIC.BorderColor= Color.Green;
+                txtFCNIC.BorderColor = Color.Green;
                 isvalid = true;
             }
             if (string.IsNullOrEmpty(txtFname.Text))
@@ -191,13 +220,84 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                 txtFname.BorderColor = Color.Green;
                 isvalid = true;
             }
+            if (string.IsNullOrEmpty(txtDOB.Value.Date.ToString()))
+            {
+                txtDOB.BorderColor = Color.Red;
+                isvalid = false;
+            }
+            else
+            {
+                txtDOB.BorderColor = Color.Green;
+                isvalid = true;
+            }
+            if (string.IsNullOrEmpty(DDLGender.Text))
+            {
+                DDLGender.BorderColor = Color.Red;
+                isvalid = false;
+            }
+            else
+            {
+                DDLGender.BorderColor = Color.Green;
+                isvalid = true;
+            }
+            if (string.IsNullOrEmpty(DDLSection.Text))
+            {
+                DDLSection.BorderColor = Color.Red;
+                isvalid = false;
+            }
+            else
+            {
+                DDLSection.BorderColor = Color.Green;
+                isvalid = true;
+            }
+            if (string.IsNullOrEmpty(DDLclass.Text))
+            {
+                DDLclass.BorderColor = Color.Red;
+                isvalid = false;
+            }
+            else
+            {
+                DDLclass.BorderColor = Color.Green;
+                isvalid = true;
+            }
+            if (string.IsNullOrEmpty(DomicileBack))
+            {
+                PicBoxDomicileBackImage.FillColor = Color.Red;
+                isvalid = false;
+            }
+            else
+            {
+                PicBoxDomicileBackImage.FillColor = Color.Green;
+                isvalid = true;
+            }
+            if (string.IsNullOrEmpty(DomicileFront))
+            {
+                PicBoxDomicilFrontImage.FillColor = Color.Red;
+                isvalid = false;
+            }
+            else
+            {
+                PicBoxDomicilFrontImage.FillColor = Color.Green;
+                isvalid = true;
+            }
+            if (string.IsNullOrEmpty(FormBimage))
+            {
+                PicBoxFormBImage.FillColor = Color.Red;
+                isvalid = false;
+            }
+            else
+            {
+                PicBoxFormBImage.FillColor = Color.Green;
+                isvalid = true;
+            }
+
             return isvalid;
- 
+
         }
 
         private void txtStdName_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(char.IsLetter(e.KeyChar) || e.KeyChar == ' ' || e.KeyChar == (char)Keys.Back )
+            if (char.IsLetter(e.KeyChar) || e.KeyChar == ' ' || e.KeyChar == (char)Keys.Back)
             {
                 e.Handled = false;
             }
@@ -209,7 +309,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
 
         private void txtFCNIC_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back)
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == '-' || e.KeyChar == (char)Keys.Back)
             {
                 e.Handled = false;
             }

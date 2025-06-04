@@ -36,7 +36,16 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            Checkinguser();
+            try
+            {
+
+                Checkinguser();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+                return;
+            }
         }
 
         public bool Checkinguser()

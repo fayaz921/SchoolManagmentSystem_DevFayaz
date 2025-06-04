@@ -31,6 +31,13 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.SignUpPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtuserstatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtuserotp = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbluserid = new System.Windows.Forms.Label();
@@ -41,13 +48,6 @@
             this.btnsignup = new Guna.UI2.WinForms.Guna2Button();
             this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SignUpPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox)).BeginInit();
@@ -108,11 +108,70 @@
             this.SignUpPanel.Size = new System.Drawing.Size(1367, 750);
             this.SignUpPanel.TabIndex = 15;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel6.Location = new System.Drawing.Point(969, 539);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(286, 11);
+            this.panel6.TabIndex = 38;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel5.Location = new System.Drawing.Point(969, 355);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(286, 11);
+            this.panel5.TabIndex = 36;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel4.Location = new System.Drawing.Point(969, 451);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(286, 11);
+            this.panel4.TabIndex = 37;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel2.Location = new System.Drawing.Point(108, 355);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(286, 11);
+            this.panel2.TabIndex = 36;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel3.Location = new System.Drawing.Point(110, 451);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(286, 11);
+            this.panel3.TabIndex = 36;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel1.Location = new System.Drawing.Point(111, 538);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(286, 11);
+            this.panel1.TabIndex = 36;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(650, 277);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 24);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Image";
+            // 
             // txtuserstatus
             // 
             this.txtuserstatus.BackColor = System.Drawing.Color.Transparent;
-            this.txtuserstatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtuserstatus.BorderThickness = 0;
+            this.txtuserstatus.BorderColor = System.Drawing.Color.Black;
+            this.txtuserstatus.BorderThickness = 2;
             this.txtuserstatus.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtuserstatus.DefaultText = "";
             this.txtuserstatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -137,8 +196,8 @@
             // txtuserotp
             // 
             this.txtuserotp.BackColor = System.Drawing.Color.Transparent;
-            this.txtuserotp.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtuserotp.BorderThickness = 0;
+            this.txtuserotp.BorderColor = System.Drawing.Color.Black;
+            this.txtuserotp.BorderThickness = 2;
             this.txtuserotp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtuserotp.DefaultText = "";
             this.txtuserotp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -173,8 +232,8 @@
             // comboboxRole
             // 
             this.comboboxRole.BackColor = System.Drawing.Color.Transparent;
-            this.comboboxRole.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.comboboxRole.BorderThickness = 0;
+            this.comboboxRole.BorderColor = System.Drawing.Color.Black;
+            this.comboboxRole.BorderThickness = 2;
             this.comboboxRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboboxRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboboxRole.FillColor = System.Drawing.Color.Black;
@@ -211,8 +270,8 @@
             // txtemail
             // 
             this.txtemail.BackColor = System.Drawing.Color.Transparent;
-            this.txtemail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtemail.BorderThickness = 0;
+            this.txtemail.BorderColor = System.Drawing.Color.Black;
+            this.txtemail.BorderThickness = 2;
             this.txtemail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtemail.DefaultText = "";
             this.txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -272,8 +331,8 @@
             // txtpassword
             // 
             this.txtpassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtpassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtpassword.BorderThickness = 0;
+            this.txtpassword.BorderColor = System.Drawing.Color.Black;
+            this.txtpassword.BorderThickness = 2;
             this.txtpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtpassword.DefaultText = "";
             this.txtpassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -298,8 +357,8 @@
             // txtusername
             // 
             this.txtusername.BackColor = System.Drawing.Color.Transparent;
-            this.txtusername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtusername.BorderThickness = 0;
+            this.txtusername.BorderColor = System.Drawing.Color.Black;
+            this.txtusername.BorderThickness = 2;
             this.txtusername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtusername.DefaultText = "";
             this.txtusername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -320,65 +379,6 @@
             this.txtusername.Size = new System.Drawing.Size(286, 60);
             this.txtusername.TabIndex = 1;
             this.txtusername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtusername_KeyPress);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(650, 277);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 24);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Image";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(111, 538);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(286, 11);
-            this.panel1.TabIndex = 36;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel2.Location = new System.Drawing.Point(108, 355);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 11);
-            this.panel2.TabIndex = 36;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(110, 451);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(286, 11);
-            this.panel3.TabIndex = 36;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel4.Location = new System.Drawing.Point(969, 451);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(286, 11);
-            this.panel4.TabIndex = 37;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel5.Location = new System.Drawing.Point(969, 355);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(286, 11);
-            this.panel5.TabIndex = 36;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel6.Location = new System.Drawing.Point(969, 538);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(286, 11);
-            this.panel6.TabIndex = 38;
             // 
             // Signupform
             // 

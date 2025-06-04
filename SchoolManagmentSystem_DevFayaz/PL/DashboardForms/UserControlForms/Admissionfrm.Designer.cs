@@ -31,6 +31,10 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.SignUpPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.DDLSection = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblStudentStrength = new System.Windows.Forms.Label();
@@ -52,10 +56,6 @@
             this.txtFCNIC = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnsubmit = new Guna.UI2.WinForms.Guna2Button();
             this.txtStdName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SignUpPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxDomicileBackImage)).BeginInit();
@@ -125,6 +125,38 @@
             this.SignUpPanel.Name = "SignUpPanel";
             this.SignUpPanel.Size = new System.Drawing.Size(1457, 775);
             this.SignUpPanel.TabIndex = 19;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel4.Location = new System.Drawing.Point(64, 576);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(286, 11);
+            this.panel4.TabIndex = 39;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel3.Location = new System.Drawing.Point(67, 459);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(286, 11);
+            this.panel3.TabIndex = 38;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel2.Location = new System.Drawing.Point(66, 350);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(286, 11);
+            this.panel2.TabIndex = 37;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel1.Location = new System.Drawing.Point(69, 230);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(284, 10);
+            this.panel1.TabIndex = 36;
             // 
             // label9
             // 
@@ -345,8 +377,8 @@
             // txtFname
             // 
             this.txtFname.BackColor = System.Drawing.Color.Transparent;
-            this.txtFname.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtFname.BorderThickness = 0;
+            this.txtFname.BorderColor = System.Drawing.Color.Black;
+            this.txtFname.BorderThickness = 2;
             this.txtFname.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFname.DefaultText = "";
             this.txtFname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -405,8 +437,8 @@
             // txtFCNIC
             // 
             this.txtFCNIC.BackColor = System.Drawing.Color.Transparent;
-            this.txtFCNIC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtFCNIC.BorderThickness = 0;
+            this.txtFCNIC.BorderColor = System.Drawing.Color.Black;
+            this.txtFCNIC.BorderThickness = 2;
             this.txtFCNIC.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFCNIC.DefaultText = "";
             this.txtFCNIC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -451,8 +483,8 @@
             // txtStdName
             // 
             this.txtStdName.BackColor = System.Drawing.Color.Transparent;
-            this.txtStdName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtStdName.BorderThickness = 0;
+            this.txtStdName.BorderColor = System.Drawing.Color.Black;
+            this.txtStdName.BorderThickness = 2;
             this.txtStdName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtStdName.DefaultText = "";
             this.txtStdName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -473,38 +505,6 @@
             this.txtStdName.Size = new System.Drawing.Size(286, 60);
             this.txtStdName.TabIndex = 1;
             this.txtStdName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStdName_KeyPress);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(69, 230);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(284, 10);
-            this.panel1.TabIndex = 36;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel2.Location = new System.Drawing.Point(66, 350);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 11);
-            this.panel2.TabIndex = 37;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(67, 459);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(286, 11);
-            this.panel3.TabIndex = 38;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel4.Location = new System.Drawing.Point(64, 576);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(286, 11);
-            this.panel4.TabIndex = 39;
             // 
             // Admissionfrm
             // 

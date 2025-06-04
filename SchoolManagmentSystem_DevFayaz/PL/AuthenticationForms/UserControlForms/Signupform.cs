@@ -29,32 +29,41 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
         string filepath;
         private void btnsignup_Click(object sender, EventArgs e)
         {
-            if (PlValidations())
+            try
             {
 
-                if (Getdata())
+                if (PlValidations())
                 {
-                    MessageBox.Show("Email OR Username Already Exist");
 
-                }
-                else
-                {
-                    UserinfoModel userinfomodel = new UserinfoModel();
-                    userinfomodel.User_Name = txtusername.Text;
-                    userinfomodel.User_Email = txtemail.Text;
-                    userinfomodel.User_Password = txtpassword.Text;
-                    userinfomodel.User_Image = filepath;
-                    userinfomodel.User_Role = Convert.ToInt32(Role.Employee | Role.Teacher | Role.Student);
-                    userinfomodel.User_Status = Convert.ToInt32(txtuserstatus.Text);
-                    userinfomodel.User_OTP = Convert.ToInt32(txtuserotp.Text);
-                    BLUserinfo bLUserinfo = new BLUserinfo();
-                    int result = bLUserinfo.Insert(userinfomodel);
-                    MessageBox.Show("signup successfully");
-                    Cleartextboxes();
+                    if (Getdata())
+                    {
+                        MessageBox.Show("Email OR Username Already Exist");
 
-                    Authenticationfrm authenticationfrm = (Authenticationfrm)this.FindForm();
-                    authenticationfrm.Showloginform();
+                    }
+                    else
+                    {
+                        UserinfoModel userinfomodel = new UserinfoModel();
+                        userinfomodel.User_Name = txtusername.Text;
+                        userinfomodel.User_Email = txtemail.Text;
+                        userinfomodel.User_Password = txtpassword.Text;
+                        userinfomodel.User_Image = filepath;
+                        userinfomodel.User_Role = Convert.ToInt32(Role.Employee | Role.Teacher | Role.Student);
+                        userinfomodel.User_Status = Convert.ToInt32(txtuserstatus.Text);
+                        userinfomodel.User_OTP = Convert.ToInt32(txtuserotp.Text);
+                        BLUserinfo bLUserinfo = new BLUserinfo();
+                        int result = bLUserinfo.Insert(userinfomodel);
+                        MessageBox.Show("signup successfully");
+                        Cleartextboxes();
+
+                        Authenticationfrm authenticationfrm = (Authenticationfrm)this.FindForm();
+                        authenticationfrm.Showloginform();
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+                return;
             }
         }
 
@@ -160,11 +169,19 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
 
         private void picbox_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            try
             {
-                filepath = openFileDialog.FileName;
-                picbox.Image = Bitmap.FromFile(filepath);
+
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    filepath = openFileDialog.FileName;
+                    picbox.Image = Bitmap.FromFile(filepath);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
             }
         }
 

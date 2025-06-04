@@ -21,23 +21,34 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-           if(Checktextboxes())
+            try
             {
-                if(CheckAdmin())
+
+                if (Checktextboxes())
                 {
-                    MessageBox.Show("Wellcome Admin Fayaz ","Info",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Authenticationfrm authenticationfrm = (Authenticationfrm)this.FindForm();
-                    Signupform signupform = new Signupform();
-                    authenticationfrm.Showsignupform(signupform);
-                }
-                else
-                {
-                    MessageBox.Show("You are not Admin","info",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    if (CheckAdmin())
+                    {
+                        MessageBox.Show("Wellcome Admin Fayaz ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Authenticationfrm authenticationfrm = (Authenticationfrm)this.FindForm();
+                        Signupform signupform = new Signupform();
+                        authenticationfrm.Showsignupform(signupform);
+                    }
+                    else
+                    {
+                        MessageBox.Show("You are not Admin", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
             }
-           
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+                return;
+            }
 
-            
+
+
+
+
         }
 
         public bool CheckAdmin()
@@ -49,7 +60,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
             BLUserinfo bLUserinfo = new BLUserinfo();
             DataTable dt = new DataTable();
             dt = bLUserinfo.Admin(userinfoModel);
-            if(dt.Rows.Count > 0 )
+            if (dt.Rows.Count > 0)
             {
                 return true;
             }

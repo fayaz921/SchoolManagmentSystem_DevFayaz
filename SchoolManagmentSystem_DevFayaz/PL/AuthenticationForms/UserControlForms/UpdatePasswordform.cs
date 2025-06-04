@@ -19,29 +19,37 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
         }
         private void btnupdatepassword_Click(object sender, EventArgs e)
         {
-            if (Textboxvalidations())
+            try
             {
-                BLUserinfo bLUserinfo = new BLUserinfo();
-                int otp = Convert.ToInt32(txtotp.Text);
-                var dt = bLUserinfo.OTPVerify(otp);
-                if (dt.Rows.Count > 0)
+
+                if (Textboxvalidations())
                 {
-                    if (txtnewpassword.Text != txtconfirmpassword.Text)
+                    BLUserinfo bLUserinfo = new BLUserinfo();
+                    int otp = Convert.ToInt32(txtotp.Text);
+                    var dt = bLUserinfo.OTPVerify(otp);
+                    if (dt.Rows.Count > 0)
                     {
-                        MessageBox.Show("Password didn't match", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        if (txtnewpassword.Text != txtconfirmpassword.Text)
+                        {
+                            MessageBox.Show("Password didn't match", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            bLUserinfo.UpdatePassword(otp, txtnewpassword.Text);
+                            MessageBox.Show("Password changed successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Authenticationfrm authenticationfrm = (Authenticationfrm)this.FindForm();
+                            authenticationfrm.Showloginform();
+                        }
                     }
                     else
                     {
-                        bLUserinfo.UpdatePassword(otp, txtnewpassword.Text);
-                        MessageBox.Show("Password changed successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Authenticationfrm authenticationfrm = (Authenticationfrm)this.FindForm();
-                        authenticationfrm.Showloginform();
+                        MessageBox.Show("Invalid OTP", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                else
-                {
-                    MessageBox.Show("Invalid OTP", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
             }
 
         }

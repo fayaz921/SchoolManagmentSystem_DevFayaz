@@ -21,31 +21,40 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            BLUserinfo bLUserinfo = new BLUserinfo();
-            var dt = bLUserinfo.CheckIdentity("", txtEmail.Text);
-            if (dt.Rows.Count > 0)
+            try
             {
-                string ToEmail = txtEmail.Text;
-                int OTP = OTP_Generator.OTP();
-                int userid = Convert.ToInt32(dt.Rows[0]["User_Id".ToString()]);
-                bLUserinfo.UpdateOTP(userid, OTP);
-                int result = ClassSendMail.Sendmail("mfayaz21703@gmail.com", ToEmail, "Change Password", "Dont share this OTP  " + OTP);
-                if (result == 1)
-                {
-                    MessageBox.Show("OTP sended successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Authenticationfrm authenticationfrm = (Authenticationfrm)this.FindForm();
-                    UpdatePasswordform updatePasswordform = new UpdatePasswordform();
-                    authenticationfrm.ShowUpdatepasswordform(updatePasswordform);
 
+                BLUserinfo bLUserinfo = new BLUserinfo();
+                var dt = bLUserinfo.CheckIdentity("", txtEmail.Text);
+                if (dt.Rows.Count > 0)
+                {
+                    string ToEmail = txtEmail.Text;
+                    int OTP = OTP_Generator.OTP();
+                    int userid = Convert.ToInt32(dt.Rows[0]["User_Id".ToString()]);
+                    bLUserinfo.UpdateOTP(userid, OTP);
+                    int result = ClassSendMail.Sendmail("mfayaz21703@gmail.com", ToEmail, "Change Password", "Dont share this OTP  " + OTP);
+                    if (result == 1)
+                    {
+                        MessageBox.Show("OTP sended successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Authenticationfrm authenticationfrm = (Authenticationfrm)this.FindForm();
+                        UpdatePasswordform updatePasswordform = new UpdatePasswordform();
+                        authenticationfrm.ShowUpdatepasswordform(updatePasswordform);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Network is not available", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Network is not available", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Email not Registered", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Email not Registered", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error" + ex.Message);
+                return;
             }
         }
         private void guna2Button1_Click(object sender, EventArgs e)
