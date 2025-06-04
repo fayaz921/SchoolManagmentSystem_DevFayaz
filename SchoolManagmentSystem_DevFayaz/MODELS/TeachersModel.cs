@@ -14,6 +14,9 @@ namespace SchoolManagmentSystem_DevFayaz.MODELS
         public string Qualification { get; set; }
         public string Subject { get; set; }
         public string Designation { get; set; }
+        public string Email { get; set; }
+        public DateTime DateofJoining { get; set; }
+
 
     }
 }

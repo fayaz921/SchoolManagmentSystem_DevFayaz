@@ -73,7 +73,7 @@
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(282, 75);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1451, 63);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1455, 63);
             this.guna2CustomGradientPanel1.TabIndex = 20;
             // 
             // label1
@@ -82,7 +82,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Stencil", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(469, 11);
+            this.label1.Location = new System.Drawing.Point(546, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(397, 52);
             this.label1.TabIndex = 12;
@@ -121,9 +121,9 @@
             this.SignUpPanel.FillColor2 = System.Drawing.Color.Transparent;
             this.SignUpPanel.FillColor3 = System.Drawing.Color.Transparent;
             this.SignUpPanel.FillColor4 = System.Drawing.Color.Transparent;
-            this.SignUpPanel.Location = new System.Drawing.Point(280, 75);
+            this.SignUpPanel.Location = new System.Drawing.Point(280, 78);
             this.SignUpPanel.Name = "SignUpPanel";
-            this.SignUpPanel.Size = new System.Drawing.Size(1457, 775);
+            this.SignUpPanel.Size = new System.Drawing.Size(1457, 753);
             this.SignUpPanel.TabIndex = 19;
             // 
             // panel4
@@ -402,8 +402,8 @@
             // txtstudentid
             // 
             this.txtstudentid.BackColor = System.Drawing.Color.Transparent;
-            this.txtstudentid.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(79)))));
-            this.txtstudentid.BorderThickness = 0;
+            this.txtstudentid.BorderColor = System.Drawing.Color.Black;
+            this.txtstudentid.BorderThickness = 2;
             this.txtstudentid.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtstudentid.DefaultText = "";
             this.txtstudentid.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

@@ -31,6 +31,9 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.txtdateofjoining = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -59,9 +62,9 @@
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(213, 153);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(213, 172);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1446, 77);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1388, 58);
             this.guna2CustomGradientPanel2.TabIndex = 15;
             // 
             // label1
@@ -73,7 +76,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Stencil", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(585, 15);
+            this.label1.Location = new System.Drawing.Point(577, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(273, 52);
             this.label1.TabIndex = 12;
@@ -86,6 +89,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
             this.guna2CustomGradientPanel1.BorderThickness = 8;
+            this.guna2CustomGradientPanel1.Controls.Add(this.panel6);
+            this.guna2CustomGradientPanel1.Controls.Add(this.panel5);
+            this.guna2CustomGradientPanel1.Controls.Add(this.panel4);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtdateofjoining);
             this.guna2CustomGradientPanel1.Controls.Add(this.label5);
             this.guna2CustomGradientPanel1.Controls.Add(this.panel3);
@@ -106,13 +112,36 @@
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(213, 223);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1446, 616);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1388, 616);
             this.guna2CustomGradientPanel1.TabIndex = 14;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel6.Location = new System.Drawing.Point(864, 452);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(288, 10);
+            this.panel6.TabIndex = 44;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel5.Location = new System.Drawing.Point(862, 348);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(286, 11);
+            this.panel5.TabIndex = 43;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel4.Location = new System.Drawing.Point(862, 237);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(286, 11);
+            this.panel4.TabIndex = 38;
             // 
             // txtdateofjoining
             // 
-            this.txtdateofjoining.BackColor = System.Drawing.Color.Transparent;
-            this.txtdateofjoining.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.txtdateofjoining.BackColor = System.Drawing.Color.Black;
             this.txtdateofjoining.BorderThickness = 2;
             this.txtdateofjoining.Checked = true;
             this.txtdateofjoining.FillColor = System.Drawing.Color.Black;
@@ -120,18 +149,18 @@
             this.txtdateofjoining.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtdateofjoining.ForeColor = System.Drawing.SystemColors.Control;
             this.txtdateofjoining.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.txtdateofjoining.Location = new System.Drawing.Point(862, 421);
+            this.txtdateofjoining.Location = new System.Drawing.Point(862, 419);
             this.txtdateofjoining.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtdateofjoining.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtdateofjoining.Name = "txtdateofjoining";
-            this.txtdateofjoining.Size = new System.Drawing.Size(244, 36);
+            this.txtdateofjoining.Size = new System.Drawing.Size(291, 36);
             this.txtdateofjoining.TabIndex = 42;
             this.txtdateofjoining.Value = new System.DateTime(2025, 5, 22, 16, 20, 35, 315);
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Gadugi", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(863, 376);
             this.label5.Name = "label5";
@@ -142,7 +171,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(219, 453);
+            this.panel3.Location = new System.Drawing.Point(219, 454);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(286, 11);
             this.panel3.TabIndex = 39;
@@ -150,8 +179,8 @@
             // Txtemail
             // 
             this.Txtemail.BackColor = System.Drawing.Color.Transparent;
-            this.Txtemail.BorderColor = System.Drawing.Color.Transparent;
-            this.Txtemail.BorderThickness = 0;
+            this.Txtemail.BorderColor = System.Drawing.Color.Black;
+            this.Txtemail.BorderThickness = 2;
             this.Txtemail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Txtemail.DefaultText = "";
             this.Txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -183,8 +212,8 @@
             // txtemployecnic
             // 
             this.txtemployecnic.BackColor = System.Drawing.Color.Transparent;
-            this.txtemployecnic.BorderColor = System.Drawing.Color.Transparent;
-            this.txtemployecnic.BorderThickness = 0;
+            this.txtemployecnic.BorderColor = System.Drawing.Color.Black;
+            this.txtemployecnic.BorderThickness = 2;
             this.txtemployecnic.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtemployecnic.DefaultText = "";
             this.txtemployecnic.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -208,7 +237,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(219, 230);
+            this.panel1.Location = new System.Drawing.Point(219, 231);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(286, 11);
             this.panel1.TabIndex = 35;
@@ -216,8 +245,8 @@
             // txtemployename
             // 
             this.txtemployename.BackColor = System.Drawing.Color.Transparent;
-            this.txtemployename.BorderColor = System.Drawing.Color.Transparent;
-            this.txtemployename.BorderThickness = 0;
+            this.txtemployename.BorderColor = System.Drawing.Color.Black;
+            this.txtemployename.BorderThickness = 2;
             this.txtemployename.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtemployename.DefaultText = "";
             this.txtemployename.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -241,9 +270,9 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Gadugi", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(862, 176);
+            this.label4.Location = new System.Drawing.Point(858, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(180, 27);
             this.label4.TabIndex = 33;
@@ -252,9 +281,9 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Gadugi", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(862, 274);
+            this.label3.Location = new System.Drawing.Point(862, 268);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(180, 27);
             this.label3.TabIndex = 32;
@@ -263,7 +292,8 @@
             // DDLdesignation
             // 
             this.DDLdesignation.BackColor = System.Drawing.Color.Transparent;
-            this.DDLdesignation.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.DDLdesignation.BorderColor = System.Drawing.Color.Black;
+            this.DDLdesignation.BorderThickness = 2;
             this.DDLdesignation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.DDLdesignation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.DDLdesignation.FillColor = System.Drawing.Color.Black;
@@ -281,15 +311,16 @@
             "Cleaner",
             "Gatekeeper",
             "Aya"});
-            this.DDLdesignation.Location = new System.Drawing.Point(862, 311);
+            this.DDLdesignation.Location = new System.Drawing.Point(862, 302);
             this.DDLdesignation.Name = "DDLdesignation";
-            this.DDLdesignation.Size = new System.Drawing.Size(244, 36);
+            this.DDLdesignation.Size = new System.Drawing.Size(286, 36);
             this.DDLdesignation.TabIndex = 29;
             // 
             // DDLqualification
             // 
             this.DDLqualification.BackColor = System.Drawing.Color.Transparent;
-            this.DDLqualification.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.DDLqualification.BorderColor = System.Drawing.Color.Black;
+            this.DDLqualification.BorderThickness = 2;
             this.DDLqualification.CausesValidation = false;
             this.DDLqualification.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.DDLqualification.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -306,9 +337,9 @@
             "Intermediate",
             "DAE",
             "None"});
-            this.DDLqualification.Location = new System.Drawing.Point(862, 214);
+            this.DDLqualification.Location = new System.Drawing.Point(861, 192);
             this.DDLqualification.Name = "DDLqualification";
-            this.DDLqualification.Size = new System.Drawing.Size(244, 36);
+            this.DDLqualification.Size = new System.Drawing.Size(286, 36);
             this.DDLqualification.TabIndex = 28;
             // 
             // lblteacherid
@@ -378,5 +409,8 @@
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2TextBox Txtemail;
         private Guna.UI2.WinForms.Guna2DateTimePicker txtdateofjoining;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
     }
 }

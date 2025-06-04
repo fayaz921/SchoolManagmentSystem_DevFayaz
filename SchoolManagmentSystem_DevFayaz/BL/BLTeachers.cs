@@ -17,13 +17,15 @@ namespace SchoolManagmentSystem_DevFayaz.BL
 
         public static int Insert (TeachersModel model)
         {
-            SqlParameter[] prm = new SqlParameter[6];
+            SqlParameter[] prm = new SqlParameter[8];
             prm[0] = new SqlParameter(Actiontype, TeacherEnums.Insert);
             prm[1] = new SqlParameter("@Teacher_Name", model.Teacher_Name);
             prm[2] = new SqlParameter("@Teacher_Cnic",model.Teacher_Cnic);
             prm[3] = new SqlParameter("@Qualification",model.Qualification);
             prm[4] = new SqlParameter("@Subject",model.Subject);
             prm[5] = new SqlParameter("@Designation",model.Designation);
+            prm[6] = new SqlParameter("@Email",model.Email);
+            prm[7] = new SqlParameter("@DateofJoining", model.DateofJoining);
             return DataAccessLayer.Setdata(Spname,prm);
         }
     }
