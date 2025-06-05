@@ -51,7 +51,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                         userinfomodel.User_Status = Convert.ToInt32(txtuserstatus.Text);
                         userinfomodel.User_OTP = Convert.ToInt32(txtuserotp.Text);
                         BLUserinfo bLUserinfo = new BLUserinfo();
-                        int result = bLUserinfo.Insert(userinfomodel);
+                        bLUserinfo.Insert(userinfomodel);
                         MessageBox.Show("signup successfully");
                         Cleartextboxes();
 
@@ -199,26 +199,26 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
 
         private void txtemail_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsLetterOrDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == '@' || e.KeyChar == '.' || e.KeyChar == '_')
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
+            //if (char.IsLetterOrDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == '@' || e.KeyChar == '.' || e.KeyChar == '_')
+            //{
+            //    e.Handled = false;
+            //}
+            //else
+            //{
+            //    e.Handled = true;
+            //}
         }
 
         private void txtpassword_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsLetterOrDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == '.' || e.KeyChar == '_')
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
+            //if (char.IsLetterOrDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == '.' || e.KeyChar == '_')
+            //{
+            //    e.Handled = false;
+            //}
+            //else
+            //{
+            //    e.Handled = true;
+            //}
         }
 
         private void txtuserstatus_KeyPress(object sender, KeyPressEventArgs e)

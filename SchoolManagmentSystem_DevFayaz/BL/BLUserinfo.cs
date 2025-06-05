@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 using SchoolManagmentSystem_DevFayaz.MODELS.Dashboardmodels;
 using SchoolManagmentSystem_DevFayaz.Enums;
 using SchoolManagmentSystem_DevFayaz.DL;
+using SchoolManagmentSystem_DevFayaz.MODELS;
+using SchoolManagmentSystem_DevFayaz.Validations;
+using System.Windows.Forms;
 
 namespace SchoolManagmentSystem_DevFayaz.BL
 {
@@ -15,8 +18,12 @@ namespace SchoolManagmentSystem_DevFayaz.BL
     {
         private string Sp_Type = "@type";
         private string SP_Name = "Sp_Userinfo";
-        public int Insert(UserinfoModel model)
+        public void Insert(UserinfoModel model)
         {
+            if (!UserValidation(model))
+            {
+                return;
+            }
             SqlParameter[] sp = new SqlParameter[8];
             sp[0] = new SqlParameter("@type", UserEnums.Insert);
             sp[1] = new SqlParameter("@User_Name", model.User_Name);
@@ -26,8 +33,8 @@ namespace SchoolManagmentSystem_DevFayaz.BL
             sp[5] = new SqlParameter("@User_Image", model.User_Image);
             sp[6] = new SqlParameter("@User_Status", model.User_Status);
             sp[7] = new SqlParameter("@User_OTP", model.User_OTP);
-            int result = DataAccessLayer.Setdata("Sp_Userinfo", sp);
-            return result;
+             DataAccessLayer.Setdata("Sp_Userinfo", sp);
+            //return result;
         }
         public int Update(UserinfoModel model)
         {
@@ -123,10 +130,25 @@ namespace SchoolManagmentSystem_DevFayaz.BL
         public void UpdatePassword(int otp, string newpassword)
         {
             SqlParameter[] prm = new SqlParameter[3];
-            prm[0] = new SqlParameter(Sp_Type,UserEnums.UpdatePassword);
+            prm[0] = new SqlParameter(Sp_Type, UserEnums.UpdatePassword);
             prm[1] = new SqlParameter("User_OTP", otp);
             prm[2] = new SqlParameter("@User_Password", newpassword);
-            DataAccessLayer.Setdata(SP_Name , prm);
+            DataAccessLayer.Setdata(SP_Name, prm);
+        }
+
+        public bool UserValidation(UserinfoModel obj)
+        {
+            UserInfoValidations validationRules = new UserInfoValidations();
+            var result = validationRules.Validate(obj);
+            if (result.IsValid)
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show(result.Errors[0].ErrorMessage);
+                return false;
+            }
         }
     }
 }
