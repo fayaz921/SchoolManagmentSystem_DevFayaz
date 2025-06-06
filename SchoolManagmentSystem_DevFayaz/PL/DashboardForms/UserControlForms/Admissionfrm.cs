@@ -107,6 +107,10 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     students.DomicileFront = DomicileFront;
                     students.DomicileBack = DomicileBack;
                     students.StudentFormBImage = FormBimage;
+                    if(!BLStudent.StudentValidation(students))
+                    {
+                        return;
+                    }
                     int Stdid = BLStudent.Insert(students);
                     AdmissionModel admissionModel = new AdmissionModel();
                     admissionModel.Form_Number = Formno;
@@ -118,6 +122,10 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     classModel.Section = Convert.ToChar(DDLSection.Text);
                     classModel.Section_Strength = Stdstrength;
                     classModel.Student_Id = Stdid;
+                    if(!BLClass.ClassValidations(classModel)) 
+                    {
+                        return;
+                    }
                     BLClass.Insert(classModel);
 
                     MessageBox.Show("Admission successful", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -200,16 +208,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                 txtStdName.BorderColor = Color.Green;
                 isvalid = true;
             }
-            if (string.IsNullOrEmpty(txtFCNIC.Text))
-            {
-                txtFCNIC.BorderColor = Color.Red;
-                isvalid = false;
-            }
-            else
-            {
-                txtFCNIC.BorderColor = Color.Green;
-                isvalid = true;
-            }
+           
             if (string.IsNullOrEmpty(txtFname.Text))
             {
                 txtFname.BorderColor = Color.Red;
@@ -305,19 +304,6 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
             {
                 e.Handled = true;
             }
-        }
-
-        private void txtFCNIC_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (char.IsDigit(e.KeyChar) || e.KeyChar == '-' || e.KeyChar == (char)Keys.Back)
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
         }
 
         private void txtFname_KeyPress(object sender, KeyPressEventArgs e)

@@ -18,7 +18,7 @@ namespace SchoolManagmentSystem_DevFayaz
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Authenticationfrm());
+            Application.Run(new Dashboardfrm());
         }
     }
 }

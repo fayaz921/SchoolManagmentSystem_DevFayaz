@@ -33,6 +33,10 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     employeModel.Designation = DDLdesignation.Text;
                     employeModel.Email = Txtemail.Text;
                     employeModel.DateofJoining = txtdateofjoining.Value.Date;
+                    if (!BLEmployes.EmployeValidations(employeModel))
+                    {
+                        return;
+                    }
                     BLEmployes.Insert(employeModel);
                     MessageBox.Show("Employe submitted successfully");
                     Cleartextboxes();

@@ -14,7 +14,7 @@ namespace SchoolManagmentSystem_DevFayaz.MODELS
         public string Father_Name { get; set; }
         public string Roll_Number { get; set; }
         public DateTime Dob { get; set; }
-        public int Gender { get; set; }
+        public int Gender { get; set; }     
         public string DomicileFront { get; set; }
         public string DomicileBack { get; set; }
         public string StudentFormBImage { get; set; }

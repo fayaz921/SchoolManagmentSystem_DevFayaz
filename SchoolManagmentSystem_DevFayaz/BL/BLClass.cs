@@ -1,6 +1,7 @@
 ﻿using SchoolManagmentSystem_DevFayaz.DL;
 using SchoolManagmentSystem_DevFayaz.Enums;
 using SchoolManagmentSystem_DevFayaz.MODELS.Dashboardmodels;
+using SchoolManagmentSystem_DevFayaz.Validations;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SchoolManagmentSystem_DevFayaz.BL
 {
@@ -18,6 +20,10 @@ namespace SchoolManagmentSystem_DevFayaz.BL
 
         public static void Insert(ClassModel model)
         {
+            if (!ClassValidations(model))
+            {
+                return;
+            }
             SqlParameter[] prm = new SqlParameter[5];
             prm[0] = new SqlParameter(Actiontype, 1);
             prm[1] = new SqlParameter("@ClassName", model.ClassName);
@@ -42,6 +48,21 @@ namespace SchoolManagmentSystem_DevFayaz.BL
             prm[0] = new SqlParameter(Actiontype, ClassEnums.ClassRecord);
             prm[1] = new SqlParameter("@ClassName",classname);
             return DataAccessLayer.GetData(Spname, prm);
+        }
+
+        public static bool ClassValidations(ClassModel model)
+        {
+            ClassModelValidations validationRules = new ClassModelValidations();
+            var result = validationRules.Validate(model);
+            if (result.IsValid)
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show(result.Errors[0].ErrorMessage);
+                return false;
+            }
         }
     }
 }

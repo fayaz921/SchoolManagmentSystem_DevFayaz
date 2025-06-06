@@ -33,6 +33,10 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     model.Designation = DDLdesignation.Text;
                     model.Email = txtemail.Text;
                     model.DateofJoining = txtdateofjoining.Value.Date;
+                    if (!BLTeachers.TeacherValidations(model))
+                    {
+                        return;
+                    }
                     BLTeachers.Insert(model);
                     MessageBox.Show("Teacher Submitted successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Cleartextboxes();

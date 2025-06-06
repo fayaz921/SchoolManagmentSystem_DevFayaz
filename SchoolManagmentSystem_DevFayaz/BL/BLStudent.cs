@@ -1,6 +1,7 @@
 ﻿using Microsoft.SqlServer.Server;
 using SchoolManagmentSystem_DevFayaz.DL;
 using SchoolManagmentSystem_DevFayaz.MODELS;
+using SchoolManagmentSystem_DevFayaz.Validations;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SchoolManagmentSystem_DevFayaz.BL
 {
@@ -17,6 +19,11 @@ namespace SchoolManagmentSystem_DevFayaz.BL
         private static string Spname = "Sp_Students";
         public static int Insert(StudentsModel students)
         {
+            if(!StudentValidation(students))
+            {
+                return 0;
+            }
+            
             SqlParameter[] prm = new SqlParameter[9];
             prm[0] = new SqlParameter(Actiontype, 1);
             prm[1] = new SqlParameter("@Student_Name", students.Student_Name);
@@ -30,6 +37,21 @@ namespace SchoolManagmentSystem_DevFayaz.BL
             var dt = DataAccessLayer.GetData(Spname, prm);
             int Stdid = Convert.ToInt32(dt.Rows[0]["Student_Id"].ToString());
             return Stdid;
+        }
+
+        public static bool StudentValidation(StudentsModel model)
+        {
+            StudentModelValidations studentValidations = new StudentModelValidations();
+            var result = studentValidations.Validate(model);
+            if (result.IsValid)
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show(result.Errors[0].ErrorMessage);
+                return false;
+            }
         }
     }
 }

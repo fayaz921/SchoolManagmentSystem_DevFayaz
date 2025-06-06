@@ -1,12 +1,14 @@
 ﻿using SchoolManagmentSystem_DevFayaz.DL;
 using SchoolManagmentSystem_DevFayaz.Enums;
 using SchoolManagmentSystem_DevFayaz.MODELS;
+using SchoolManagmentSystem_DevFayaz.Validations;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SchoolManagmentSystem_DevFayaz.BL
 {
@@ -17,6 +19,10 @@ namespace SchoolManagmentSystem_DevFayaz.BL
 
         public static int Insert (TeachersModel model)
         {
+            if (!TeacherValidations(model))
+            {
+                return 0;
+            }
             SqlParameter[] prm = new SqlParameter[8];
             prm[0] = new SqlParameter(Actiontype, TeacherEnums.Insert);
             prm[1] = new SqlParameter("@Teacher_Name", model.Teacher_Name);
@@ -27,6 +33,21 @@ namespace SchoolManagmentSystem_DevFayaz.BL
             prm[6] = new SqlParameter("@Email",model.Email);
             prm[7] = new SqlParameter("@DateofJoining", model.DateofJoining);
             return DataAccessLayer.Setdata(Spname,prm);
+        }
+
+        public static bool TeacherValidations(TeachersModel model)
+        {
+            TeachersModelValidations validationRules = new TeachersModelValidations();
+            var result = validationRules.Validate(model);
+            if (result.IsValid)
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show(result.Errors[0].ErrorMessage);
+                return false;
+            }
         }
     }
 }
