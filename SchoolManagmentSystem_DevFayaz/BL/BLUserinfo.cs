@@ -22,7 +22,7 @@ namespace SchoolManagmentSystem_DevFayaz.BL
         {
             if (!UserValidation(model))
             {
-                return;
+                 return;
             }
             SqlParameter[] sp = new SqlParameter[8];
             sp[0] = new SqlParameter("@type", UserEnums.Insert);

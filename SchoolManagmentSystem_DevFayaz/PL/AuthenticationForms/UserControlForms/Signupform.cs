@@ -51,6 +51,10 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                         userinfomodel.User_Status = Convert.ToInt32(txtuserstatus.Text);
                         userinfomodel.User_OTP = Convert.ToInt32(txtuserotp.Text);
                         BLUserinfo bLUserinfo = new BLUserinfo();
+                        if(!bLUserinfo.UserValidation(userinfomodel))
+                        {
+                            return;
+                        }
                         bLUserinfo.Insert(userinfomodel);
                         MessageBox.Show("signup successfully");
                         Cleartextboxes();
