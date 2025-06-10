@@ -23,7 +23,6 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
         {
             try
             {
-
                 if (Checktextboxes())
                 {
                     if (CheckAdmin())
@@ -44,11 +43,6 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                 MessageBox.Show("Error" + ex.Message);
                 return;
             }
-
-
-
-
-
         }
 
         public bool CheckAdmin()

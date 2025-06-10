@@ -31,6 +31,8 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.SignUpPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnshowhide = new Guna.UI2.WinForms.Guna2Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -48,8 +50,6 @@
             this.btnsignup = new Guna.UI2.WinForms.Guna2Button();
             this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnshowhide = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SignUpPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox)).BeginInit();
@@ -112,10 +112,44 @@
             this.SignUpPanel.Size = new System.Drawing.Size(1367, 750);
             this.SignUpPanel.TabIndex = 15;
             // 
+            // btnshowhide
+            // 
+            this.btnshowhide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnshowhide.AutoRoundedCorners = true;
+            this.btnshowhide.BackColor = System.Drawing.Color.Transparent;
+            this.btnshowhide.BorderRadius = 15;
+            this.btnshowhide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnshowhide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnshowhide.FillColor = System.Drawing.Color.Black;
+            this.btnshowhide.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold);
+            this.btnshowhide.ForeColor = System.Drawing.Color.Red;
+            this.btnshowhide.Location = new System.Drawing.Point(332, 500);
+            this.btnshowhide.Name = "btnshowhide";
+            this.btnshowhide.Size = new System.Drawing.Size(45, 32);
+            this.btnshowhide.TabIndex = 40;
+            this.btnshowhide.Text = "S";
+            this.btnshowhide.UseTransparentBackground = true;
+            this.btnshowhide.Visible = false;
+            this.btnshowhide.MouseEnter += new System.EventHandler(this.btnshowhide_MouseEnter);
+            this.btnshowhide.MouseLeave += new System.EventHandler(this.btnshowhide_MouseLeave);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(970, 472);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 24);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Role";
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel6.Location = new System.Drawing.Point(969, 542);
+            this.panel6.Location = new System.Drawing.Point(969, 543);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(286, 11);
             this.panel6.TabIndex = 38;
@@ -385,40 +419,6 @@
             this.txtusername.Size = new System.Drawing.Size(286, 60);
             this.txtusername.TabIndex = 1;
             this.txtusername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtusername_KeyPress);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(970, 472);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 24);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Role";
-            // 
-            // btnshowhide
-            // 
-            this.btnshowhide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnshowhide.AutoRoundedCorners = true;
-            this.btnshowhide.BackColor = System.Drawing.Color.Transparent;
-            this.btnshowhide.BorderRadius = 15;
-            this.btnshowhide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnshowhide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnshowhide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnshowhide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnshowhide.FillColor = System.Drawing.Color.Black;
-            this.btnshowhide.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold);
-            this.btnshowhide.ForeColor = System.Drawing.Color.Red;
-            this.btnshowhide.Location = new System.Drawing.Point(332, 500);
-            this.btnshowhide.Name = "btnshowhide";
-            this.btnshowhide.Size = new System.Drawing.Size(45, 32);
-            this.btnshowhide.TabIndex = 40;
-            this.btnshowhide.Text = "S";
-            this.btnshowhide.UseTransparentBackground = true;
-            this.btnshowhide.Visible = false;
-            this.btnshowhide.MouseEnter += new System.EventHandler(this.btnshowhide_MouseEnter);
-            this.btnshowhide.MouseLeave += new System.EventHandler(this.btnshowhide_MouseLeave);
             // 
             // Signupform
             // 

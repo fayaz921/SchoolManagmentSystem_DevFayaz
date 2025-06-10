@@ -63,6 +63,16 @@ namespace SchoolManagmentSystem_DevFayaz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dark_brown_login_ {
+            get {
+                object obj = ResourceManager.GetObject("dark brown login ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Laptoptyping_ezgif_com_video_to_gif_converter {
             get {
                 object obj = ResourceManager.GetObject("Laptoptyping-ezgif.com-video-to-gif-converter", resourceCulture);
@@ -73,9 +83,39 @@ namespace SchoolManagmentSystem_DevFayaz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LOGIN_GIF_CLIPCHAMP {
+            get {
+                object obj = ResourceManager.GetObject("LOGIN GIF CLIPCHAMP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGINGIFVIDEO_ezgif_com_video_to_gif_converter {
             get {
                 object obj = ResourceManager.GetObject("LOGINGIFVIDEO-ezgif.com-video-to-gif-converter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_06_10_164147 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-06-10 164147", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VERIFICATION_GIF_CLIPCHAMP {
+            get {
+                object obj = ResourceManager.GetObject("VERIFICATION GIF CLIPCHAMP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

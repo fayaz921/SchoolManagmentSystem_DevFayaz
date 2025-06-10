@@ -31,6 +31,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.LoginPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnshowhide = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.linkLabelforgetpassword = new System.Windows.Forms.LinkLabel();
@@ -38,10 +39,9 @@
             this.btnlogin = new Guna.UI2.WinForms.Guna2Button();
             this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictureboxlogin = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnshowhide = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureboxlogin = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.LoginPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxlogin)).BeginInit();
@@ -87,8 +87,31 @@
             this.LoginPanel.FillColor4 = System.Drawing.Color.Transparent;
             this.LoginPanel.Location = new System.Drawing.Point(140, 66);
             this.LoginPanel.Name = "LoginPanel";
-            this.LoginPanel.Size = new System.Drawing.Size(482, 750);
+            this.LoginPanel.Size = new System.Drawing.Size(482, 737);
             this.LoginPanel.TabIndex = 13;
+            // 
+            // btnshowhide
+            // 
+            this.btnshowhide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnshowhide.AutoRoundedCorners = true;
+            this.btnshowhide.BackColor = System.Drawing.Color.Transparent;
+            this.btnshowhide.BorderRadius = 15;
+            this.btnshowhide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnshowhide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnshowhide.FillColor = System.Drawing.Color.Black;
+            this.btnshowhide.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold);
+            this.btnshowhide.ForeColor = System.Drawing.Color.Red;
+            this.btnshowhide.Location = new System.Drawing.Point(323, 318);
+            this.btnshowhide.Name = "btnshowhide";
+            this.btnshowhide.Size = new System.Drawing.Size(45, 32);
+            this.btnshowhide.TabIndex = 41;
+            this.btnshowhide.Text = "S";
+            this.btnshowhide.UseTransparentBackground = true;
+            this.btnshowhide.Visible = false;
+            this.btnshowhide.MouseEnter += new System.EventHandler(this.btnshowhide_MouseEnter);
+            this.btnshowhide.MouseLeave += new System.EventHandler(this.btnshowhide_MouseLeave);
             // 
             // panel2
             // 
@@ -209,58 +232,35 @@
             this.txtusername.TabIndex = 1;
             this.txtusername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtusername_KeyPress);
             // 
-            // pictureboxlogin
-            // 
-            this.pictureboxlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureboxlogin.ErrorImage = null;
-            this.pictureboxlogin.Image = global::SchoolManagmentSystem_DevFayaz.Properties.Resources.LOGINGIFVIDEO_ezgif_com_video_to_gif_converter;
-            this.pictureboxlogin.ImageLocation = "center";
-            this.pictureboxlogin.ImageRotate = 0F;
-            this.pictureboxlogin.Location = new System.Drawing.Point(624, 128);
-            this.pictureboxlogin.Name = "pictureboxlogin";
-            this.pictureboxlogin.Size = new System.Drawing.Size(1182, 675);
-            this.pictureboxlogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureboxlogin.TabIndex = 14;
-            this.pictureboxlogin.TabStop = false;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel4.Location = new System.Drawing.Point(620, 804);
+            this.panel4.Location = new System.Drawing.Point(620, 793);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1187, 10);
+            this.panel4.Size = new System.Drawing.Size(1184, 10);
             this.panel4.TabIndex = 37;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(1799, 123);
+            this.panel3.Location = new System.Drawing.Point(1794, 123);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 690);
+            this.panel3.Size = new System.Drawing.Size(10, 673);
             this.panel3.TabIndex = 38;
             // 
-            // btnshowhide
+            // pictureboxlogin
             // 
-            this.btnshowhide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnshowhide.AutoRoundedCorners = true;
-            this.btnshowhide.BackColor = System.Drawing.Color.Transparent;
-            this.btnshowhide.BorderRadius = 15;
-            this.btnshowhide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnshowhide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnshowhide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnshowhide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnshowhide.FillColor = System.Drawing.Color.Black;
-            this.btnshowhide.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold);
-            this.btnshowhide.ForeColor = System.Drawing.Color.Red;
-            this.btnshowhide.Location = new System.Drawing.Point(323, 318);
-            this.btnshowhide.Name = "btnshowhide";
-            this.btnshowhide.Size = new System.Drawing.Size(45, 32);
-            this.btnshowhide.TabIndex = 41;
-            this.btnshowhide.Text = "S";
-            this.btnshowhide.UseTransparentBackground = true;
-            this.btnshowhide.Visible = false;
-            this.btnshowhide.MouseEnter += new System.EventHandler(this.btnshowhide_MouseEnter);
-            this.btnshowhide.MouseLeave += new System.EventHandler(this.btnshowhide_MouseLeave);
+            this.pictureboxlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureboxlogin.ErrorImage = null;
+            this.pictureboxlogin.Image = global::SchoolManagmentSystem_DevFayaz.Properties.Resources.LOGIN_GIF_CLIPCHAMP;
+            this.pictureboxlogin.ImageLocation = "center";
+            this.pictureboxlogin.ImageRotate = 0F;
+            this.pictureboxlogin.Location = new System.Drawing.Point(625, 105);
+            this.pictureboxlogin.Name = "pictureboxlogin";
+            this.pictureboxlogin.Size = new System.Drawing.Size(1169, 706);
+            this.pictureboxlogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureboxlogin.TabIndex = 14;
+            this.pictureboxlogin.TabStop = false;
             // 
             // Loginform
             // 

@@ -33,12 +33,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblRoleName = new System.Windows.Forms.Label();
             this.LoginPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureboxlogin = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureboxlogin = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.LoginPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxlogin)).BeginInit();
@@ -119,6 +119,14 @@
             this.LoginPanel.Size = new System.Drawing.Size(464, 639);
             this.LoginPanel.TabIndex = 21;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel2.Location = new System.Drawing.Point(79, 262);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(286, 11);
+            this.panel2.TabIndex = 37;
+            // 
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.Color.Transparent;
@@ -165,28 +173,6 @@
             this.btnSubmit.UseTransparentBackground = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnlogin_Click);
             // 
-            // pictureboxlogin
-            // 
-            this.pictureboxlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureboxlogin.ErrorImage = null;
-            this.pictureboxlogin.Image = global::SchoolManagmentSystem_DevFayaz.Properties.Resources.Laptoptyping_ezgif_com_video_to_gif_converter;
-            this.pictureboxlogin.ImageLocation = "center";
-            this.pictureboxlogin.ImageRotate = 0F;
-            this.pictureboxlogin.Location = new System.Drawing.Point(777, 198);
-            this.pictureboxlogin.Name = "pictureboxlogin";
-            this.pictureboxlogin.Size = new System.Drawing.Size(1040, 623);
-            this.pictureboxlogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureboxlogin.TabIndex = 22;
-            this.pictureboxlogin.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel2.Location = new System.Drawing.Point(79, 262);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 11);
-            this.panel2.TabIndex = 37;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
@@ -202,6 +188,20 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 614);
             this.panel3.TabIndex = 39;
+            // 
+            // pictureboxlogin
+            // 
+            this.pictureboxlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureboxlogin.ErrorImage = null;
+            this.pictureboxlogin.Image = global::SchoolManagmentSystem_DevFayaz.Properties.Resources.VERIFICATION_GIF_CLIPCHAMP;
+            this.pictureboxlogin.ImageLocation = "center";
+            this.pictureboxlogin.ImageRotate = 0F;
+            this.pictureboxlogin.Location = new System.Drawing.Point(777, 198);
+            this.pictureboxlogin.Name = "pictureboxlogin";
+            this.pictureboxlogin.Size = new System.Drawing.Size(1040, 623);
+            this.pictureboxlogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureboxlogin.TabIndex = 22;
+            this.pictureboxlogin.TabStop = false;
             // 
             // EmailVerification
             // 

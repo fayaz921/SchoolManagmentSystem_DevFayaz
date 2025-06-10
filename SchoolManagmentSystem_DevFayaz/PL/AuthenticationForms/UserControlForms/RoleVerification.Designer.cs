@@ -250,13 +250,13 @@
             // 
             this.pictureboxlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureboxlogin.ErrorImage = null;
-            this.pictureboxlogin.Image = global::SchoolManagmentSystem_DevFayaz.Properties.Resources.Laptoptyping_ezgif_com_video_to_gif_converter;
+            this.pictureboxlogin.Image = global::SchoolManagmentSystem_DevFayaz.Properties.Resources.VERIFICATION_GIF_CLIPCHAMP;
             this.pictureboxlogin.ImageLocation = "center";
             this.pictureboxlogin.ImageRotate = 0F;
             this.pictureboxlogin.Location = new System.Drawing.Point(800, 203);
             this.pictureboxlogin.Name = "pictureboxlogin";
             this.pictureboxlogin.Size = new System.Drawing.Size(1040, 620);
-            this.pictureboxlogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureboxlogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureboxlogin.TabIndex = 23;
             this.pictureboxlogin.TabStop = false;
             // 

@@ -210,12 +210,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\dark brown login .png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LOGINGIFVIDEO-ezgif.com-video-to-gif-converter.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Laptoptyping-ezgif.com-video-to-gif-converter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN GIF CLIPCHAMP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VERIFICATION GIF CLIPCHAMP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-06-10 164147.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

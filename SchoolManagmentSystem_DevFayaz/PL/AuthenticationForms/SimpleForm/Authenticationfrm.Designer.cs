@@ -34,6 +34,7 @@
             // 
             // flowLayoutPanelAuthentication
             // 
+            this.flowLayoutPanelAuthentication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
             this.flowLayoutPanelAuthentication.Location = new System.Drawing.Point(26, 65);
             this.flowLayoutPanelAuthentication.Name = "flowLayoutPanelAuthentication";
             this.flowLayoutPanelAuthentication.Size = new System.Drawing.Size(1968, 919);
@@ -58,9 +59,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1946, 883);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.flowLayoutPanelAuthentication);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Authenticationfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
