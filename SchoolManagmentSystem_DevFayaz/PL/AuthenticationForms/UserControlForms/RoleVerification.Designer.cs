@@ -33,13 +33,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblRoleName = new System.Windows.Forms.Label();
             this.LoginPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnshowhide = new Guna.UI2.WinForms.Guna2Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnlogin = new Guna.UI2.WinForms.Guna2Button();
             this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureboxlogin = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.guna2Panel1.SuspendLayout();
@@ -109,6 +110,7 @@
             this.LoginPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
             this.LoginPanel.BorderRadius = 2;
             this.LoginPanel.BorderThickness = 8;
+            this.LoginPanel.Controls.Add(this.btnshowhide);
             this.LoginPanel.Controls.Add(this.panel3);
             this.LoginPanel.Controls.Add(this.panel2);
             this.LoginPanel.Controls.Add(this.panel1);
@@ -123,6 +125,53 @@
             this.LoginPanel.Name = "LoginPanel";
             this.LoginPanel.Size = new System.Drawing.Size(464, 639);
             this.LoginPanel.TabIndex = 22;
+            // 
+            // btnshowhide
+            // 
+            this.btnshowhide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnshowhide.AutoRoundedCorners = true;
+            this.btnshowhide.BackColor = System.Drawing.Color.Transparent;
+            this.btnshowhide.BorderRadius = 15;
+            this.btnshowhide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnshowhide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnshowhide.FillColor = System.Drawing.Color.Black;
+            this.btnshowhide.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold);
+            this.btnshowhide.ForeColor = System.Drawing.Color.Red;
+            this.btnshowhide.Location = new System.Drawing.Point(311, 323);
+            this.btnshowhide.Name = "btnshowhide";
+            this.btnshowhide.Size = new System.Drawing.Size(45, 32);
+            this.btnshowhide.TabIndex = 41;
+            this.btnshowhide.Text = "S";
+            this.btnshowhide.UseTransparentBackground = true;
+            this.btnshowhide.Visible = false;
+            this.btnshowhide.MouseEnter += new System.EventHandler(this.btnshowhide_MouseEnter);
+            this.btnshowhide.MouseLeave += new System.EventHandler(this.btnshowhide_MouseLeave);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel3.Location = new System.Drawing.Point(463, 625);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(286, 11);
+            this.panel3.TabIndex = 36;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel2.Location = new System.Drawing.Point(79, 261);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(286, 11);
+            this.panel2.TabIndex = 36;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel1.Location = new System.Drawing.Point(79, 361);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(286, 11);
+            this.panel1.TabIndex = 36;
             // 
             // txtusername
             // 
@@ -189,11 +238,13 @@
             this.txtpassword.Location = new System.Drawing.Point(79, 313);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtpassword.Name = "txtpassword";
+            this.txtpassword.PasswordChar = '*';
             this.txtpassword.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtpassword.PlaceholderText = "Password";
             this.txtpassword.SelectedText = "";
             this.txtpassword.Size = new System.Drawing.Size(286, 60);
             this.txtpassword.TabIndex = 6;
+            this.txtpassword.TextChanged += new System.EventHandler(this.txtpassword_TextChanged);
             // 
             // pictureboxlogin
             // 
@@ -208,30 +259,6 @@
             this.pictureboxlogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureboxlogin.TabIndex = 23;
             this.pictureboxlogin.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(79, 361);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(286, 11);
-            this.panel1.TabIndex = 36;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel2.Location = new System.Drawing.Point(79, 261);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 11);
-            this.panel2.TabIndex = 36;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(463, 625);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(286, 11);
-            this.panel3.TabIndex = 36;
             // 
             // panel4
             // 
@@ -286,5 +313,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
+        private Guna.UI2.WinForms.Guna2Button btnshowhide;
     }
 }

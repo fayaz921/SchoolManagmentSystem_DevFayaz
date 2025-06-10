@@ -48,6 +48,8 @@
             this.btnsignup = new Guna.UI2.WinForms.Guna2Button();
             this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnshowhide = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SignUpPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox)).BeginInit();
@@ -82,6 +84,8 @@
             // 
             this.SignUpPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
             this.SignUpPanel.BorderThickness = 8;
+            this.SignUpPanel.Controls.Add(this.btnshowhide);
+            this.SignUpPanel.Controls.Add(this.label3);
             this.SignUpPanel.Controls.Add(this.panel6);
             this.SignUpPanel.Controls.Add(this.panel5);
             this.SignUpPanel.Controls.Add(this.panel4);
@@ -240,7 +244,7 @@
             this.comboboxRole.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboboxRole.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboboxRole.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboboxRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboboxRole.ForeColor = System.Drawing.Color.White;
             this.comboboxRole.ItemHeight = 30;
             this.comboboxRole.Items.AddRange(new object[] {
             "Admin",
@@ -347,11 +351,13 @@
             this.txtpassword.Location = new System.Drawing.Point(111, 490);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtpassword.Name = "txtpassword";
+            this.txtpassword.PasswordChar = '*';
             this.txtpassword.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtpassword.PlaceholderText = "Password";
             this.txtpassword.SelectedText = "";
             this.txtpassword.Size = new System.Drawing.Size(286, 60);
             this.txtpassword.TabIndex = 3;
+            this.txtpassword.TextChanged += new System.EventHandler(this.txtpassword_TextChanged);
             this.txtpassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpassword_KeyPress);
             // 
             // txtusername
@@ -379,6 +385,40 @@
             this.txtusername.Size = new System.Drawing.Size(286, 60);
             this.txtusername.TabIndex = 1;
             this.txtusername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtusername_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(970, 472);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 24);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Role";
+            // 
+            // btnshowhide
+            // 
+            this.btnshowhide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnshowhide.AutoRoundedCorners = true;
+            this.btnshowhide.BackColor = System.Drawing.Color.Transparent;
+            this.btnshowhide.BorderRadius = 15;
+            this.btnshowhide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnshowhide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnshowhide.FillColor = System.Drawing.Color.Black;
+            this.btnshowhide.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold);
+            this.btnshowhide.ForeColor = System.Drawing.Color.Red;
+            this.btnshowhide.Location = new System.Drawing.Point(332, 500);
+            this.btnshowhide.Name = "btnshowhide";
+            this.btnshowhide.Size = new System.Drawing.Size(45, 32);
+            this.btnshowhide.TabIndex = 40;
+            this.btnshowhide.Text = "S";
+            this.btnshowhide.UseTransparentBackground = true;
+            this.btnshowhide.Visible = false;
+            this.btnshowhide.MouseEnter += new System.EventHandler(this.btnshowhide_MouseEnter);
+            this.btnshowhide.MouseLeave += new System.EventHandler(this.btnshowhide_MouseLeave);
             // 
             // Signupform
             // 
@@ -420,5 +460,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Button btnshowhide;
     }
 }

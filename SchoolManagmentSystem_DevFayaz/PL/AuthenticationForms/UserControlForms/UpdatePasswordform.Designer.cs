@@ -32,13 +32,15 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnupdatepassword = new Guna.UI2.WinForms.Guna2Button();
             this.txtnewpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtconfirmpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtotp = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnshowhideNp = new Guna.UI2.WinForms.Guna2Button();
+            this.btnshowhideCp = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -93,6 +95,8 @@
             // 
             this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
             this.guna2CustomGradientPanel1.BorderThickness = 8;
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnshowhideNp);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnshowhideCp);
             this.guna2CustomGradientPanel1.Controls.Add(this.panel3);
             this.guna2CustomGradientPanel1.Controls.Add(this.panel1);
             this.guna2CustomGradientPanel1.Controls.Add(this.panel2);
@@ -108,6 +112,30 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(759, 683);
             this.guna2CustomGradientPanel1.TabIndex = 22;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel3.Location = new System.Drawing.Point(209, 430);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(286, 11);
+            this.panel3.TabIndex = 39;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel1.Location = new System.Drawing.Point(209, 320);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(286, 11);
+            this.panel1.TabIndex = 38;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel2.Location = new System.Drawing.Point(209, 199);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(286, 11);
+            this.panel2.TabIndex = 37;
             // 
             // btnupdatepassword
             // 
@@ -149,11 +177,13 @@
             this.txtnewpassword.Location = new System.Drawing.Point(209, 271);
             this.txtnewpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtnewpassword.Name = "txtnewpassword";
+            this.txtnewpassword.PasswordChar = '*';
             this.txtnewpassword.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtnewpassword.PlaceholderText = "New Password";
             this.txtnewpassword.SelectedText = "";
             this.txtnewpassword.Size = new System.Drawing.Size(286, 60);
             this.txtnewpassword.TabIndex = 5;
+            this.txtnewpassword.TextChanged += new System.EventHandler(this.txtnewpassword_TextChanged);
             // 
             // txtconfirmpassword
             // 
@@ -174,11 +204,13 @@
             this.txtconfirmpassword.Location = new System.Drawing.Point(209, 381);
             this.txtconfirmpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtconfirmpassword.Name = "txtconfirmpassword";
+            this.txtconfirmpassword.PasswordChar = '*';
             this.txtconfirmpassword.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtconfirmpassword.PlaceholderText = "Confirm Password";
             this.txtconfirmpassword.SelectedText = "";
             this.txtconfirmpassword.Size = new System.Drawing.Size(286, 60);
             this.txtconfirmpassword.TabIndex = 6;
+            this.txtconfirmpassword.TextChanged += new System.EventHandler(this.txtconfirmpassword_TextChanged);
             // 
             // txtotp
             // 
@@ -205,29 +237,51 @@
             this.txtotp.Size = new System.Drawing.Size(286, 60);
             this.txtotp.TabIndex = 4;
             // 
-            // panel2
+            // btnshowhideNp
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel2.Location = new System.Drawing.Point(209, 199);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 11);
-            this.panel2.TabIndex = 37;
+            this.btnshowhideNp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnshowhideNp.AutoRoundedCorners = true;
+            this.btnshowhideNp.BackColor = System.Drawing.Color.Transparent;
+            this.btnshowhideNp.BorderRadius = 15;
+            this.btnshowhideNp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhideNp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhideNp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnshowhideNp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnshowhideNp.FillColor = System.Drawing.Color.Black;
+            this.btnshowhideNp.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold);
+            this.btnshowhideNp.ForeColor = System.Drawing.Color.Red;
+            this.btnshowhideNp.Location = new System.Drawing.Point(441, 282);
+            this.btnshowhideNp.Name = "btnshowhideNp";
+            this.btnshowhideNp.Size = new System.Drawing.Size(45, 32);
+            this.btnshowhideNp.TabIndex = 41;
+            this.btnshowhideNp.Text = "S";
+            this.btnshowhideNp.UseTransparentBackground = true;
+            this.btnshowhideNp.Visible = false;
+            this.btnshowhideNp.MouseEnter += new System.EventHandler(this.btnshowhideNp_MouseEnter);
+            this.btnshowhideNp.MouseLeave += new System.EventHandler(this.btnshowhideNp_MouseLeave);
             // 
-            // panel1
+            // btnshowhideCp
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(209, 320);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(286, 11);
-            this.panel1.TabIndex = 38;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(209, 430);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(286, 11);
-            this.panel3.TabIndex = 39;
+            this.btnshowhideCp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnshowhideCp.AutoRoundedCorners = true;
+            this.btnshowhideCp.BackColor = System.Drawing.Color.Transparent;
+            this.btnshowhideCp.BorderRadius = 15;
+            this.btnshowhideCp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhideCp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnshowhideCp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnshowhideCp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnshowhideCp.FillColor = System.Drawing.Color.Black;
+            this.btnshowhideCp.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold);
+            this.btnshowhideCp.ForeColor = System.Drawing.Color.Red;
+            this.btnshowhideCp.Location = new System.Drawing.Point(441, 393);
+            this.btnshowhideCp.Name = "btnshowhideCp";
+            this.btnshowhideCp.Size = new System.Drawing.Size(45, 32);
+            this.btnshowhideCp.TabIndex = 42;
+            this.btnshowhideCp.Text = "S";
+            this.btnshowhideCp.UseTransparentBackground = true;
+            this.btnshowhideCp.Visible = false;
+            this.btnshowhideCp.MouseEnter += new System.EventHandler(this.btnshowhideCp_MouseEnter);
+            this.btnshowhideCp.MouseLeave += new System.EventHandler(this.btnshowhideCp_MouseLeave);
             // 
             // UpdatePasswordform
             // 
@@ -259,5 +313,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2Button btnshowhideNp;
+        private Guna.UI2.WinForms.Guna2Button btnshowhideCp;
     }
 }

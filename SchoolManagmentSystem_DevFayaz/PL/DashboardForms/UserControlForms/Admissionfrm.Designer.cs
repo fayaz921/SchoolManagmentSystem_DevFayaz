@@ -31,6 +31,10 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.SignUpPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -52,10 +56,6 @@
             this.lblFormNo = new System.Windows.Forms.Label();
             this.btnsubmit = new Guna.UI2.WinForms.Guna2Button();
             this.txtStdName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SignUpPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxDomicileBackImage)).BeginInit();
@@ -71,7 +71,7 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(282, 75);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(238, 143);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1455, 63);
             this.guna2CustomGradientPanel1.TabIndex = 20;
@@ -121,10 +121,42 @@
             this.SignUpPanel.FillColor2 = System.Drawing.Color.Transparent;
             this.SignUpPanel.FillColor3 = System.Drawing.Color.Transparent;
             this.SignUpPanel.FillColor4 = System.Drawing.Color.Transparent;
-            this.SignUpPanel.Location = new System.Drawing.Point(280, 78);
+            this.SignUpPanel.Location = new System.Drawing.Point(236, 146);
             this.SignUpPanel.Name = "SignUpPanel";
-            this.SignUpPanel.Size = new System.Drawing.Size(1457, 753);
+            this.SignUpPanel.Size = new System.Drawing.Size(1457, 698);
             this.SignUpPanel.TabIndex = 19;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel7.Location = new System.Drawing.Point(1003, 237);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(275, 10);
+            this.panel7.TabIndex = 41;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel6.Location = new System.Drawing.Point(1003, 351);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(275, 10);
+            this.panel6.TabIndex = 40;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel5.Location = new System.Drawing.Point(547, 352);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(275, 10);
+            this.panel5.TabIndex = 38;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel2.Location = new System.Drawing.Point(547, 245);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(275, 10);
+            this.panel2.TabIndex = 37;
             // 
             // panel3
             // 
@@ -181,7 +213,7 @@
             this.lblStudentStrength.BackColor = System.Drawing.Color.Black;
             this.lblStudentStrength.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentStrength.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblStudentStrength.Location = new System.Drawing.Point(999, 379);
+            this.lblStudentStrength.Location = new System.Drawing.Point(999, 371);
             this.lblStudentStrength.Name = "lblStudentStrength";
             this.lblStudentStrength.Size = new System.Drawing.Size(324, 27);
             this.lblStudentStrength.TabIndex = 31;
@@ -262,7 +294,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(1040, 589);
+            this.label5.Location = new System.Drawing.Point(1030, 559);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(224, 27);
             this.label5.TabIndex = 25;
@@ -272,7 +304,7 @@
             // 
             this.PicBoxDomicileBackImage.FillColor = System.Drawing.Color.Black;
             this.PicBoxDomicileBackImage.ImageRotate = 0F;
-            this.PicBoxDomicileBackImage.Location = new System.Drawing.Point(1046, 425);
+            this.PicBoxDomicileBackImage.Location = new System.Drawing.Point(1036, 402);
             this.PicBoxDomicileBackImage.Name = "PicBoxDomicileBackImage";
             this.PicBoxDomicileBackImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PicBoxDomicileBackImage.Size = new System.Drawing.Size(166, 147);
@@ -286,7 +318,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(596, 593);
+            this.label4.Location = new System.Drawing.Point(575, 563);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(224, 27);
             this.label4.TabIndex = 23;
@@ -296,7 +328,7 @@
             // 
             this.PicBoxDomicilFrontImage.FillColor = System.Drawing.Color.Black;
             this.PicBoxDomicilFrontImage.ImageRotate = 0F;
-            this.PicBoxDomicilFrontImage.Location = new System.Drawing.Point(616, 425);
+            this.PicBoxDomicilFrontImage.Location = new System.Drawing.Point(595, 402);
             this.PicBoxDomicilFrontImage.Name = "PicBoxDomicilFrontImage";
             this.PicBoxDomicilFrontImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PicBoxDomicilFrontImage.Size = new System.Drawing.Size(166, 147);
@@ -310,7 +342,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(167, 593);
+            this.label3.Location = new System.Drawing.Point(153, 563);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(180, 27);
             this.label3.TabIndex = 21;
@@ -320,7 +352,7 @@
             // 
             this.PicBoxFormBImage.FillColor = System.Drawing.Color.Black;
             this.PicBoxFormBImage.ImageRotate = 0F;
-            this.PicBoxFormBImage.Location = new System.Drawing.Point(157, 425);
+            this.PicBoxFormBImage.Location = new System.Drawing.Point(138, 402);
             this.PicBoxFormBImage.Name = "PicBoxFormBImage";
             this.PicBoxFormBImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PicBoxFormBImage.Size = new System.Drawing.Size(166, 147);
@@ -406,7 +438,7 @@
             this.btnsubmit.FillColor = System.Drawing.SystemColors.MenuText;
             this.btnsubmit.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.btnsubmit.ForeColor = System.Drawing.Color.White;
-            this.btnsubmit.Location = new System.Drawing.Point(594, 679);
+            this.btnsubmit.Location = new System.Drawing.Point(573, 616);
             this.btnsubmit.Name = "btnsubmit";
             this.btnsubmit.Size = new System.Drawing.Size(188, 55);
             this.btnsubmit.TabIndex = 8;
@@ -439,38 +471,6 @@
             this.txtStdName.Size = new System.Drawing.Size(286, 60);
             this.txtStdName.TabIndex = 1;
             this.txtStdName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStdName_KeyPress);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel2.Location = new System.Drawing.Point(547, 245);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(275, 10);
-            this.panel2.TabIndex = 37;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel5.Location = new System.Drawing.Point(547, 352);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(275, 10);
-            this.panel5.TabIndex = 38;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel6.Location = new System.Drawing.Point(1003, 351);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(275, 10);
-            this.panel6.TabIndex = 40;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel7.Location = new System.Drawing.Point(1003, 237);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(275, 10);
-            this.panel7.TabIndex = 41;
             // 
             // Admissionfrm
             // 

@@ -105,5 +105,29 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                 e.Handled = true;
             }
         }
+
+        private void txtpassword_TextChanged(object sender, EventArgs e)
+        {
+            if (txtpassword.Text != "")
+            {
+                btnshowhide.Visible = true;
+            }
+            else
+            {
+                btnshowhide.Visible = false;
+            }
+        }
+
+        private void btnshowhide_MouseEnter(object sender, EventArgs e)
+        {
+            txtpassword.PasswordChar = '\0';
+            btnshowhide.Text = "H";
+        }
+
+        private void btnshowhide_MouseLeave(object sender, EventArgs e)
+        {
+            txtpassword.PasswordChar = '*';
+            btnshowhide.Text = "S";
+        }
     }
 }

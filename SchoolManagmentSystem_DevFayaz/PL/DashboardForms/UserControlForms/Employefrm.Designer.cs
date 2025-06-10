@@ -382,6 +382,7 @@
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Name = "Employefrm";
             this.Size = new System.Drawing.Size(1946, 883);
+            this.Load += new System.EventHandler(this.Employefrm_Load);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             this.guna2CustomGradientPanel2.PerformLayout();
             this.guna2CustomGradientPanel1.ResumeLayout(false);

@@ -119,5 +119,10 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
             Txtemail.Clear();
             txtdateofjoining.Text = null;
         }
+
+        private void Employefrm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

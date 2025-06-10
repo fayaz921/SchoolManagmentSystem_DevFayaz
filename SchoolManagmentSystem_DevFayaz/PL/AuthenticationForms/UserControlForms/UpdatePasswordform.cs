@@ -97,6 +97,52 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
             authenticationfrm.ShowEmailverificationform(emailVerification);
         }
 
+        private void txtnewpassword_TextChanged(object sender, EventArgs e)
+        {
+            if(txtnewpassword.Text !="")
+            {
+                btnshowhideNp.Visible = true;
+            }
+            else
+            {
+                btnshowhideNp.Visible = false;
+            }
+        }
 
+        private void btnshowhideNp_MouseEnter(object sender, EventArgs e)
+        {
+            txtnewpassword.PasswordChar = '\0';
+            btnshowhideNp.Text = "H";
+        }
+
+        private void btnshowhideNp_MouseLeave(object sender, EventArgs e)
+        {
+            txtnewpassword.PasswordChar = '*';
+            btnshowhideNp.Text = "S";
+        }
+
+        private void txtconfirmpassword_TextChanged(object sender, EventArgs e)
+        {
+            if(txtconfirmpassword.Text !="")
+            {
+                btnshowhideCp.Visible = true;
+            }
+            else
+            {
+                btnshowhideCp.Visible = false;
+            }
+        }
+
+        private void btnshowhideCp_MouseEnter(object sender, EventArgs e)
+        {
+            txtconfirmpassword.PasswordChar = '\0';
+            btnshowhideCp.Text = "H";
+        }
+
+        private void btnshowhideCp_MouseLeave(object sender, EventArgs e)
+        {
+            txtconfirmpassword.PasswordChar= '*';
+            btnshowhideCp.Text = "S";
+        }
     }
 }
