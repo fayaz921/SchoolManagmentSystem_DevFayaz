@@ -1,16 +1,9 @@
 ﻿using SchoolManagmentSystem_DevFayaz.BL;
+using SchoolManagmentSystem_DevFayaz.Custom_Classes;
 using SchoolManagmentSystem_DevFayaz.MODELS;
 using SchoolManagmentSystem_DevFayaz.MODELS.Dashboardmodels;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Security.Permissions;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
@@ -107,6 +100,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     students.DomicileFront = DomicileFront;
                     students.DomicileBack = DomicileBack;
                     students.StudentFormBImage = FormBimage;
+
                     if(!BLStudent.StudentValidation(students))
                     {
                         return;
@@ -122,10 +116,15 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     classModel.Section = Convert.ToChar(DDLSection.Text);
                     classModel.Section_Strength = Stdstrength;
                     classModel.Student_Id = Stdid;
-                    if(!BLClass.ClassValidations(classModel)) 
+                    LogModel objmodel = new LogModel();
+                    objmodel.UserId = UserCreads.UserId;
+                    objmodel.Std_Id = Stdid;
+                    objmodel.CreateAt = DateTime.Now;
+                    BL_Log.Insert(objmodel);
+                    if (!BLClass.ClassValidations(classModel)) 
                     {
                         return;
-                    }
+                    } 
                     BLClass.Insert(classModel);
 
                     MessageBox.Show("Admission successful", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);

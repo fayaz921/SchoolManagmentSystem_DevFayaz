@@ -1,4 +1,6 @@
 ﻿using SchoolManagmentSystem_DevFayaz.BL;
+using SchoolManagmentSystem_DevFayaz.Custom_Classes;
+using SchoolManagmentSystem_DevFayaz.Enums;
 using SchoolManagmentSystem_DevFayaz.MODELS.Dashboardmodels;
 using SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm;
 using System;
@@ -71,8 +73,10 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                 Authenticationfrm authenticationfrm = (Authenticationfrm)this.FindForm();
                 authenticationfrm.Controls.Clear();
                 Dashboardfrm dashboardfrm = new Dashboardfrm();
+                UserCreads.UserId = Convert.ToInt32( dt.Rows[0]["User_Id"].ToString());
                 dashboardfrm.ShowDialog();
                 authenticationfrm.Close();
+
                 return true;
             }
             else

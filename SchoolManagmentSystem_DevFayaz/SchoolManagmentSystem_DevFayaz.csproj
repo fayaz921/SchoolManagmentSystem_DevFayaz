@@ -65,8 +65,10 @@
     <Compile Include="BL\BLStudent.cs" />
     <Compile Include="BL\BLTeachers.cs" />
     <Compile Include="BL\BLUserinfo.cs" />
+    <Compile Include="BL\BL_Log.cs" />
     <Compile Include="Custom Classes\ClassSendMail.cs" />
     <Compile Include="Custom Classes\OTP_Generator.cs" />
+    <Compile Include="Custom Classes\UserCreads.cs" />
     <Compile Include="DL\DataAccessLayer.cs" />
     <Compile Include="Enums\AdmissionEnum.cs" />
     <Compile Include="Enums\ClassEnums.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="MODELS\AdmissionModel.cs" />
     <Compile Include="MODELS\ClassModel.cs" />
     <Compile Include="MODELS\EmployeModel.cs" />
+    <Compile Include="MODELS\LogModel.cs" />
     <Compile Include="MODELS\StudentsModel.cs" />
     <Compile Include="MODELS\TeachersModel.cs" />
     <Compile Include="MODELS\UserinfoModel.cs" />
@@ -140,6 +143,12 @@
     <Compile Include="PL\DashboardForms\UserControlForms\Employefrm.Designer.cs">
       <DependentUpon>Employefrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\TeacherData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\TeacherData.Designer.cs">
+      <DependentUpon>TeacherData.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\DashboardForms\UserControlForms\Teacherfrm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -182,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Employefrm.resx">
       <DependentUpon>Employefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\TeacherData.resx">
+      <DependentUpon>TeacherData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Teacherfrm.resx">
       <DependentUpon>Teacherfrm.cs</DependentUpon>

@@ -1,4 +1,5 @@
-﻿using SchoolManagmentSystem_DevFayaz.Enums;
+﻿using SchoolManagmentSystem_DevFayaz.Custom_Classes;
+using SchoolManagmentSystem_DevFayaz.Enums;
 using SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms;
 using System;
 using System.Collections.Generic;
@@ -73,8 +74,16 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm
 
         private void btnteachers_Click(object sender, EventArgs e)
         {
-            Teacherfrm teacherfrm = new Teacherfrm();
-            Showusercontrolforms(teacherfrm);
+            if(UserCreads.UserRole == Role.Admin)
+            {
+                TeacherData teacherdataFrm = new TeacherData();
+                Showusercontrolforms(teacherdataFrm);
+            }
+            else
+            {
+                MessageBox.Show("Only Admin Have Access This Form");
+            }
+         
         }
 
         private void btnemployes_Click(object sender, EventArgs e)

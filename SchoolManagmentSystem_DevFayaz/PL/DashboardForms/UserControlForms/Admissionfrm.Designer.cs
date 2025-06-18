@@ -377,7 +377,7 @@
             this.txtDOB.BackColor = System.Drawing.Color.Black;
             this.txtDOB.BorderThickness = 3;
             this.txtDOB.Checked = true;
-            this.txtDOB.FillColor = System.Drawing.Color.Transparent;
+            this.txtDOB.FillColor = System.Drawing.Color.Black;
             this.txtDOB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDOB.ForeColor = System.Drawing.SystemColors.Control;
             this.txtDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;

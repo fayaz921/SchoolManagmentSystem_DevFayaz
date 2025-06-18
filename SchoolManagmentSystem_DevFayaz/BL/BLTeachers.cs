@@ -2,12 +2,9 @@
 using SchoolManagmentSystem_DevFayaz.Enums;
 using SchoolManagmentSystem_DevFayaz.MODELS;
 using SchoolManagmentSystem_DevFayaz.Validations;
-using System;
-using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace SchoolManagmentSystem_DevFayaz.BL
@@ -48,6 +45,13 @@ namespace SchoolManagmentSystem_DevFayaz.BL
                 MessageBox.Show(result.Errors[0].ErrorMessage);
                 return false;
             }
+        }
+
+        public static DataTable GetData()
+        {
+            SqlParameter[] prm = new SqlParameter[1];
+            prm[0] = new SqlParameter(Actiontype, TeacherEnums.Select);
+            return DataAccessLayer.GetData(Spname, prm);
         }
     }
 }
