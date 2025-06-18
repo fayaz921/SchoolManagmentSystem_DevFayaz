@@ -1,5 +1,7 @@
 ﻿using SchoolManagmentSystem_DevFayaz.BL;
+using SchoolManagmentSystem_DevFayaz.Custom_Classes;
 using SchoolManagmentSystem_DevFayaz.Enums;
+using SchoolManagmentSystem_DevFayaz.MODELS;
 using SchoolManagmentSystem_DevFayaz.MODELS.Dashboardmodels;
 using System;
 using System.Collections.Generic;
@@ -51,10 +53,16 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                         userinfomodel.User_Status = Convert.ToInt32(txtuserstatus.Text);
                         userinfomodel.User_OTP = Convert.ToInt32(txtuserotp.Text);
                         BLUserinfo bLUserinfo = new BLUserinfo();
+                        
                         if(!bLUserinfo.UserValidation(userinfomodel))
                         {
                             return;
                         }
+                        LogModel logModel = new LogModel();
+                        logModel.UserId = UserCreads.UserId;
+                        logModel.Message = ("New SignUp: UserName" + userinfomodel.User_Name + ",Role:" + userinfomodel.User_Role);
+                        logModel.CreateAt = DateTime.Now;
+                        BL_Log.Insert(logModel);
                         bLUserinfo.Insert(userinfomodel);
                         MessageBox.Show("signup successfully");
                         Cleartextboxes();

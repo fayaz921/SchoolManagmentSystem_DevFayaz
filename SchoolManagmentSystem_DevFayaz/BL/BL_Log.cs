@@ -1,14 +1,6 @@
-﻿using SchoolManagmentSystem_DevFayaz.Custom_Classes;
-using SchoolManagmentSystem_DevFayaz.DL;
-using SchoolManagmentSystem_DevFayaz.Enums;
+﻿using SchoolManagmentSystem_DevFayaz.DL;
 using SchoolManagmentSystem_DevFayaz.MODELS;
-using SchoolManagmentSystem_DevFayaz.MODELS.Dashboardmodels;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolManagmentSystem_DevFayaz.BL
 {

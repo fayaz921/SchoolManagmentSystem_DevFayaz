@@ -116,15 +116,19 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     classModel.Section = Convert.ToChar(DDLSection.Text);
                     classModel.Section_Strength = Stdstrength;
                     classModel.Student_Id = Stdid;
-                    LogModel objmodel = new LogModel();
-                    objmodel.UserId = UserCreads.UserId;
-                    objmodel.Std_Id = Stdid;
-                    objmodel.CreateAt = DateTime.Now;
-                    BL_Log.Insert(objmodel);
+                    
                     if (!BLClass.ClassValidations(classModel)) 
                     {
                         return;
-                    } 
+                    }
+
+                    LogModel objmodel = new LogModel();
+                    objmodel.UserId = UserCreads.UserId;
+                    objmodel.Std_Id = Stdid;
+                    objmodel.Message = ("New Student Admitted: Name :" + students.Student_Name + ", Class : " + classModel.ClassName);
+                    objmodel.CreateAt = DateTime.Now;
+                    BL_Log.Insert(objmodel);
+
                     BLClass.Insert(classModel);
 
                     MessageBox.Show("Admission successful", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);

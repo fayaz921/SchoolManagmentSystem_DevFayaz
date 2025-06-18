@@ -10,9 +10,9 @@ namespace SchoolManagmentSystem_DevFayaz.MODELS
     public class LogModel
     {
         public int Actiontype { get; set; }
-        public  int UserId { get; set; }
-        public  int Std_Id { get; set; }
-        public  string Message { get; set; }
-        public  DateTime CreateAt { get; set; }
+        public int UserId { get; set; }
+        public int Std_Id { get; set; }
+        public string Message { get; set; }
+        public DateTime CreateAt { get; set; }
     }
 }

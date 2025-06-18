@@ -1,4 +1,5 @@
 ﻿using SchoolManagmentSystem_DevFayaz.BL;
+using SchoolManagmentSystem_DevFayaz.Custom_Classes;
 using SchoolManagmentSystem_DevFayaz.MODELS;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,11 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     {
                         return;
                     }
+                    LogModel logModel = new LogModel();
+                    logModel.UserId = UserCreads.UserId;
+                    logModel.Message ="New Employe Added: Name:"+employeModel.Employe_Name+",Email:"+employeModel.Email;
+                    logModel.CreateAt  = DateTime.Now;
+                    BL_Log.Insert(logModel);
                     BLEmployes.Insert(employeModel);
                     MessageBox.Show("Employe submitted successfully");
                     Cleartextboxes();

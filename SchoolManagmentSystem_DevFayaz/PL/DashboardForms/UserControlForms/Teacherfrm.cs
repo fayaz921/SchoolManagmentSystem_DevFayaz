@@ -1,4 +1,5 @@
 ﻿using SchoolManagmentSystem_DevFayaz.BL;
+using SchoolManagmentSystem_DevFayaz.Custom_Classes;
 using SchoolManagmentSystem_DevFayaz.MODELS;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,11 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     {
                         return;
                     }
+                    LogModel logModel = new LogModel();
+                    logModel.UserId = UserCreads.UserId;
+                    logModel.Message = "New Teacher Added: TeacherName:" + model.Teacher_Name + ",Email:" + model.Email;
+                    logModel.CreateAt = DateTime.Now;
+                    BL_Log.Insert(logModel);
                     BLTeachers.Insert(model);
                     MessageBox.Show("Teacher Submitted successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Cleartextboxes();
