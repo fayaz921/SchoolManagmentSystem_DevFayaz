@@ -42,7 +42,9 @@
             this.btnteachers = new Guna.UI2.WinForms.Guna2Button();
             this.btnemployes = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnlogdata = new Guna.UI2.WinForms.Guna2Button();
             this.btnloginfrm = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStudentFee = new Guna.UI2.WinForms.Guna2Button();
             this.Classmenustrip.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -117,7 +119,7 @@
             this.classToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.classToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.classToolStripMenuItem.Name = "classToolStripMenuItem";
-            this.classToolStripMenuItem.Size = new System.Drawing.Size(111, 35);
+            this.classToolStripMenuItem.Size = new System.Drawing.Size(111, 51);
             this.classToolStripMenuItem.Text = "Classes";
             // 
             // btnclass5th
@@ -206,6 +208,8 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.btnStudentFee);
+            this.guna2Panel1.Controls.Add(this.btnlogdata);
             this.guna2Panel1.Controls.Add(this.Classmenustrip);
             this.guna2Panel1.Controls.Add(this.btnloginfrm);
             this.guna2Panel1.Controls.Add(this.btnadmissionform);
@@ -216,6 +220,27 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1922, 90);
             this.guna2Panel1.TabIndex = 13;
+            // 
+            // btnlogdata
+            // 
+            this.btnlogdata.BackColor = System.Drawing.Color.Transparent;
+            this.btnlogdata.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.btnlogdata.BorderRadius = 15;
+            this.btnlogdata.BorderThickness = 3;
+            this.btnlogdata.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnlogdata.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnlogdata.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnlogdata.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnlogdata.FillColor = System.Drawing.SystemColors.MenuText;
+            this.btnlogdata.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btnlogdata.ForeColor = System.Drawing.Color.White;
+            this.btnlogdata.Location = new System.Drawing.Point(1102, 25);
+            this.btnlogdata.Name = "btnlogdata";
+            this.btnlogdata.Size = new System.Drawing.Size(211, 55);
+            this.btnlogdata.TabIndex = 26;
+            this.btnlogdata.Text = "LOG DATA";
+            this.btnlogdata.UseTransparentBackground = true;
+            this.btnlogdata.Click += new System.EventHandler(this.btnlogdata_Click);
             // 
             // btnloginfrm
             // 
@@ -237,6 +262,27 @@
             this.btnloginfrm.Text = "🔙";
             this.btnloginfrm.UseTransparentBackground = true;
             this.btnloginfrm.Click += new System.EventHandler(this.btnloginfrm_Click);
+            // 
+            // btnStudentFee
+            // 
+            this.btnStudentFee.BackColor = System.Drawing.Color.Transparent;
+            this.btnStudentFee.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.btnStudentFee.BorderRadius = 15;
+            this.btnStudentFee.BorderThickness = 3;
+            this.btnStudentFee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStudentFee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStudentFee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStudentFee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStudentFee.FillColor = System.Drawing.SystemColors.MenuText;
+            this.btnStudentFee.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btnStudentFee.ForeColor = System.Drawing.Color.White;
+            this.btnStudentFee.Location = new System.Drawing.Point(1342, 23);
+            this.btnStudentFee.Name = "btnStudentFee";
+            this.btnStudentFee.Size = new System.Drawing.Size(211, 55);
+            this.btnStudentFee.TabIndex = 27;
+            this.btnStudentFee.Text = "Fees";
+            this.btnStudentFee.UseTransparentBackground = true;
+            this.btnStudentFee.Click += new System.EventHandler(this.btnStudentFee_Click);
             // 
             // Dashboardfrm
             // 
@@ -276,5 +322,7 @@
         private Guna.UI2.WinForms.Guna2Button btnemployes;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btnloginfrm;
+        private Guna.UI2.WinForms.Guna2Button btnlogdata;
+        private Guna.UI2.WinForms.Guna2Button btnStudentFee;
     }
 }

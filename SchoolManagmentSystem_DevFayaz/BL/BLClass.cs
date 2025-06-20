@@ -64,5 +64,15 @@ namespace SchoolManagmentSystem_DevFayaz.BL
                 return false;
             }
         }
+
+        public static DataTable SelectByClassAndSectionName(string classname,char section)
+        {
+            SqlParameter[] prm = new SqlParameter[3];
+            prm[0] = new SqlParameter(Actiontype, 7);
+            prm[1] = new SqlParameter("@ClassName", classname);
+            prm[2] = new SqlParameter("@Section", section);
+            return DataAccessLayer.GetData(Spname, prm);
+
+        }
     }
 }

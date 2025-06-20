@@ -34,14 +34,10 @@
             this.btnshowhide = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtuserstatus = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtuserotp = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbluserid = new System.Windows.Forms.Label();
             this.comboboxRole = new Guna.UI2.WinForms.Guna2ComboBox();
             this.picbox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -87,14 +83,10 @@
             this.SignUpPanel.Controls.Add(this.btnshowhide);
             this.SignUpPanel.Controls.Add(this.label3);
             this.SignUpPanel.Controls.Add(this.panel6);
-            this.SignUpPanel.Controls.Add(this.panel5);
-            this.SignUpPanel.Controls.Add(this.panel4);
             this.SignUpPanel.Controls.Add(this.panel2);
             this.SignUpPanel.Controls.Add(this.panel3);
             this.SignUpPanel.Controls.Add(this.panel1);
             this.SignUpPanel.Controls.Add(this.label2);
-            this.SignUpPanel.Controls.Add(this.txtuserstatus);
-            this.SignUpPanel.Controls.Add(this.txtuserotp);
             this.SignUpPanel.Controls.Add(this.lbluserid);
             this.SignUpPanel.Controls.Add(this.comboboxRole);
             this.SignUpPanel.Controls.Add(this.picbox);
@@ -125,7 +117,7 @@
             this.btnshowhide.FillColor = System.Drawing.Color.Black;
             this.btnshowhide.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold);
             this.btnshowhide.ForeColor = System.Drawing.Color.Red;
-            this.btnshowhide.Location = new System.Drawing.Point(332, 500);
+            this.btnshowhide.Location = new System.Drawing.Point(1079, 315);
             this.btnshowhide.Name = "btnshowhide";
             this.btnshowhide.Size = new System.Drawing.Size(45, 32);
             this.btnshowhide.TabIndex = 40;
@@ -140,7 +132,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(970, 472);
+            this.label3.Location = new System.Drawing.Point(851, 386);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 24);
             this.label3.TabIndex = 39;
@@ -149,31 +141,15 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel6.Location = new System.Drawing.Point(969, 543);
+            this.panel6.Location = new System.Drawing.Point(850, 457);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(286, 11);
             this.panel6.TabIndex = 38;
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel5.Location = new System.Drawing.Point(969, 356);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(286, 11);
-            this.panel5.TabIndex = 36;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel4.Location = new System.Drawing.Point(969, 452);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(286, 11);
-            this.panel4.TabIndex = 37;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel2.Location = new System.Drawing.Point(108, 355);
+            this.panel2.Location = new System.Drawing.Point(311, 354);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(286, 11);
             this.panel2.TabIndex = 36;
@@ -181,7 +157,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(110, 451);
+            this.panel3.Location = new System.Drawing.Point(313, 450);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(286, 11);
             this.panel3.TabIndex = 36;
@@ -189,7 +165,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(111, 538);
+            this.panel1.Location = new System.Drawing.Point(849, 353);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(286, 11);
             this.panel1.TabIndex = 36;
@@ -199,63 +175,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(650, 277);
+            this.label2.Location = new System.Drawing.Point(650, 248);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 24);
             this.label2.TabIndex = 18;
             this.label2.Text = "Image";
-            // 
-            // txtuserstatus
-            // 
-            this.txtuserstatus.BackColor = System.Drawing.Color.Transparent;
-            this.txtuserstatus.BorderColor = System.Drawing.Color.Black;
-            this.txtuserstatus.BorderThickness = 2;
-            this.txtuserstatus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtuserstatus.DefaultText = "";
-            this.txtuserstatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtuserstatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtuserstatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtuserstatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtuserstatus.FillColor = System.Drawing.Color.Black;
-            this.txtuserstatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtuserstatus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtuserstatus.ForeColor = System.Drawing.Color.White;
-            this.txtuserstatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtuserstatus.Location = new System.Drawing.Point(969, 306);
-            this.txtuserstatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtuserstatus.Name = "txtuserstatus";
-            this.txtuserstatus.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtuserstatus.PlaceholderText = "Status";
-            this.txtuserstatus.SelectedText = "";
-            this.txtuserstatus.Size = new System.Drawing.Size(286, 60);
-            this.txtuserstatus.TabIndex = 17;
-            this.txtuserstatus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtuserstatus_KeyPress);
-            // 
-            // txtuserotp
-            // 
-            this.txtuserotp.BackColor = System.Drawing.Color.Transparent;
-            this.txtuserotp.BorderColor = System.Drawing.Color.Black;
-            this.txtuserotp.BorderThickness = 2;
-            this.txtuserotp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtuserotp.DefaultText = "";
-            this.txtuserotp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtuserotp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtuserotp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtuserotp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtuserotp.FillColor = System.Drawing.Color.Black;
-            this.txtuserotp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtuserotp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtuserotp.ForeColor = System.Drawing.Color.White;
-            this.txtuserotp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtuserotp.Location = new System.Drawing.Point(969, 398);
-            this.txtuserotp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtuserotp.Name = "txtuserotp";
-            this.txtuserotp.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtuserotp.PlaceholderText = "OTP";
-            this.txtuserotp.SelectedText = "";
-            this.txtuserotp.Size = new System.Drawing.Size(286, 60);
-            this.txtuserotp.TabIndex = 16;
-            this.txtuserotp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtuserotp_KeyPress);
             // 
             // lbluserid
             // 
@@ -285,7 +209,7 @@
             "Employe",
             "Student",
             "Teacher"});
-            this.comboboxRole.Location = new System.Drawing.Point(969, 500);
+            this.comboboxRole.Location = new System.Drawing.Point(850, 414);
             this.comboboxRole.Name = "comboboxRole";
             this.comboboxRole.Size = new System.Drawing.Size(285, 36);
             this.comboboxRole.TabIndex = 14;
@@ -296,7 +220,7 @@
             // 
             this.picbox.FillColor = System.Drawing.Color.Black;
             this.picbox.ImageRotate = 0F;
-            this.picbox.Location = new System.Drawing.Point(585, 89);
+            this.picbox.Location = new System.Drawing.Point(585, 76);
             this.picbox.Name = "picbox";
             this.picbox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.picbox.Size = new System.Drawing.Size(197, 169);
@@ -321,7 +245,7 @@
             this.txtemail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtemail.ForeColor = System.Drawing.Color.White;
             this.txtemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtemail.Location = new System.Drawing.Point(109, 402);
+            this.txtemail.Location = new System.Drawing.Point(312, 401);
             this.txtemail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtemail.Name = "txtemail";
             this.txtemail.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -337,7 +261,7 @@
             this.linkLabelSignup.BackColor = System.Drawing.Color.Transparent;
             this.linkLabelSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelSignup.LinkColor = System.Drawing.SystemColors.Control;
-            this.linkLabelSignup.Location = new System.Drawing.Point(512, 685);
+            this.linkLabelSignup.Location = new System.Drawing.Point(558, 645);
             this.linkLabelSignup.Name = "linkLabelSignup";
             this.linkLabelSignup.Size = new System.Drawing.Size(292, 25);
             this.linkLabelSignup.TabIndex = 9;
@@ -358,7 +282,7 @@
             this.btnsignup.FillColor = System.Drawing.SystemColors.MenuText;
             this.btnsignup.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.btnsignup.ForeColor = System.Drawing.Color.White;
-            this.btnsignup.Location = new System.Drawing.Point(573, 599);
+            this.btnsignup.Location = new System.Drawing.Point(619, 559);
             this.btnsignup.Name = "btnsignup";
             this.btnsignup.Size = new System.Drawing.Size(188, 55);
             this.btnsignup.TabIndex = 8;
@@ -382,7 +306,7 @@
             this.txtpassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtpassword.ForeColor = System.Drawing.Color.White;
             this.txtpassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtpassword.Location = new System.Drawing.Point(111, 490);
+            this.txtpassword.Location = new System.Drawing.Point(849, 305);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
@@ -410,7 +334,7 @@
             this.txtusername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtusername.ForeColor = System.Drawing.Color.White;
             this.txtusername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtusername.Location = new System.Drawing.Point(109, 306);
+            this.txtusername.Location = new System.Drawing.Point(312, 305);
             this.txtusername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtusername.Name = "txtusername";
             this.txtusername.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -443,8 +367,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel SignUpPanel;
-        private Guna.UI2.WinForms.Guna2TextBox txtuserstatus;
-        private Guna.UI2.WinForms.Guna2TextBox txtuserotp;
         private System.Windows.Forms.Label lbluserid;
         public Guna.UI2.WinForms.Guna2ComboBox comboboxRole;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picbox;
@@ -458,8 +380,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button btnshowhide;
     }

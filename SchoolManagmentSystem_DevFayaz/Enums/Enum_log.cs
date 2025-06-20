@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace SchoolManagmentSystem_DevFayaz.Enums
 {
-    public enum ClassEnums
+    public enum Enum_log
     {
         Select,
         Insert,
         Update,
         Delete,
-        Studentstrength,
-        ClassRecord,
-        SelectByClassAndSectionName
     }
 }

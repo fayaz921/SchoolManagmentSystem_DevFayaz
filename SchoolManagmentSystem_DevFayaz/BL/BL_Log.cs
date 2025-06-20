@@ -1,5 +1,7 @@
 ﻿using SchoolManagmentSystem_DevFayaz.DL;
+using SchoolManagmentSystem_DevFayaz.Enums;
 using SchoolManagmentSystem_DevFayaz.MODELS;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace SchoolManagmentSystem_DevFayaz.BL
@@ -9,13 +11,23 @@ namespace SchoolManagmentSystem_DevFayaz.BL
         public static void  Insert (LogModel model)
         {
             SqlParameter[] prm = new SqlParameter[5];
-            prm[0] = new SqlParameter("@Actiontype", 1);
+            prm[0] = new SqlParameter("@Actiontype", Enum_log.Insert);
             prm[1] = new SqlParameter("@UserId", model.UserId);
             prm[2] = new SqlParameter("@Message",model.Message);
             prm[3] = new SqlParameter("@CreateAt", model.CreateAt);
             prm[4] = new SqlParameter("@Std_Id", model.Std_Id);
-            DataAccessLayer.GetData("Sp_Log", prm);
+            DataAccessLayer.Setdata("Sp_Log", prm);
             
+        }
+
+
+        public static DataTable Select()
+        {
+            SqlParameter[] prm = new SqlParameter[1];
+            prm[0] = new SqlParameter("@Actiontype",Enum_log.Select );
+          
+          return DataAccessLayer.GetData("Sp_Log", prm);
+
         }
     }
 }

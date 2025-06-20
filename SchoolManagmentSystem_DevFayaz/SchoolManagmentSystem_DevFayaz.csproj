@@ -73,6 +73,7 @@
     <Compile Include="Enums\AdmissionEnum.cs" />
     <Compile Include="Enums\ClassEnums.cs" />
     <Compile Include="Enums\EmployeEnums.cs" />
+    <Compile Include="Enums\Enum_log.cs" />
     <Compile Include="Enums\Role.cs" />
     <Compile Include="Enums\TeacherEnums.cs" />
     <Compile Include="Enums\UserEnums.cs" />
@@ -143,6 +144,18 @@
     <Compile Include="PL\DashboardForms\UserControlForms\Employefrm.Designer.cs">
       <DependentUpon>Employefrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Logfrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Logfrm.Designer.cs">
+      <DependentUpon>Logfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\StudentFeeFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\StudentFeeFrm.Designer.cs">
+      <DependentUpon>StudentFeeFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\DashboardForms\UserControlForms\TeacherData.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -192,6 +205,12 @@
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Employefrm.resx">
       <DependentUpon>Employefrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Logfrm.resx">
+      <DependentUpon>Logfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\StudentFeeFrm.resx">
+      <DependentUpon>StudentFeeFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\TeacherData.resx">
       <DependentUpon>TeacherData.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +258,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot 2025-06-10 164147.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Shared\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

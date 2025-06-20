@@ -1,4 +1,5 @@
 ﻿using SchoolManagmentSystem_DevFayaz.BL;
+using SchoolManagmentSystem_DevFayaz.Custom_Classes;
 using SchoolManagmentSystem_DevFayaz.MODELS.Dashboardmodels;
 using System;
 using System.Data;
@@ -25,6 +26,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                         MessageBox.Show("Wellcome Admin Fayaz ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Authenticationfrm authenticationfrm = (Authenticationfrm)this.FindForm();
                         Signupform signupform = new Signupform();
+
                         authenticationfrm.Showsignupform(signupform);
                     }
                     else
@@ -51,6 +53,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
             dt = bLUserinfo.Admin(userinfoModel);
             if (dt.Rows.Count > 0)
             {
+                UserCreads.UserId = Convert.ToInt32(dt.Rows[0]["User_Id"].ToString());
                 return true;
             }
             else

@@ -73,17 +73,9 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm
         }
 
         private void btnteachers_Click(object sender, EventArgs e)
-        {
-            if(UserCreads.UserRole == Role.Admin)
-            {
+        {         
                 TeacherData teacherdataFrm = new TeacherData();
-                Showusercontrolforms(teacherdataFrm);
-            }
-            else
-            {
-                MessageBox.Show("Only Admin Have Access This Form");
-            }
-         
+                Showusercontrolforms(teacherdataFrm);       
         }
 
         private void btnemployes_Click(object sender, EventArgs e)
@@ -101,6 +93,18 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm
             authfrm.Showloginform();
             dashboardfrm.Close();
           
+        }
+
+        private void btnlogdata_Click(object sender, EventArgs e)
+        {
+            Logfrm logfrm = new Logfrm();
+            Showusercontrolforms(logfrm);
+        }
+
+        private void btnStudentFee_Click(object sender, EventArgs e)
+        {
+            StudentFeeFrm obj = new StudentFeeFrm();
+            Showusercontrolforms(obj);
         }
     }
 }

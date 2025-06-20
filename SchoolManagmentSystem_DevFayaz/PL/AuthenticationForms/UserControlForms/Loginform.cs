@@ -74,6 +74,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                 authenticationfrm.Controls.Clear();
                 Dashboardfrm dashboardfrm = new Dashboardfrm();
                 UserCreads.UserId = Convert.ToInt32( dt.Rows[0]["User_Id"].ToString());
+                UserCreads.UserRole = (Role) Convert.ToInt32( dt.Rows[0]["User_Role"].ToString());
                 dashboardfrm.ShowDialog();
                 authenticationfrm.Close();
 
