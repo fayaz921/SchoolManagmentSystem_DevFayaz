@@ -11,11 +11,6 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
             InitializeComponent();
         }
 
-        private void FeeDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
 
 
         public void GetStudentRecordByClassAndSectionName()
@@ -38,6 +33,22 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
             section = Convert.ToChar(DDLSection.Text);
             DLLClasses.Enabled = true;
 
+        }
+
+        public void FeeDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                int studentId = Convert.ToInt32(FeeDataGridView.Rows[e.RowIndex].Cells["Student_Id"].Value);
+                int classId = Convert.ToInt32(FeeDataGridView.Rows[e.RowIndex].Cells["Class_Id"].Value);
+
+                Managestudetfeefrm managestudetfeefrm = new Managestudetfeefrm();
+                managestudetfeefrm.StudentId = studentId;
+                managestudetfeefrm.ClassId = classId;
+                managestudetfeefrm.Dock = DockStyle.Fill;
+                this.Controls.Clear();
+                this.Controls.Add(managestudetfeefrm);
+            }
         }
     }
 }

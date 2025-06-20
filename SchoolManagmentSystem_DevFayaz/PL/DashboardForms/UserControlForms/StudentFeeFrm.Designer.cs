@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -38,13 +38,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.DLLClasses = new Guna.UI2.WinForms.Guna2ComboBox();
             this.SignUpPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.txtSearchStdName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.FeeDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.FeeDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txtSearchStdName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btninsertfee = new System.Windows.Forms.DataGridViewImageColumn();
             this.SignUpPanel.SuspendLayout();
-            this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FeeDataGridView)).BeginInit();
+            this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel5
@@ -156,58 +157,61 @@
             this.SignUpPanel.Size = new System.Drawing.Size(1457, 698);
             this.SignUpPanel.TabIndex = 21;
             // 
-            // label1
+            // txtSearchStdName
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Stencil", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(546, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(397, 52);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "ADMISSION FORM";
-            // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.guna2CustomGradientPanel1.Controls.Add(this.label1);
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(238, 143);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1455, 63);
-            this.guna2CustomGradientPanel1.TabIndex = 22;
+            this.txtSearchStdName.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearchStdName.BorderColor = System.Drawing.Color.Black;
+            this.txtSearchStdName.BorderThickness = 2;
+            this.txtSearchStdName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchStdName.DefaultText = "";
+            this.txtSearchStdName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchStdName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchStdName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchStdName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchStdName.FillColor = System.Drawing.Color.Black;
+            this.txtSearchStdName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchStdName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearchStdName.ForeColor = System.Drawing.Color.White;
+            this.txtSearchStdName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchStdName.Location = new System.Drawing.Point(47, 160);
+            this.txtSearchStdName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSearchStdName.Name = "txtSearchStdName";
+            this.txtSearchStdName.PlaceholderForeColor = System.Drawing.Color.LightGray;
+            this.txtSearchStdName.PlaceholderText = "Enter Student Name";
+            this.txtSearchStdName.SelectedText = "";
+            this.txtSearchStdName.Size = new System.Drawing.Size(1374, 41);
+            this.txtSearchStdName.TabIndex = 40;
+            this.txtSearchStdName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FeeDataGridView
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.FeeDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.FeeDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.FeeDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FeeDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
             this.FeeDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FeeDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FeeDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.FeeDataGridView.ColumnHeadersHeight = 4;
             this.FeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.FeeDataGridView.DefaultCellStyle = dataGridViewCellStyle9;
+            this.FeeDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btninsertfee});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.FeeDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.FeeDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.FeeDataGridView.Location = new System.Drawing.Point(47, 204);
             this.FeeDataGridView.Name = "FeeDataGridView";
@@ -239,31 +243,36 @@
             this.FeeDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.FeeDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FeeDataGridView_CellContentClick);
             // 
-            // txtSearchStdName
+            // label1
             // 
-            this.txtSearchStdName.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearchStdName.BorderColor = System.Drawing.Color.Black;
-            this.txtSearchStdName.BorderThickness = 2;
-            this.txtSearchStdName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchStdName.DefaultText = "";
-            this.txtSearchStdName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchStdName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchStdName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchStdName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchStdName.FillColor = System.Drawing.Color.Black;
-            this.txtSearchStdName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchStdName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearchStdName.ForeColor = System.Drawing.Color.White;
-            this.txtSearchStdName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchStdName.Location = new System.Drawing.Point(47, 160);
-            this.txtSearchStdName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtSearchStdName.Name = "txtSearchStdName";
-            this.txtSearchStdName.PlaceholderForeColor = System.Drawing.Color.LightGray;
-            this.txtSearchStdName.PlaceholderText = "Enter Student Name";
-            this.txtSearchStdName.SelectedText = "";
-            this.txtSearchStdName.Size = new System.Drawing.Size(1374, 41);
-            this.txtSearchStdName.TabIndex = 40;
-            this.txtSearchStdName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Stencil", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(546, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(397, 52);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "ADMISSION FORM";
+            // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.guna2CustomGradientPanel1.Controls.Add(this.label1);
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(238, 143);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1455, 63);
+            this.guna2CustomGradientPanel1.TabIndex = 22;
+            // 
+            // btninsertfee
+            // 
+            this.btninsertfee.HeaderText = "Column1";
+            this.btninsertfee.MinimumWidth = 8;
+            this.btninsertfee.Name = "btninsertfee";
             // 
             // StudentFeeFrm
             // 
@@ -275,9 +284,9 @@
             this.Name = "StudentFeeFrm";
             this.Size = new System.Drawing.Size(1946, 883);
             this.SignUpPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.FeeDataGridView)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FeeDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -294,5 +303,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2DataGridView FeeDataGridView;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchStdName;
+        private System.Windows.Forms.DataGridViewImageColumn btninsertfee;
     }
 }

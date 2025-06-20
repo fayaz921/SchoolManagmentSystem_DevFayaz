@@ -63,6 +63,7 @@
     <Compile Include="BL\BLClass.cs" />
     <Compile Include="BL\BLEmployes.cs" />
     <Compile Include="BL\BLStudent.cs" />
+    <Compile Include="BL\BLStudentFee.cs" />
     <Compile Include="BL\BLTeachers.cs" />
     <Compile Include="BL\BLUserinfo.cs" />
     <Compile Include="BL\BL_Log.cs" />
@@ -75,12 +76,14 @@
     <Compile Include="Enums\EmployeEnums.cs" />
     <Compile Include="Enums\Enum_log.cs" />
     <Compile Include="Enums\Role.cs" />
+    <Compile Include="Enums\StudentFeeEnums.cs" />
     <Compile Include="Enums\TeacherEnums.cs" />
     <Compile Include="Enums\UserEnums.cs" />
     <Compile Include="MODELS\AdmissionModel.cs" />
     <Compile Include="MODELS\ClassModel.cs" />
     <Compile Include="MODELS\EmployeModel.cs" />
     <Compile Include="MODELS\LogModel.cs" />
+    <Compile Include="MODELS\StudentfeeModel.cs" />
     <Compile Include="MODELS\StudentsModel.cs" />
     <Compile Include="MODELS\TeachersModel.cs" />
     <Compile Include="MODELS\UserinfoModel.cs" />
@@ -126,6 +129,12 @@
     <Compile Include="PL\DashboardForms\SimpleForm\Dashboardfrm.Designer.cs">
       <DependentUpon>Dashboardfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Admindashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Admindashboard.Designer.cs">
+      <DependentUpon>Admindashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\DashboardForms\UserControlForms\Admissionfrm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -137,6 +146,12 @@
     </Compile>
     <Compile Include="PL\DashboardForms\UserControlForms\Classfrm.Designer.cs">
       <DependentUpon>Classfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Employedashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Employedashboard.Designer.cs">
+      <DependentUpon>Employedashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\DashboardForms\UserControlForms\Employefrm.cs">
       <SubType>UserControl</SubType>
@@ -150,11 +165,23 @@
     <Compile Include="PL\DashboardForms\UserControlForms\Logfrm.Designer.cs">
       <DependentUpon>Logfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Managestudetfeefrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Managestudetfeefrm.Designer.cs">
+      <DependentUpon>Managestudetfeefrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\DashboardForms\UserControlForms\StudentFeeFrm.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PL\DashboardForms\UserControlForms\StudentFeeFrm.Designer.cs">
       <DependentUpon>StudentFeeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Studentsdashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Studentsdashboard.Designer.cs">
+      <DependentUpon>Studentsdashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\DashboardForms\UserControlForms\TeacherData.cs">
       <SubType>UserControl</SubType>
@@ -167,6 +194,12 @@
     </Compile>
     <Compile Include="PL\DashboardForms\UserControlForms\Teacherfrm.Designer.cs">
       <DependentUpon>Teacherfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Teachersdashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Teachersdashboard.Designer.cs">
+      <DependentUpon>Teachersdashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -196,11 +229,17 @@
     <EmbeddedResource Include="PL\DashboardForms\SimpleForm\Dashboardfrm.resx">
       <DependentUpon>Dashboardfrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Admindashboard.resx">
+      <DependentUpon>Admindashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Admissionfrm.resx">
       <DependentUpon>Admissionfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Classfrm.resx">
       <DependentUpon>Classfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Employedashboard.resx">
+      <DependentUpon>Employedashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Employefrm.resx">
       <DependentUpon>Employefrm.cs</DependentUpon>
@@ -208,14 +247,23 @@
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Logfrm.resx">
       <DependentUpon>Logfrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Managestudetfeefrm.resx">
+      <DependentUpon>Managestudetfeefrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\StudentFeeFrm.resx">
       <DependentUpon>StudentFeeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Studentsdashboard.resx">
+      <DependentUpon>Studentsdashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\TeacherData.resx">
       <DependentUpon>TeacherData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Teacherfrm.resx">
       <DependentUpon>Teacherfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Teachersdashboard.resx">
+      <DependentUpon>Teachersdashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

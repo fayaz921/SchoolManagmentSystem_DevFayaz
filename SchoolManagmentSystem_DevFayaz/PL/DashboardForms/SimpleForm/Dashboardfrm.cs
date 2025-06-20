@@ -106,5 +106,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm
             StudentFeeFrm obj = new StudentFeeFrm();
             Showusercontrolforms(obj);
         }
+
+        
     }
 }
