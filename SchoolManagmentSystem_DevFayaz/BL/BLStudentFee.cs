@@ -3,6 +3,7 @@ using SchoolManagmentSystem_DevFayaz.Enums;
 using SchoolManagmentSystem_DevFayaz.MODELS;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace SchoolManagmentSystem_DevFayaz.BL
 {
-    public class BLStudentFee
+    public static class BLStudentFee
     {
-        public void Insert(StudentfeeModel model)
+        public static void Insert(StudentfeeModel model)
         {
             SqlParameter[] prm = new SqlParameter[7];
             prm[0] = new SqlParameter("@type",StudentFeeEnums.Insert);
@@ -23,6 +24,14 @@ namespace SchoolManagmentSystem_DevFayaz.BL
             prm[5] = new SqlParameter("@Fee_Submitiondate",model.Fee_Submitiondate);
             prm[6] = new SqlParameter("@Fee_Status",model.Fee_Status);
             DataAccessLayer.Setdata("Sp_Studentfee", prm);
+        }
+
+        public static DataTable Select()
+        {
+            SqlParameter[] prm = new SqlParameter[1];
+            prm[0] = new SqlParameter("@type", StudentFeeEnums.Select);
+            return DataAccessLayer.GetData("Sp_Studentfee", prm);
+
         }
     }
 }

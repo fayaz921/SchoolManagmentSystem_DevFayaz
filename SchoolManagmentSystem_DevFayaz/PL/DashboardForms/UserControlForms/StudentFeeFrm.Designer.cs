@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -40,9 +40,11 @@
             this.SignUpPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.txtSearchStdName = new Guna.UI2.WinForms.Guna2TextBox();
             this.FeeDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btninsertfee = new System.Windows.Forms.DataGridViewImageColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.btninsertfee = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnstudentfee = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SignUpPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FeeDataGridView)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
@@ -140,6 +142,8 @@
             // 
             this.SignUpPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
             this.SignUpPanel.BorderThickness = 8;
+            this.SignUpPanel.Controls.Add(this.panel1);
+            this.SignUpPanel.Controls.Add(this.btnstudentfee);
             this.SignUpPanel.Controls.Add(this.txtSearchStdName);
             this.SignUpPanel.Controls.Add(this.FeeDataGridView);
             this.SignUpPanel.Controls.Add(this.panel5);
@@ -185,33 +189,33 @@
             // 
             // FeeDataGridView
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.FeeDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.FeeDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.FeeDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FeeDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
             this.FeeDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FeeDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FeeDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.FeeDataGridView.ColumnHeadersHeight = 4;
             this.FeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.FeeDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btninsertfee});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.FeeDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.FeeDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.FeeDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.FeeDataGridView.Location = new System.Drawing.Point(47, 204);
             this.FeeDataGridView.Name = "FeeDataGridView";
@@ -243,6 +247,12 @@
             this.FeeDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.FeeDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FeeDataGridView_CellContentClick);
             // 
+            // btninsertfee
+            // 
+            this.btninsertfee.HeaderText = "Column1";
+            this.btninsertfee.MinimumWidth = 8;
+            this.btninsertfee.Name = "btninsertfee";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -268,11 +278,32 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1455, 63);
             this.guna2CustomGradientPanel1.TabIndex = 22;
             // 
-            // btninsertfee
+            // btnstudentfee
             // 
-            this.btninsertfee.HeaderText = "Column1";
-            this.btninsertfee.MinimumWidth = 8;
-            this.btninsertfee.Name = "btninsertfee";
+            this.btnstudentfee.BackColor = System.Drawing.Color.Transparent;
+            this.btnstudentfee.BorderThickness = 2;
+            this.btnstudentfee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnstudentfee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnstudentfee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnstudentfee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnstudentfee.FillColor = System.Drawing.SystemColors.MenuText;
+            this.btnstudentfee.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnstudentfee.ForeColor = System.Drawing.Color.White;
+            this.btnstudentfee.Location = new System.Drawing.Point(699, 67);
+            this.btnstudentfee.Name = "btnstudentfee";
+            this.btnstudentfee.Size = new System.Drawing.Size(275, 49);
+            this.btnstudentfee.TabIndex = 41;
+            this.btnstudentfee.Text = "Student Fee";
+            this.btnstudentfee.UseTransparentBackground = true;
+            this.btnstudentfee.Click += new System.EventHandler(this.btnstudentfee_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel1.Location = new System.Drawing.Point(699, 121);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(275, 10);
+            this.panel1.TabIndex = 39;
             // 
             // StudentFeeFrm
             // 
@@ -304,5 +335,7 @@
         private Guna.UI2.WinForms.Guna2DataGridView FeeDataGridView;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchStdName;
         private System.Windows.Forms.DataGridViewImageColumn btninsertfee;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button btnstudentfee;
     }
 }

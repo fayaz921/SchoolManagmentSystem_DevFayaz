@@ -32,8 +32,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                 studentfeemodel.Fee_PendingAmount = Convert.ToInt32(txtfeependingamount.Text);
                 studentfeemodel.Fee_Submitiondate = DateTime.Now;
                 studentfeemodel.Fee_Status = 1;
-                BLStudentFee bLStudentFee = new BLStudentFee();
-                bLStudentFee.Insert(studentfeemodel);
+                BLStudentFee .Insert(studentfeemodel);
                 MessageBox.Show("Student Fee submitted successfully", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
