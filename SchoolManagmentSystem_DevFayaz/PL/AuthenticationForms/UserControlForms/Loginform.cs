@@ -3,6 +3,7 @@ using SchoolManagmentSystem_DevFayaz.Custom_Classes;
 using SchoolManagmentSystem_DevFayaz.Enums;
 using SchoolManagmentSystem_DevFayaz.MODELS.Dashboardmodels;
 using SchoolManagmentSystem_DevFayaz.PL.DashboardForms.SimpleForm;
+using SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

@@ -38,13 +38,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.DLLClasses = new Guna.UI2.WinForms.Guna2ComboBox();
             this.SignUpPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnstudentfee = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearchStdName = new Guna.UI2.WinForms.Guna2TextBox();
             this.FeeDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btninsertfee = new System.Windows.Forms.DataGridViewImageColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.btnstudentfee = new Guna.UI2.WinForms.Guna2Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.SignUpPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FeeDataGridView)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
@@ -53,7 +53,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel5.Location = new System.Drawing.Point(368, 123);
+            this.panel5.Location = new System.Drawing.Point(47, 113);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(275, 10);
             this.panel5.TabIndex = 38;
@@ -61,7 +61,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel2.Location = new System.Drawing.Point(47, 121);
+            this.panel2.Location = new System.Drawing.Point(370, 113);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(275, 10);
             this.panel2.TabIndex = 37;
@@ -71,7 +71,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(375, 43);
+            this.label7.Location = new System.Drawing.Point(54, 33);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(180, 27);
             this.label7.TabIndex = 30;
@@ -94,7 +94,7 @@
             "A",
             "B",
             "C"});
-            this.DDLSection.Location = new System.Drawing.Point(368, 77);
+            this.DDLSection.Location = new System.Drawing.Point(47, 67);
             this.DDLSection.Name = "DDLSection";
             this.DDLSection.Size = new System.Drawing.Size(275, 36);
             this.DDLSection.TabIndex = 29;
@@ -105,7 +105,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(53, 43);
+            this.label6.Location = new System.Drawing.Point(376, 35);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(180, 27);
             this.label6.TabIndex = 28;
@@ -132,7 +132,7 @@
             "8th",
             "9th",
             "10th"});
-            this.DLLClasses.Location = new System.Drawing.Point(48, 75);
+            this.DLLClasses.Location = new System.Drawing.Point(371, 67);
             this.DLLClasses.Name = "DLLClasses";
             this.DLLClasses.Size = new System.Drawing.Size(275, 36);
             this.DLLClasses.TabIndex = 27;
@@ -156,10 +156,37 @@
             this.SignUpPanel.FillColor2 = System.Drawing.Color.Transparent;
             this.SignUpPanel.FillColor3 = System.Drawing.Color.Transparent;
             this.SignUpPanel.FillColor4 = System.Drawing.Color.Transparent;
-            this.SignUpPanel.Location = new System.Drawing.Point(236, 146);
+            this.SignUpPanel.Location = new System.Drawing.Point(236, 147);
             this.SignUpPanel.Name = "SignUpPanel";
             this.SignUpPanel.Size = new System.Drawing.Size(1457, 698);
             this.SignUpPanel.TabIndex = 21;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel1.Location = new System.Drawing.Point(699, 110);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(275, 10);
+            this.panel1.TabIndex = 39;
+            // 
+            // btnstudentfee
+            // 
+            this.btnstudentfee.BackColor = System.Drawing.Color.Transparent;
+            this.btnstudentfee.BorderThickness = 2;
+            this.btnstudentfee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnstudentfee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnstudentfee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnstudentfee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnstudentfee.FillColor = System.Drawing.SystemColors.MenuText;
+            this.btnstudentfee.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnstudentfee.ForeColor = System.Drawing.Color.White;
+            this.btnstudentfee.Location = new System.Drawing.Point(699, 56);
+            this.btnstudentfee.Name = "btnstudentfee";
+            this.btnstudentfee.Size = new System.Drawing.Size(275, 49);
+            this.btnstudentfee.TabIndex = 41;
+            this.btnstudentfee.Text = "Student Fee";
+            this.btnstudentfee.UseTransparentBackground = true;
+            this.btnstudentfee.Click += new System.EventHandler(this.btnstudentfee_Click);
             // 
             // txtSearchStdName
             // 
@@ -277,33 +304,6 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1455, 63);
             this.guna2CustomGradientPanel1.TabIndex = 22;
-            // 
-            // btnstudentfee
-            // 
-            this.btnstudentfee.BackColor = System.Drawing.Color.Transparent;
-            this.btnstudentfee.BorderThickness = 2;
-            this.btnstudentfee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnstudentfee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnstudentfee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnstudentfee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnstudentfee.FillColor = System.Drawing.SystemColors.MenuText;
-            this.btnstudentfee.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnstudentfee.ForeColor = System.Drawing.Color.White;
-            this.btnstudentfee.Location = new System.Drawing.Point(699, 67);
-            this.btnstudentfee.Name = "btnstudentfee";
-            this.btnstudentfee.Size = new System.Drawing.Size(275, 49);
-            this.btnstudentfee.TabIndex = 41;
-            this.btnstudentfee.Text = "Student Fee";
-            this.btnstudentfee.UseTransparentBackground = true;
-            this.btnstudentfee.Click += new System.EventHandler(this.btnstudentfee_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(699, 121);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(275, 10);
-            this.panel1.TabIndex = 39;
             // 
             // StudentFeeFrm
             // 

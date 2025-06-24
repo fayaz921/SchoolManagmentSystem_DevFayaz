@@ -29,7 +29,6 @@ namespace SchoolManagmentSystem_DevFayaz.Validations
 
             RuleFor(x => x.User_Image).NotEmpty().WithMessage("Upload image");
 
-            RuleFor(x => x.User_Status).NotEmpty().WithMessage("UserStatus is required");
             
                 
 

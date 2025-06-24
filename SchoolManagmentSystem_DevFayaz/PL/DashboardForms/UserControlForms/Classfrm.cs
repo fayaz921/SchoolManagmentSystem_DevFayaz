@@ -34,5 +34,23 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                 lblStudentRecordMsg.Visible = true;
             }
         }
+
+        private void ClassDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+
+                Managestudetfeefrm managestudetfeefrm = new Managestudetfeefrm();
+                managestudetfeefrm.StudentId = Convert.ToInt32(ClassDataGridView.Rows[e.RowIndex].Cells["Student_Id"].Value);
+                managestudetfeefrm.ClassId = Convert.ToInt32(ClassDataGridView.Rows[e.RowIndex].Cells["Class_Id"].Value);
+                string ClassName = ClassDataGridView.Rows[e.RowIndex].Cells["ClassName"].Value.ToString();
+                managestudetfeefrm.AssignCurrentFeeClassNameAccording(ClassName);
+                managestudetfeefrm.CheckPendingAmount();
+
+                managestudetfeefrm.Dock = DockStyle.Fill;
+                this.Controls.Clear();
+                this.Controls.Add(managestudetfeefrm);
+            }
+        }
     }
 }

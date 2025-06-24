@@ -38,10 +38,9 @@
             this.btnclass8th = new System.Windows.Forms.ToolStripMenuItem();
             this.btnclass9th = new System.Windows.Forms.ToolStripMenuItem();
             this.btnclass10th = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnloginfrm = new Guna.UI2.WinForms.Guna2Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnlogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnteachers = new Guna.UI2.WinForms.Guna2Button();
-            this.flowLayoutPaneldashboard = new System.Windows.Forms.FlowLayoutPanel();
+            this.PanelTeacherdashboard = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2Panel1.SuspendLayout();
             this.Classmenustrip.SuspendLayout();
             this.SuspendLayout();
@@ -50,8 +49,7 @@
             // 
             this.guna2Panel1.Controls.Add(this.btnStudentFee);
             this.guna2Panel1.Controls.Add(this.Classmenustrip);
-            this.guna2Panel1.Controls.Add(this.btnloginfrm);
-            this.guna2Panel1.Controls.Add(this.button1);
+            this.guna2Panel1.Controls.Add(this.btnlogout);
             this.guna2Panel1.Controls.Add(this.btnteachers);
             this.guna2Panel1.Location = new System.Drawing.Point(3, 12);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -71,12 +69,13 @@
             this.btnStudentFee.FillColor = System.Drawing.SystemColors.MenuText;
             this.btnStudentFee.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.btnStudentFee.ForeColor = System.Drawing.Color.White;
-            this.btnStudentFee.Location = new System.Drawing.Point(765, 22);
+            this.btnStudentFee.Location = new System.Drawing.Point(1093, 22);
             this.btnStudentFee.Name = "btnStudentFee";
             this.btnStudentFee.Size = new System.Drawing.Size(211, 55);
             this.btnStudentFee.TabIndex = 27;
             this.btnStudentFee.Text = "Fees";
             this.btnStudentFee.UseTransparentBackground = true;
+            this.btnStudentFee.Click += new System.EventHandler(this.btnStudentFee_Click);
             // 
             // Classmenustrip
             // 
@@ -88,7 +87,7 @@
             this.Classmenustrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.classToolStripMenuItem});
             this.Classmenustrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.Classmenustrip.Location = new System.Drawing.Point(465, 22);
+            this.Classmenustrip.Location = new System.Drawing.Point(856, 22);
             this.Classmenustrip.Name = "Classmenustrip";
             this.Classmenustrip.Size = new System.Drawing.Size(211, 55);
             this.Classmenustrip.TabIndex = 13;
@@ -112,71 +111,59 @@
             // btnclass5th
             // 
             this.btnclass5th.Name = "btnclass5th";
-            this.btnclass5th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass5th.Size = new System.Drawing.Size(169, 40);
             this.btnclass5th.Text = "5th";
             // 
             // btnclass6th
             // 
             this.btnclass6th.Name = "btnclass6th";
-            this.btnclass6th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass6th.Size = new System.Drawing.Size(169, 40);
             this.btnclass6th.Text = "6th";
             // 
             // btnclass7th
             // 
             this.btnclass7th.Name = "btnclass7th";
-            this.btnclass7th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass7th.Size = new System.Drawing.Size(169, 40);
             this.btnclass7th.Text = "7th";
             // 
             // btnclass8th
             // 
             this.btnclass8th.Name = "btnclass8th";
-            this.btnclass8th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass8th.Size = new System.Drawing.Size(169, 40);
             this.btnclass8th.Text = "8th";
             // 
             // btnclass9th
             // 
             this.btnclass9th.Name = "btnclass9th";
-            this.btnclass9th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass9th.Size = new System.Drawing.Size(169, 40);
             this.btnclass9th.Text = "9th";
             // 
             // btnclass10th
             // 
             this.btnclass10th.Name = "btnclass10th";
-            this.btnclass10th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass10th.Size = new System.Drawing.Size(169, 40);
             this.btnclass10th.Text = "10th";
             // 
-            // btnloginfrm
+            // btnlogout
             // 
-            this.btnloginfrm.BackColor = System.Drawing.Color.Transparent;
-            this.btnloginfrm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.btnloginfrm.BorderRadius = 15;
-            this.btnloginfrm.BorderThickness = 1;
-            this.btnloginfrm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnloginfrm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnloginfrm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnloginfrm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnloginfrm.FillColor = System.Drawing.Color.Black;
-            this.btnloginfrm.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
-            this.btnloginfrm.ForeColor = System.Drawing.Color.Red;
-            this.btnloginfrm.Location = new System.Drawing.Point(3, 22);
-            this.btnloginfrm.Name = "btnloginfrm";
-            this.btnloginfrm.Size = new System.Drawing.Size(82, 56);
-            this.btnloginfrm.TabIndex = 25;
-            this.btnloginfrm.Text = "🔙";
-            this.btnloginfrm.UseTransparentBackground = true;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(1820, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 66);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "❌";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnlogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnlogout.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.btnlogout.BorderRadius = 15;
+            this.btnlogout.BorderThickness = 1;
+            this.btnlogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnlogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnlogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnlogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnlogout.FillColor = System.Drawing.Color.Black;
+            this.btnlogout.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
+            this.btnlogout.ForeColor = System.Drawing.Color.Red;
+            this.btnlogout.Location = new System.Drawing.Point(32, 21);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Size = new System.Drawing.Size(144, 56);
+            this.btnlogout.TabIndex = 25;
+            this.btnlogout.Text = "Logout";
+            this.btnlogout.UseTransparentBackground = true;
+            this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
             // 
             // btnteachers
             // 
@@ -191,26 +178,31 @@
             this.btnteachers.FillColor = System.Drawing.SystemColors.MenuText;
             this.btnteachers.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.btnteachers.ForeColor = System.Drawing.Color.White;
-            this.btnteachers.Location = new System.Drawing.Point(201, 22);
+            this.btnteachers.Location = new System.Drawing.Point(616, 22);
             this.btnteachers.Name = "btnteachers";
             this.btnteachers.Size = new System.Drawing.Size(211, 55);
             this.btnteachers.TabIndex = 14;
             this.btnteachers.Text = "Teachers";
             this.btnteachers.UseTransparentBackground = true;
+            this.btnteachers.Click += new System.EventHandler(this.btnteachers_Click);
             // 
-            // flowLayoutPaneldashboard
+            // PanelTeacherdashboard
             // 
-            this.flowLayoutPaneldashboard.Location = new System.Drawing.Point(0, 108);
-            this.flowLayoutPaneldashboard.Name = "flowLayoutPaneldashboard";
-            this.flowLayoutPaneldashboard.Size = new System.Drawing.Size(1928, 844);
-            this.flowLayoutPaneldashboard.TabIndex = 17;
+            this.PanelTeacherdashboard.FillColor = System.Drawing.Color.Transparent;
+            this.PanelTeacherdashboard.FillColor2 = System.Drawing.Color.Transparent;
+            this.PanelTeacherdashboard.FillColor3 = System.Drawing.Color.Transparent;
+            this.PanelTeacherdashboard.FillColor4 = System.Drawing.Color.Transparent;
+            this.PanelTeacherdashboard.Location = new System.Drawing.Point(3, 108);
+            this.PanelTeacherdashboard.Name = "PanelTeacherdashboard";
+            this.PanelTeacherdashboard.Size = new System.Drawing.Size(1946, 910);
+            this.PanelTeacherdashboard.TabIndex = 17;
             // 
             // Teachersdashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
-            this.Controls.Add(this.flowLayoutPaneldashboard);
+            this.Controls.Add(this.PanelTeacherdashboard);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Teachersdashboard";
             this.Size = new System.Drawing.Size(1946, 883);
@@ -233,9 +225,8 @@
         private System.Windows.Forms.ToolStripMenuItem btnclass8th;
         private System.Windows.Forms.ToolStripMenuItem btnclass9th;
         private System.Windows.Forms.ToolStripMenuItem btnclass10th;
-        private Guna.UI2.WinForms.Guna2Button btnloginfrm;
-        private System.Windows.Forms.Button button1;
+        private Guna.UI2.WinForms.Guna2Button btnlogout;
         private Guna.UI2.WinForms.Guna2Button btnteachers;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPaneldashboard;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelTeacherdashboard;
     }
 }

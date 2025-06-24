@@ -71,7 +71,7 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(238, 143);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(187, 58);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1455, 63);
             this.guna2CustomGradientPanel1.TabIndex = 20;
@@ -121,7 +121,7 @@
             this.SignUpPanel.FillColor2 = System.Drawing.Color.Transparent;
             this.SignUpPanel.FillColor3 = System.Drawing.Color.Transparent;
             this.SignUpPanel.FillColor4 = System.Drawing.Color.Transparent;
-            this.SignUpPanel.Location = new System.Drawing.Point(236, 146);
+            this.SignUpPanel.Location = new System.Drawing.Point(185, 61);
             this.SignUpPanel.Name = "SignUpPanel";
             this.SignUpPanel.Size = new System.Drawing.Size(1457, 698);
             this.SignUpPanel.TabIndex = 19;

@@ -33,5 +33,31 @@ namespace SchoolManagmentSystem_DevFayaz.BL
             return DataAccessLayer.GetData("Sp_Studentfee", prm);
 
         }
+
+        public static DataTable CheckPendingAmount(int std_id, int class_Id)
+        {
+            SqlParameter[] prm = new SqlParameter[3];
+            prm[0] = new SqlParameter("@type", 4);
+            prm[1] = new SqlParameter("@Student_Id", std_id);
+            prm[2] = new SqlParameter("@Class_Id", class_Id);
+          return  DataAccessLayer.GetData("Sp_Studentfee", prm);
+
+        }
+
+        public static bool CheckFeeSubmitionDate(DateTime CurrentDate, int std_id)
+        {
+            SqlParameter[] prm = new SqlParameter[3];
+            prm[0] = new SqlParameter("@type", 5);
+            prm[1] = new SqlParameter("@Fee_Submitiondate", CurrentDate);
+            prm[2] = new SqlParameter("@Student_Id", std_id);
+            var dt= DataAccessLayer.GetData("Sp_Studentfee", prm);
+            if(dt.Rows.Count>0)
+            {
+                return true;
+            }
+            return false;
+
+
+        }
     }
 }

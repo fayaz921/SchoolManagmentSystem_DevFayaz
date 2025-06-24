@@ -207,8 +207,8 @@
             this.comboboxRole.Items.AddRange(new object[] {
             "Admin",
             "Employe",
-            "Student",
-            "Teacher"});
+            "Teacher",
+            "Student"});
             this.comboboxRole.Location = new System.Drawing.Point(850, 414);
             this.comboboxRole.Name = "comboboxRole";
             this.comboboxRole.Size = new System.Drawing.Size(285, 36);

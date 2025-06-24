@@ -36,6 +36,7 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.lblStudentRecordMsg = new System.Windows.Forms.Label();
             this.ClassDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnPayFee = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClassDataGridView)).BeginInit();
@@ -124,6 +125,8 @@
             this.ClassDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ClassDataGridView.ColumnHeadersHeight = 4;
             this.ClassDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.ClassDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btnPayFee});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,6 +164,13 @@
             this.ClassDataGridView.ThemeStyle.RowsStyle.Height = 28;
             this.ClassDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ClassDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ClassDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClassDataGridView_CellContentClick);
+            // 
+            // btnPayFee
+            // 
+            this.btnPayFee.HeaderText = "Fees";
+            this.btnPayFee.MinimumWidth = 8;
+            this.btnPayFee.Name = "btnPayFee";
             // 
             // Classfrm
             // 
@@ -186,5 +196,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.Label lblStudentRecordMsg;
         private Guna.UI2.WinForms.Guna2DataGridView ClassDataGridView;
+        private System.Windows.Forms.DataGridViewImageColumn btnPayFee;
     }
 }

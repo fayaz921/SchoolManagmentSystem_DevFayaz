@@ -49,7 +49,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                         userinfomodel.User_Email = txtemail.Text;
                         userinfomodel.User_Password = txtpassword.Text;
                         userinfomodel.User_Image = filepath;
-                        userinfomodel.User_Role = Convert.ToInt32(Role.Employee | Role.Teacher | Role.Student);
+                        userinfomodel.User_Role = Convert.ToInt32(Role.Admin|Role.Employee | Role.Teacher | Role.Student);
                         BLUserinfo bLUserinfo = new BLUserinfo();
                         
                         if(!bLUserinfo.UserValidation(userinfomodel))
