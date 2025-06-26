@@ -31,14 +31,14 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtSubtotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblDateShow = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtfeependingamount = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtfeeamount = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnsubmit = new Guna.UI2.WinForms.Guna2Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtSubtotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(308, 110);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(187, 58);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1126, 53);
             this.guna2CustomGradientPanel2.TabIndex = 15;
@@ -92,10 +92,46 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(308, 156);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(185, 61);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1126, 616);
             this.guna2CustomGradientPanel1.TabIndex = 14;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel3.Location = new System.Drawing.Point(430, 306);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(286, 11);
+            this.panel3.TabIndex = 54;
+            this.panel3.Visible = false;
+            // 
+            // txtSubtotal
+            // 
+            this.txtSubtotal.BackColor = System.Drawing.Color.Transparent;
+            this.txtSubtotal.BorderColor = System.Drawing.Color.Black;
+            this.txtSubtotal.BorderThickness = 2;
+            this.txtSubtotal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSubtotal.DefaultText = "";
+            this.txtSubtotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSubtotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSubtotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSubtotal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSubtotal.FillColor = System.Drawing.Color.Black;
+            this.txtSubtotal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSubtotal.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSubtotal.ForeColor = System.Drawing.Color.White;
+            this.txtSubtotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSubtotal.Location = new System.Drawing.Point(430, 257);
+            this.txtSubtotal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtSubtotal.PlaceholderText = "Sub Total";
+            this.txtSubtotal.ReadOnly = true;
+            this.txtSubtotal.SelectedText = "";
+            this.txtSubtotal.Size = new System.Drawing.Size(286, 60);
+            this.txtSubtotal.TabIndex = 53;
+            this.txtSubtotal.Visible = false;
             // 
             // lblDateShow
             // 
@@ -196,40 +232,6 @@
             this.btnsubmit.Text = "Submit";
             this.btnsubmit.UseTransparentBackground = true;
             this.btnsubmit.Click += new System.EventHandler(this.btnsubmit_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(430, 306);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(286, 11);
-            this.panel3.TabIndex = 54;
-            // 
-            // txtSubtotal
-            // 
-            this.txtSubtotal.BackColor = System.Drawing.Color.Transparent;
-            this.txtSubtotal.BorderColor = System.Drawing.Color.Black;
-            this.txtSubtotal.BorderThickness = 2;
-            this.txtSubtotal.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSubtotal.DefaultText = "";
-            this.txtSubtotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSubtotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSubtotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSubtotal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSubtotal.FillColor = System.Drawing.Color.Black;
-            this.txtSubtotal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSubtotal.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSubtotal.ForeColor = System.Drawing.Color.White;
-            this.txtSubtotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSubtotal.Location = new System.Drawing.Point(430, 257);
-            this.txtSubtotal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtSubtotal.Name = "txtSubtotal";
-            this.txtSubtotal.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtSubtotal.PlaceholderText = "Sub Total";
-            this.txtSubtotal.ReadOnly = true;
-            this.txtSubtotal.SelectedText = "";
-            this.txtSubtotal.Size = new System.Drawing.Size(286, 60);
-            this.txtSubtotal.TabIndex = 53;
             // 
             // Managestudetfeefrm
             // 

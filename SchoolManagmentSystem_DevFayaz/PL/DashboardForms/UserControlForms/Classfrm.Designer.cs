@@ -52,9 +52,9 @@
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(60, 152);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(113, 74);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1736, 60);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1708, 60);
             this.guna2CustomGradientPanel2.TabIndex = 11;
             // 
             // label1
@@ -85,9 +85,9 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(60, 205);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(111, 77);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1736, 616);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1710, 616);
             this.guna2CustomGradientPanel1.TabIndex = 10;
             // 
             // lblStudentRecordMsg
@@ -100,7 +100,7 @@
             this.lblStudentRecordMsg.ForeColor = System.Drawing.Color.White;
             this.lblStudentRecordMsg.Location = new System.Drawing.Point(399, 339);
             this.lblStudentRecordMsg.Name = "lblStudentRecordMsg";
-            this.lblStudentRecordMsg.Size = new System.Drawing.Size(802, 65);
+            this.lblStudentRecordMsg.Size = new System.Drawing.Size(776, 65);
             this.lblStudentRecordMsg.TabIndex = 13;
             this.lblStudentRecordMsg.Text = "There Is No Students";
             this.lblStudentRecordMsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -141,7 +141,7 @@
             this.ClassDataGridView.RowHeadersVisible = false;
             this.ClassDataGridView.RowHeadersWidth = 62;
             this.ClassDataGridView.RowTemplate.Height = 28;
-            this.ClassDataGridView.Size = new System.Drawing.Size(1693, 499);
+            this.ClassDataGridView.Size = new System.Drawing.Size(1667, 499);
             this.ClassDataGridView.TabIndex = 0;
             this.ClassDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.ClassDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;

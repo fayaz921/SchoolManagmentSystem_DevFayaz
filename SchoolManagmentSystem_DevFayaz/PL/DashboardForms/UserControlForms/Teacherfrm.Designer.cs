@@ -31,6 +31,14 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.txtdateofjoining = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txtemail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtteachercnic = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,14 +51,6 @@
             this.DDLqualification = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblteacherid = new System.Windows.Forms.Label();
             this.btnsubmit = new Guna.UI2.WinForms.Guna2Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txtemail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.txtdateofjoining = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,9 +65,9 @@
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(265, 172);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(250, 63);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1331, 53);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1329, 53);
             this.guna2CustomGradientPanel2.TabIndex = 13;
             // 
             // label1
@@ -116,10 +116,104 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(265, 218);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(248, 66);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1331, 616);
             this.guna2CustomGradientPanel1.TabIndex = 12;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel7.Location = new System.Drawing.Point(903, 497);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(288, 10);
+            this.panel7.TabIndex = 47;
+            // 
+            // txtdateofjoining
+            // 
+            this.txtdateofjoining.BackColor = System.Drawing.Color.Black;
+            this.txtdateofjoining.BorderThickness = 2;
+            this.txtdateofjoining.Checked = true;
+            this.txtdateofjoining.FillColor = System.Drawing.Color.Black;
+            this.txtdateofjoining.FocusedColor = System.Drawing.Color.Black;
+            this.txtdateofjoining.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtdateofjoining.ForeColor = System.Drawing.SystemColors.Control;
+            this.txtdateofjoining.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.txtdateofjoining.Location = new System.Drawing.Point(901, 464);
+            this.txtdateofjoining.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtdateofjoining.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtdateofjoining.Name = "txtdateofjoining";
+            this.txtdateofjoining.Size = new System.Drawing.Size(291, 36);
+            this.txtdateofjoining.TabIndex = 46;
+            this.txtdateofjoining.Value = new System.DateTime(2025, 5, 22, 16, 20, 35, 315);
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Gadugi", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(902, 421);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(180, 27);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "DATEOFJOINING";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel6.Location = new System.Drawing.Point(219, 449);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(286, 11);
+            this.panel6.TabIndex = 39;
+            // 
+            // txtemail
+            // 
+            this.txtemail.BackColor = System.Drawing.Color.Transparent;
+            this.txtemail.BorderColor = System.Drawing.Color.Black;
+            this.txtemail.BorderThickness = 2;
+            this.txtemail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtemail.DefaultText = "";
+            this.txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtemail.FillColor = System.Drawing.Color.Black;
+            this.txtemail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtemail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtemail.ForeColor = System.Drawing.Color.White;
+            this.txtemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtemail.Location = new System.Drawing.Point(219, 400);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtemail.PlaceholderText = "Email";
+            this.txtemail.SelectedText = "";
+            this.txtemail.Size = new System.Drawing.Size(286, 60);
+            this.txtemail.TabIndex = 38;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel5.Location = new System.Drawing.Point(904, 383);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(286, 11);
+            this.panel5.TabIndex = 40;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel4.Location = new System.Drawing.Point(905, 284);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(286, 11);
+            this.panel4.TabIndex = 39;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.panel3.Location = new System.Drawing.Point(901, 188);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(286, 11);
+            this.panel3.TabIndex = 38;
             // 
             // panel2
             // 
@@ -331,100 +425,6 @@
             this.btnsubmit.Text = "Submit";
             this.btnsubmit.UseTransparentBackground = true;
             this.btnsubmit.Click += new System.EventHandler(this.btnsubmit_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(901, 188);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(286, 11);
-            this.panel3.TabIndex = 38;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel4.Location = new System.Drawing.Point(905, 284);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(286, 11);
-            this.panel4.TabIndex = 39;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel5.Location = new System.Drawing.Point(904, 383);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(286, 11);
-            this.panel5.TabIndex = 40;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel6.Location = new System.Drawing.Point(219, 449);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(286, 11);
-            this.panel6.TabIndex = 39;
-            // 
-            // txtemail
-            // 
-            this.txtemail.BackColor = System.Drawing.Color.Transparent;
-            this.txtemail.BorderColor = System.Drawing.Color.Black;
-            this.txtemail.BorderThickness = 2;
-            this.txtemail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtemail.DefaultText = "";
-            this.txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtemail.FillColor = System.Drawing.Color.Black;
-            this.txtemail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtemail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtemail.ForeColor = System.Drawing.Color.White;
-            this.txtemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtemail.Location = new System.Drawing.Point(219, 400);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtemail.PlaceholderText = "Email";
-            this.txtemail.SelectedText = "";
-            this.txtemail.Size = new System.Drawing.Size(286, 60);
-            this.txtemail.TabIndex = 38;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.panel7.Location = new System.Drawing.Point(903, 497);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(288, 10);
-            this.panel7.TabIndex = 47;
-            // 
-            // txtdateofjoining
-            // 
-            this.txtdateofjoining.BackColor = System.Drawing.Color.Black;
-            this.txtdateofjoining.BorderThickness = 2;
-            this.txtdateofjoining.Checked = true;
-            this.txtdateofjoining.FillColor = System.Drawing.Color.Black;
-            this.txtdateofjoining.FocusedColor = System.Drawing.Color.Black;
-            this.txtdateofjoining.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtdateofjoining.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtdateofjoining.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.txtdateofjoining.Location = new System.Drawing.Point(901, 464);
-            this.txtdateofjoining.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtdateofjoining.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txtdateofjoining.Name = "txtdateofjoining";
-            this.txtdateofjoining.Size = new System.Drawing.Size(291, 36);
-            this.txtdateofjoining.TabIndex = 46;
-            this.txtdateofjoining.Value = new System.DateTime(2025, 5, 22, 16, 20, 35, 315);
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Gadugi", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(902, 421);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 27);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "DATEOFJOINING";
             // 
             // Teacherfrm
             // 

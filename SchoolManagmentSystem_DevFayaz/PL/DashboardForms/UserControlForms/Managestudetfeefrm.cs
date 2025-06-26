@@ -19,11 +19,14 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
             InitializeComponent();
 
         }
+                
         public int StudentId { get; set; }
         public int ClassId { get; set; }
         public DateTime FeeDate { get; set; }
         private int CurrentFee { get; set; }
         private int ActualFeeAmount { get; set; }
+        public int FeeId { get; set; }
+        public string ActionType { get; set; }
 
         public void AssignCurrentFeeClassNameAccording(string ClassName)
         {
@@ -57,22 +60,53 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
         }
         public void CheckPendingAmount()
         {
-            var dt = BLStudentFee.CheckPendingAmount(StudentId, ClassId);
-            if (dt.Rows.Count > 0)
+            try
             {
-                string PendingAmount = dt.Rows[0]["Fee_PendingAmount"].ToString();
-                txtfeependingamount.Text = PendingAmount;
-                lblDateShow.Text = DateTime.Now.ToString();
-                int pending = Convert.ToInt32(PendingAmount);
-                int Subtotal = CurrentFee + pending;
-                txtSubtotal.Text = Subtotal.ToString();
+
+                var dt = BLStudentFee.CheckPendingAmount(StudentId, ClassId);
+                if (dt.Rows.Count > 0)
+                {
+                    string PendingAmount = dt.Rows[0]["Fee_PendingAmount"].ToString();
+                    txtfeependingamount.Text = PendingAmount;
+                    lblDateShow.Text = DateTime.Now.ToString();
+                    int pending = Convert.ToInt32(PendingAmount);
+                    int Subtotal = CurrentFee + pending;
+                    txtSubtotal.Text = Subtotal.ToString();
+                    if (ActionType == "Submit")
+                    {
+                        txtSubtotal.Visible = true;
+                        btnsubmit.Text = ActionType;
+
+                    }
+                    else
+                    {
+                        txtSubtotal.Visible = false;
+                        btnsubmit.Text = ActionType;
+
+                    }
+                }
+                else
+                {
+
+
+                    lblDateShow.Text = DateTime.Now.ToString();
+                    txtSubtotal.Text = CurrentFee.ToString();
+                    txtfeependingamount.Text = "0";
+                    //if (ActionType == "Submit")
+                    //{
+                    //    txtSubtotal.Visible = true;
+                    //    btnsubmit.Text = ActionType;
+                    //}
+                    //else
+                    //{
+                    //    txtSubtotal.Visible = false;
+                    //    btnsubmit.Text = ActionType;
+                    //}
+                }
             }
-            else
+            catch (Exception ex)
             {
-                
-                lblDateShow.Text = DateTime.Now.ToString();
-                txtSubtotal.Text = CurrentFee.ToString();
-                txtfeependingamount.Text = "0";
+                MessageBox.Show("Error" + ex.Message);
             }
         }
 
@@ -87,10 +121,22 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
         {
             int FeePay = Convert.ToInt32(txtfeeamount.Text);
             int Subtotal = Convert.ToInt32(txtSubtotal.Text);
+            int Pending = Convert.ToInt32(txtfeependingamount.Text);
 
-            if (FeePay > Subtotal)
+            if (ActionType == "Submit")
             {
-                return false;
+                if (FeePay > Subtotal)
+                {
+
+                    return false;
+                }
+            }
+            else
+            {
+                if(FeePay > Pending)
+                {
+                    return false;
+                }
             }
 
             ActualFeeAmount = Subtotal - FeePay;
@@ -101,12 +147,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
             try
             {
 
-                if (CheckFeeSubmit())
-                {
-                    MessageBox.Show("Fee ALready Submited");
-                    return;
-
-                }
+               
                 if (CheckAmountExceed())
                 {
 
@@ -117,8 +158,27 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     studentfeemodel.Fee_PendingAmount = ActualFeeAmount;
                     studentfeemodel.Fee_Submitiondate = DateTime.Now;
                     studentfeemodel.Fee_Status = 1;
-                    BLStudentFee.Insert(studentfeemodel);
-                    MessageBox.Show("Student Fee submitted successfully", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (ActionType == "Submit")
+                    {
+                        if (CheckFeeSubmit())
+                        {
+                            MessageBox.Show("Fee ALready Submited");
+                            return;
+
+                        }
+
+                        BLStudentFee.Insert(studentfeemodel);
+                        MessageBox.Show("Student Fee submitted successfully", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    else
+                    {
+                        int result = studentfeemodel.Fee_PendingAmount - ActualFeeAmount;
+                        BLStudentFee.UpdatePendingFee(result, FeeId);
+                        MessageBox.Show("Student Fee Updated successfully", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                    }
                 }
                 else
                 {

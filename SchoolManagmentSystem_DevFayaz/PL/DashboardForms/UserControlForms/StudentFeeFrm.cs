@@ -14,7 +14,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
         private void DLLClasses_SelectedValueChanged(object sender, EventArgs e)
         {
             section = Convert.ToChar(DDLSection.Text);
-            var dt = BLClass.SelectByClassAndSectionName(DLLClasses.Text, section);
+            var dt = BLStudentFee.SelectByClassAndSectionName(DLLClasses.Text, section);
             FeeDataGridView.DataSource = dt;
             DLLClasses.Enabled = false;
             btninsertfee.Visible = true;
@@ -30,15 +30,31 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
 
         public void FeeDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            Managestudetfeefrm managestudetfeefrm = new Managestudetfeefrm();
             if (e.ColumnIndex == 0)
             {
+
                 int studentId = Convert.ToInt32(FeeDataGridView.Rows[e.RowIndex].Cells["Student_Id"].Value);
                 int classId = Convert.ToInt32(FeeDataGridView.Rows[e.RowIndex].Cells["Class_Id"].Value);
-
-                Managestudetfeefrm managestudetfeefrm = new Managestudetfeefrm();
+                string classNAme = FeeDataGridView.Rows[e.RowIndex].Cells["ClassName"].Value.ToString();
+                managestudetfeefrm.ActionType = "Submit";
                 managestudetfeefrm.StudentId = studentId;
                 managestudetfeefrm.ClassId = classId;
+                managestudetfeefrm.AssignCurrentFeeClassNameAccording(classNAme);
+                managestudetfeefrm.CheckPendingAmount();
 
+                managestudetfeefrm.Dock = DockStyle.Fill;
+                this.Controls.Clear();
+                this.Controls.Add(managestudetfeefrm);
+            }
+            else if (e.ColumnIndex == 1) 
+            {
+                managestudetfeefrm.ActionType = "Update";
+                managestudetfeefrm.StudentId = Convert.ToInt32(FeeDataGridView.Rows[e.RowIndex].Cells["Student_Id"].Value); ;
+                managestudetfeefrm.ClassId = Convert.ToInt32(FeeDataGridView.Rows[e.RowIndex].Cells["Class_Id"].Value); ;
+                managestudetfeefrm.FeeId =Convert.ToInt32( FeeDataGridView.Rows[e.RowIndex].Cells["Fee_Id"].Value.ToString());
+                managestudetfeefrm.AssignCurrentFeeClassNameAccording(FeeDataGridView.Rows[e.RowIndex].Cells["ClassName"].Value.ToString());
+                managestudetfeefrm.CheckPendingAmount();
                 managestudetfeefrm.Dock = DockStyle.Fill;
                 this.Controls.Clear();
                 this.Controls.Add(managestudetfeefrm);

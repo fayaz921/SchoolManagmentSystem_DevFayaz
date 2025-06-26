@@ -59,5 +59,25 @@ namespace SchoolManagmentSystem_DevFayaz.BL
 
 
         }
+
+        public static DataTable SelectByClassAndSectionName(string classname, char section)
+        {
+            SqlParameter[] prm = new SqlParameter[3];
+            prm[0] = new SqlParameter("@type", 6);
+            prm[1] = new SqlParameter("@ClassName", classname);
+            prm[2] = new SqlParameter("@Section", section);
+            return DataAccessLayer.GetData("Sp_Studentfee", prm);
+
+        }
+
+        public static void UpdatePendingFee(int PendingAmount , int fee_id)
+        {
+            SqlParameter[] prm = new SqlParameter[3];
+            prm[0] = new SqlParameter("@type", 7);
+            prm[1] = new SqlParameter("@Fee_Id", fee_id);
+            prm[2] = new SqlParameter("@Fee_PendingAmount", PendingAmount);
+            DataAccessLayer.Setdata("Sp_Studentfee", prm);
+        }
+
     }
 }

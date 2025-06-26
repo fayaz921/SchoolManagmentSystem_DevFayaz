@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PanelEmployedashboard = new Guna.UI2.WinForms.Guna2Panel();
+            this.Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.btnStudentFee = new Guna.UI2.WinForms.Guna2Button();
             this.Classmenustrip = new System.Windows.Forms.MenuStrip();
             this.classToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,23 +42,23 @@
             this.btnadmissionform = new Guna.UI2.WinForms.Guna2Button();
             this.btnemployes = new Guna.UI2.WinForms.Guna2Button();
             this.btnteachers = new Guna.UI2.WinForms.Guna2Button();
-            this.PanelAdmindashboard = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.PanelEmployedashboard.SuspendLayout();
+            this.PanelEmployedashboard = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.Panel.SuspendLayout();
             this.Classmenustrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // PanelEmployedashboard
+            // Panel
             // 
-            this.PanelEmployedashboard.Controls.Add(this.btnStudentFee);
-            this.PanelEmployedashboard.Controls.Add(this.Classmenustrip);
-            this.PanelEmployedashboard.Controls.Add(this.btnlogout);
-            this.PanelEmployedashboard.Controls.Add(this.btnadmissionform);
-            this.PanelEmployedashboard.Controls.Add(this.btnemployes);
-            this.PanelEmployedashboard.Controls.Add(this.btnteachers);
-            this.PanelEmployedashboard.Location = new System.Drawing.Point(3, 3);
-            this.PanelEmployedashboard.Name = "PanelEmployedashboard";
-            this.PanelEmployedashboard.Size = new System.Drawing.Size(1710, 90);
-            this.PanelEmployedashboard.TabIndex = 15;
+            this.Panel.Controls.Add(this.btnStudentFee);
+            this.Panel.Controls.Add(this.Classmenustrip);
+            this.Panel.Controls.Add(this.btnlogout);
+            this.Panel.Controls.Add(this.btnadmissionform);
+            this.Panel.Controls.Add(this.btnemployes);
+            this.Panel.Controls.Add(this.btnteachers);
+            this.Panel.Location = new System.Drawing.Point(3, 3);
+            this.Panel.Name = "Panel";
+            this.Panel.Size = new System.Drawing.Size(1710, 90);
+            this.Panel.TabIndex = 15;
             // 
             // btnStudentFee
             // 
@@ -238,27 +238,27 @@
             this.btnteachers.UseTransparentBackground = true;
             this.btnteachers.Click += new System.EventHandler(this.btnteachers_Click);
             // 
-            // PanelAdmindashboard
+            // PanelEmployedashboard
             // 
-            this.PanelAdmindashboard.FillColor = System.Drawing.Color.Transparent;
-            this.PanelAdmindashboard.FillColor2 = System.Drawing.Color.Transparent;
-            this.PanelAdmindashboard.FillColor3 = System.Drawing.Color.Transparent;
-            this.PanelAdmindashboard.FillColor4 = System.Drawing.Color.Transparent;
-            this.PanelAdmindashboard.Location = new System.Drawing.Point(3, 99);
-            this.PanelAdmindashboard.Name = "PanelAdmindashboard";
-            this.PanelAdmindashboard.Size = new System.Drawing.Size(1946, 910);
-            this.PanelAdmindashboard.TabIndex = 16;
+            this.PanelEmployedashboard.FillColor = System.Drawing.Color.Transparent;
+            this.PanelEmployedashboard.FillColor2 = System.Drawing.Color.Transparent;
+            this.PanelEmployedashboard.FillColor3 = System.Drawing.Color.Transparent;
+            this.PanelEmployedashboard.FillColor4 = System.Drawing.Color.Transparent;
+            this.PanelEmployedashboard.Location = new System.Drawing.Point(3, 99);
+            this.PanelEmployedashboard.Name = "PanelEmployedashboard";
+            this.PanelEmployedashboard.Size = new System.Drawing.Size(1946, 910);
+            this.PanelEmployedashboard.TabIndex = 16;
             // 
             // Employedashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
-            this.Controls.Add(this.PanelAdmindashboard);
             this.Controls.Add(this.PanelEmployedashboard);
+            this.Controls.Add(this.Panel);
             this.Name = "Employedashboard";
             this.Size = new System.Drawing.Size(1946, 883);
-            this.PanelEmployedashboard.ResumeLayout(false);
+            this.Panel.ResumeLayout(false);
             this.Classmenustrip.ResumeLayout(false);
             this.Classmenustrip.PerformLayout();
             this.ResumeLayout(false);
@@ -267,7 +267,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel PanelEmployedashboard;
+        private Guna.UI2.WinForms.Guna2Panel Panel;
         private Guna.UI2.WinForms.Guna2Button btnStudentFee;
         private System.Windows.Forms.MenuStrip Classmenustrip;
         private System.Windows.Forms.ToolStripMenuItem classToolStripMenuItem;
@@ -281,6 +281,6 @@
         private Guna.UI2.WinForms.Guna2Button btnadmissionform;
         private Guna.UI2.WinForms.Guna2Button btnemployes;
         private Guna.UI2.WinForms.Guna2Button btnteachers;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelAdmindashboard;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelEmployedashboard;
     }
 }

@@ -32,7 +32,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
 
         private void btnteachers_Click(object sender, EventArgs e)
         {
-            Showusercontrolfrm(new Teacherfrm());
+            Showusercontrolfrm(new TeacherData());
         }
 
         private void btnemployes_Click(object sender, EventArgs e)
