@@ -169,7 +169,7 @@
             this.btnlogout.ForeColor = System.Drawing.Color.Red;
             this.btnlogout.Location = new System.Drawing.Point(15, 15);
             this.btnlogout.Name = "btnlogout";
-            this.btnlogout.Size = new System.Drawing.Size(147, 56);
+            this.btnlogout.Size = new System.Drawing.Size(192, 56);
             this.btnlogout.TabIndex = 25;
             this.btnlogout.Text = "Logout";
             this.btnlogout.UseTransparentBackground = true;

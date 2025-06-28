@@ -63,11 +63,36 @@ namespace SchoolManagmentSystem_DevFayaz.BL
         public static DataTable SelectByClassAndSectionName(string classname, char section)
         {
             SqlParameter[] prm = new SqlParameter[3];
-            prm[0] = new SqlParameter("@type", 6);
+            prm[0] = new SqlParameter("@type", 8);
             prm[1] = new SqlParameter("@ClassName", classname);
             prm[2] = new SqlParameter("@Section", section);
-            return DataAccessLayer.GetData("Sp_Studentfee", prm);
 
+
+            var dt = DataAccessLayer.GetData("Sp_Studentfee", prm);
+
+
+            if (dt.Rows.Count > 0)
+            {
+                // Add new column only once
+                if (!dt.Columns.Contains("Status"))
+                    dt.Columns.Add("Status", typeof(string));
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    int feeStatus = Convert.ToInt32(row["Fee_Status"]);
+
+                    if (feeStatus == 0)
+                        row["Status"] = "Pending";
+                    else if (feeStatus == 1)
+                        row["Status"] = "Approved";
+                    else
+                        row["Status"] = "Unknown";
+                }
+                dt.Columns.Remove("Fee_Status");
+            }
+
+
+            return dt;
         }
 
         public static void UpdatePendingFee(int PendingAmount , int fee_id)

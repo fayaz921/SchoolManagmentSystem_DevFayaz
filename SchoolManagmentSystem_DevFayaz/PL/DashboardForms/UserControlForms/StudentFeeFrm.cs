@@ -42,7 +42,6 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                 managestudetfeefrm.ClassId = classId;
                 managestudetfeefrm.AssignCurrentFeeClassNameAccording(classNAme);
                 managestudetfeefrm.CheckPendingAmount();
-
                 managestudetfeefrm.Dock = DockStyle.Fill;
                 this.Controls.Clear();
                 this.Controls.Add(managestudetfeefrm);
@@ -66,6 +65,21 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
             var dt = BLStudentFee.Select();
             FeeDataGridView.DataSource = dt;
             btninsertfee.Visible = false;
+        }
+
+        private void DLLClasses_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DDLSection_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DLLClasses_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

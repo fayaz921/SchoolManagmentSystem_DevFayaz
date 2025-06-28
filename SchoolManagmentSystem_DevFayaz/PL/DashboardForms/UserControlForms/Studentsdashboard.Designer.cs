@@ -88,42 +88,42 @@
             // btnclass5th
             // 
             this.btnclass5th.Name = "btnclass5th";
-            this.btnclass5th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass5th.Size = new System.Drawing.Size(169, 40);
             this.btnclass5th.Text = "5th";
             this.btnclass5th.Click += new System.EventHandler(this.btnclass5th_Click);
             // 
             // btnclass6th
             // 
             this.btnclass6th.Name = "btnclass6th";
-            this.btnclass6th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass6th.Size = new System.Drawing.Size(169, 40);
             this.btnclass6th.Text = "6th";
             this.btnclass6th.Click += new System.EventHandler(this.btnclass6th_Click);
             // 
             // btnclass7th
             // 
             this.btnclass7th.Name = "btnclass7th";
-            this.btnclass7th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass7th.Size = new System.Drawing.Size(169, 40);
             this.btnclass7th.Text = "7th";
             this.btnclass7th.Click += new System.EventHandler(this.btnclass7th_Click);
             // 
             // btnclass8th
             // 
             this.btnclass8th.Name = "btnclass8th";
-            this.btnclass8th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass8th.Size = new System.Drawing.Size(169, 40);
             this.btnclass8th.Text = "8th";
             this.btnclass8th.Click += new System.EventHandler(this.btnclass8th_Click);
             // 
             // btnclass9th
             // 
             this.btnclass9th.Name = "btnclass9th";
-            this.btnclass9th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass9th.Size = new System.Drawing.Size(169, 40);
             this.btnclass9th.Text = "9th";
             this.btnclass9th.Click += new System.EventHandler(this.btnclass9th_Click);
             // 
             // btnclass10th
             // 
             this.btnclass10th.Name = "btnclass10th";
-            this.btnclass10th.Size = new System.Drawing.Size(270, 40);
+            this.btnclass10th.Size = new System.Drawing.Size(169, 40);
             this.btnclass10th.Text = "10th";
             this.btnclass10th.Click += new System.EventHandler(this.btnclass10th_Click);
             // 
@@ -163,7 +163,7 @@
             this.btnlogout.ForeColor = System.Drawing.Color.Red;
             this.btnlogout.Location = new System.Drawing.Point(31, 16);
             this.btnlogout.Name = "btnlogout";
-            this.btnlogout.Size = new System.Drawing.Size(160, 56);
+            this.btnlogout.Size = new System.Drawing.Size(197, 56);
             this.btnlogout.TabIndex = 25;
             this.btnlogout.Text = "Logout";
             this.btnlogout.UseTransparentBackground = true;

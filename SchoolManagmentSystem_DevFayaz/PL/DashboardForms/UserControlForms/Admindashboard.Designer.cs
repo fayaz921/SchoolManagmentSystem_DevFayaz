@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnloginfrm = new Guna.UI2.WinForms.Guna2Button();
             this.btnStudentFee = new Guna.UI2.WinForms.Guna2Button();
             this.btnlogdata = new Guna.UI2.WinForms.Guna2Button();
             this.Classmenustrip = new System.Windows.Forms.MenuStrip();
@@ -39,7 +40,6 @@
             this.btnclass8th = new System.Windows.Forms.ToolStripMenuItem();
             this.btnclass9th = new System.Windows.Forms.ToolStripMenuItem();
             this.btnclass10th = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnloginfrm = new Guna.UI2.WinForms.Guna2Button();
             this.btnadmissionform = new Guna.UI2.WinForms.Guna2Button();
             this.btnemployes = new Guna.UI2.WinForms.Guna2Button();
             this.btnteachers = new Guna.UI2.WinForms.Guna2Button();
@@ -62,6 +62,27 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1806, 90);
             this.guna2Panel1.TabIndex = 14;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // btnloginfrm
+            // 
+            this.btnloginfrm.BackColor = System.Drawing.Color.Transparent;
+            this.btnloginfrm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
+            this.btnloginfrm.BorderRadius = 15;
+            this.btnloginfrm.BorderThickness = 1;
+            this.btnloginfrm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnloginfrm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnloginfrm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnloginfrm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnloginfrm.FillColor = System.Drawing.Color.Black;
+            this.btnloginfrm.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnloginfrm.ForeColor = System.Drawing.Color.Red;
+            this.btnloginfrm.Location = new System.Drawing.Point(16, 20);
+            this.btnloginfrm.Name = "btnloginfrm";
+            this.btnloginfrm.Size = new System.Drawing.Size(182, 55);
+            this.btnloginfrm.TabIndex = 25;
+            this.btnloginfrm.Text = "Logout";
+            this.btnloginfrm.UseTransparentBackground = true;
+            this.btnloginfrm.Click += new System.EventHandler(this.btnloginfrm_Click);
             // 
             // btnStudentFee
             // 
@@ -177,27 +198,6 @@
             this.btnclass10th.Size = new System.Drawing.Size(169, 40);
             this.btnclass10th.Text = "10th";
             this.btnclass10th.Click += new System.EventHandler(this.btnclass10th_Click);
-            // 
-            // btnloginfrm
-            // 
-            this.btnloginfrm.BackColor = System.Drawing.Color.Transparent;
-            this.btnloginfrm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
-            this.btnloginfrm.BorderRadius = 15;
-            this.btnloginfrm.BorderThickness = 1;
-            this.btnloginfrm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnloginfrm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnloginfrm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnloginfrm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnloginfrm.FillColor = System.Drawing.Color.Black;
-            this.btnloginfrm.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnloginfrm.ForeColor = System.Drawing.Color.Red;
-            this.btnloginfrm.Location = new System.Drawing.Point(16, 20);
-            this.btnloginfrm.Name = "btnloginfrm";
-            this.btnloginfrm.Size = new System.Drawing.Size(153, 55);
-            this.btnloginfrm.TabIndex = 25;
-            this.btnloginfrm.Text = "Logout";
-            this.btnloginfrm.UseTransparentBackground = true;
-            this.btnloginfrm.Click += new System.EventHandler(this.btnloginfrm_Click);
             // 
             // btnadmissionform
             // 

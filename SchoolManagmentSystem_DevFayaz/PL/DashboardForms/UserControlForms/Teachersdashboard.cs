@@ -39,11 +39,41 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
         private void btnlogout_Click(object sender, EventArgs e)
         {
             Dashboardfrm dashboardfrm = (Dashboardfrm)this.FindForm();
+            dashboardfrm.Controls.Clear();
             Authenticationfrm auth = new Authenticationfrm();
-            Loginform loginform = new Loginform();
             auth.ShowDialog();
             auth.Showloginform();
             dashboardfrm.Close();
+        }
+
+        private void btnclass5th_Click(object sender, EventArgs e)
+        {
+            Showusercontrolfrm(new Classfrm("5th"));
+        }
+
+        private void btnclass6th_Click(object sender, EventArgs e)
+        {
+            Showusercontrolfrm(new Classfrm("6th"));
+        }
+
+        private void btnclass7th_Click(object sender, EventArgs e)
+        {
+            Showusercontrolfrm(new Classfrm("7th"));
+        }
+
+        private void btnclass8th_Click(object sender, EventArgs e)
+        {
+            Showusercontrolfrm(new Classfrm("8th"));
+        }
+
+        private void btnclass9th_Click(object sender, EventArgs e)
+        {
+            Showusercontrolfrm(new Classfrm("9th"));
+        }
+
+        private void btnclass10th_Click(object sender, EventArgs e)
+        {
+            Showusercontrolfrm(new Classfrm("10th"));
         }
     }
 }
