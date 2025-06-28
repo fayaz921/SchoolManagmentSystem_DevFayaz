@@ -9,6 +9,7 @@ namespace SchoolManagmentSystem_DevFayaz.MODELS
     public class EmployeModel
     {
         public int Actiontype {  get; set; }
+        public int Employe_Id { get; set; }
         public string Employe_Name { get; set; }
         public string Employe_Cnic { get; set; }
         public string Qualification { get; set; }

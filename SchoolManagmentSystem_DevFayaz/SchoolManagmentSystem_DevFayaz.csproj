@@ -153,6 +153,12 @@
     <Compile Include="PL\DashboardForms\UserControlForms\Employedashboard.Designer.cs">
       <DependentUpon>Employedashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Employedata.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\DashboardForms\UserControlForms\Employedata.Designer.cs">
+      <DependentUpon>Employedata.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\DashboardForms\UserControlForms\Employefrm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -240,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Employedashboard.resx">
       <DependentUpon>Employedashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Employedata.resx">
+      <DependentUpon>Employedata.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\DashboardForms\UserControlForms\Employefrm.resx">
       <DependentUpon>Employefrm.cs</DependentUpon>

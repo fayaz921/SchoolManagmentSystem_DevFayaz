@@ -41,7 +41,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
 
         private void btnemployes_Click(object sender, EventArgs e)
         {
-            Showusercontrolfrm(new Employefrm());
+            Showusercontrolfrm(new Employedata());
         }
 
         private void btnclass5th_Click(object sender, EventArgs e)

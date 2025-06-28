@@ -20,6 +20,8 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
         public Signupform()
         {
             InitializeComponent();
+            comboboxRole.DataSource = Enum.GetValues(typeof(Role));
+
         }
 
         private void linkLabelSignup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -49,14 +51,16 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
                         userinfomodel.User_Email = txtemail.Text;
                         userinfomodel.User_Password = txtpassword.Text;
                         userinfomodel.User_Image = filepath;
-                        userinfomodel.User_Role = Convert.ToInt32(Role.Admin|Role.Employee | Role.Teacher | Role.Student);
+                        //userinfomodel.User_Role = Convert.ToInt32(Role.Admin|Role.Employee | Role.Teacher | Role.Student);
+                        userinfomodel.User_Role = (int)(Role)comboboxRole.SelectedItem;
+
                         BLUserinfo bLUserinfo = new BLUserinfo();
                         
-                        if(!bLUserinfo.UserValidation(userinfomodel))
+                        if(!bLUserinfo.UserValidation(userinfomodel))    // fluentvalidations in bl (for backend )
                         {
                             return;
                         }
-                        LogModel logModel = new LogModel();
+                        LogModel logModel = new LogModel();         // checking the role that who is signing a user
                         logModel.UserId = UserCreads.UserId;
                         logModel.Message = ("New SignUp: UserName" + userinfomodel.User_Name + ",Role:" + userinfomodel.User_Role);
                         logModel.CreateAt = DateTime.Now;
@@ -82,7 +86,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
 
             BLUserinfo bLUserinfo = new BLUserinfo();
             DataTable dt = new DataTable();
-            dt = bLUserinfo.CheckIdentity(txtusername.Text, txtemail.Text);
+            dt = bLUserinfo.CheckIdentity(txtusername.Text, txtemail.Text); 
             if (dt.Rows.Count > 0)
             {
                 return true;
@@ -95,7 +99,7 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
         }
         public bool PlValidations()
         {
-            bool isvalid = true;
+            bool isvalid = true;        // check all the itmes first 
 
             if (string.IsNullOrEmpty(txtusername.Text))
             {
@@ -153,8 +157,8 @@ namespace SchoolManagmentSystem_DevFayaz.PL.AuthenticationForms.UserControlForms
             txtusername.Clear();
             txtpassword.Clear();
             txtemail.Clear();
-            comboboxRole.Items.Clear();
-            picbox.Image = null;
+            comboboxRole.SelectedIndex = -1; // just clears the selection, not the data
+            picbox.Image = null;            // clear the image picbox 
         }
 
         private void picbox_Click(object sender, EventArgs e)
