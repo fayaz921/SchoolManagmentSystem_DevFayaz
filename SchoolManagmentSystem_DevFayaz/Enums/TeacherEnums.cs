@@ -11,6 +11,7 @@ namespace SchoolManagmentSystem_DevFayaz.Enums
         Select,
         Insert,
         Update,
-        Delete
+        Delete,
+        GetByID
     }
 }

@@ -46,7 +46,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.DDLdesignation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.DDLqualification = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblteacherid = new System.Windows.Forms.Label();
+            this.lblEmployeid = new System.Windows.Forms.Label();
             this.btnsubmit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
@@ -104,7 +104,7 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.label3);
             this.guna2CustomGradientPanel1.Controls.Add(this.DDLdesignation);
             this.guna2CustomGradientPanel1.Controls.Add(this.DDLqualification);
-            this.guna2CustomGradientPanel1.Controls.Add(this.lblteacherid);
+            this.guna2CustomGradientPanel1.Controls.Add(this.lblEmployeid);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnsubmit);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
@@ -342,15 +342,15 @@
             this.DDLqualification.Size = new System.Drawing.Size(286, 36);
             this.DDLqualification.TabIndex = 28;
             // 
-            // lblteacherid
+            // lblEmployeid
             // 
-            this.lblteacherid.AutoSize = true;
-            this.lblteacherid.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblteacherid.Location = new System.Drawing.Point(154, 97);
-            this.lblteacherid.Name = "lblteacherid";
-            this.lblteacherid.Size = new System.Drawing.Size(88, 20);
-            this.lblteacherid.TabIndex = 23;
-            this.lblteacherid.Text = "Teacher ID";
+            this.lblEmployeid.AutoSize = true;
+            this.lblEmployeid.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblEmployeid.Location = new System.Drawing.Point(154, 97);
+            this.lblEmployeid.Name = "lblEmployeid";
+            this.lblEmployeid.Size = new System.Drawing.Size(91, 20);
+            this.lblEmployeid.TabIndex = 23;
+            this.lblEmployeid.Text = "Employe ID";
             // 
             // btnsubmit
             // 
@@ -404,7 +404,7 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2ComboBox DDLdesignation;
         private Guna.UI2.WinForms.Guna2ComboBox DDLqualification;
-        private System.Windows.Forms.Label lblteacherid;
+        private System.Windows.Forms.Label lblEmployeid;
         private Guna.UI2.WinForms.Guna2Button btnsubmit;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;

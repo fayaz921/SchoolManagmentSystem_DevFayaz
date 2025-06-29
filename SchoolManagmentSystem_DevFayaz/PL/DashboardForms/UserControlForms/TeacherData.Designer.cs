@@ -35,9 +35,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.TeacherDataGridview = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnTeacherAdd = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnDelete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnTeacherAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeacherDataGridview)).BeginInit();
@@ -149,6 +149,19 @@
             this.TeacherDataGridview.ThemeStyle.RowsStyle.Height = 28;
             this.TeacherDataGridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.TeacherDataGridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.TeacherDataGridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TeacherDataGridview_CellContentClick);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.HeaderText = "Update";
+            this.btnUpdate.MinimumWidth = 8;
+            this.btnUpdate.Name = "btnUpdate";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.HeaderText = "Delete";
+            this.btnDelete.MinimumWidth = 8;
+            this.btnDelete.Name = "btnDelete";
             // 
             // btnTeacherAdd
             // 
@@ -170,18 +183,6 @@
             this.btnTeacherAdd.Text = "Add Teacher";
             this.btnTeacherAdd.UseTransparentBackground = true;
             this.btnTeacherAdd.Click += new System.EventHandler(this.btnTeacherAdd_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.HeaderText = "Update";
-            this.btnUpdate.MinimumWidth = 8;
-            this.btnUpdate.Name = "btnUpdate";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.HeaderText = "Delete";
-            this.btnDelete.MinimumWidth = 8;
-            this.btnDelete.Name = "btnDelete";
             // 
             // TeacherData
             // 

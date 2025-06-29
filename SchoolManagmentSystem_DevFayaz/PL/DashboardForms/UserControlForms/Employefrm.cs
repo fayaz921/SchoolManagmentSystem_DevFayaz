@@ -15,9 +15,34 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
 {
     public partial class Employefrm : UserControl
     {
+        int? ID = null;
         public Employefrm()
         {
             InitializeComponent();
+        }
+
+
+        public Employefrm(int id)
+        {
+            InitializeComponent();
+            ID = id;
+            LoadEmployeData();
+        }
+
+        public void LoadEmployeData()
+        {
+            var dt = BLEmployes.GetDatabyID(ID.Value);
+
+            if (dt.Rows.Count > 0)
+            {
+                lblEmployeid.Text = dt.Rows[0]["Employe_Id"].ToString();
+                txtemployename.Text = dt.Rows[0]["Employe_Name"].ToString();
+                txtemployecnic.Text = dt.Rows[0]["Employe_Cnic"].ToString();
+                DDLqualification.Text = dt.Rows[0]["Qualification"].ToString();
+                DDLdesignation.Text = dt.Rows[0]["Designation"].ToString();
+                Txtemail.Text = dt.Rows[0]["Email"].ToString();
+                txtdateofjoining.Value = Convert.ToDateTime(dt.Rows[0]["DateofJoining"]);
+            }
         }
 
         private void btnsubmit_Click(object sender, EventArgs e)
@@ -40,11 +65,22 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
                     }
                     LogModel logModel = new LogModel();
                     logModel.UserId = UserCreads.UserId;
-                    logModel.Message ="New Employe Added: Name:"+employeModel.Employe_Name+",Email:"+employeModel.Email;
-                    logModel.CreateAt  = DateTime.Now;
+                    logModel.Message = "New Employe Added: Name:" + employeModel.Employe_Name + ",Email:" + employeModel.Email;
+                    logModel.CreateAt = DateTime.Now;
                     BL_Log.Insert(logModel);
-                    BLEmployes.Insert(employeModel);
-                    MessageBox.Show("Employe submitted successfully");
+                    //BLEmployes.Insert(employeModel);
+                    //MessageBox.Show("Employe submitted successfully");
+                    if (ID != null)
+                    {
+                        employeModel.Employe_Id = ID.Value;
+                        BLEmployes.Update(employeModel);
+                        MessageBox.Show("Data updated Successfully");
+                    }
+                    else
+                    {
+                        BLEmployes.Insert(employeModel);
+                        MessageBox.Show("Data inserted successfully");
+                    }
                     Cleartextboxes();
                 }
             }

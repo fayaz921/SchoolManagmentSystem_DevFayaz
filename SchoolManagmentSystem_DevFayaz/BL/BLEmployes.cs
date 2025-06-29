@@ -67,6 +67,14 @@ namespace SchoolManagmentSystem_DevFayaz.BL
             prm[0] = new SqlParameter(Actiontype, EmployeEnums.Select);
             return DataAccessLayer.GetData(Spname, prm);
         }
+
+        public static DataTable GetDatabyID(int id)
+        {
+            SqlParameter[] prm = new SqlParameter[2];
+            prm[0] = new SqlParameter(Actiontype,EmployeEnums.GetbyID);
+            prm[1] = new SqlParameter("Employe_Id",id);
+            return DataAccessLayer.GetData(Spname, prm);
+        }
         public static bool EmployeValidations(EmployeModel employeModel)
         {
             EmployeModelValidations validationRules = new EmployeModelValidations();

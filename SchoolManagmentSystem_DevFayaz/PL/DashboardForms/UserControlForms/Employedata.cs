@@ -1,6 +1,8 @@
 ﻿using SchoolManagmentSystem_DevFayaz.BL;
 using SchoolManagmentSystem_DevFayaz.Custom_Classes;
 using SchoolManagmentSystem_DevFayaz.Enums;
+using SchoolManagmentSystem_DevFayaz.MODELS;
+using SchoolManagmentSystem_DevFayaz.MODELS.Dashboardmodels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,12 +32,12 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
 
         private void btnEmployeAdd_Click(object sender, EventArgs e)
         {
-            if (UserCreads.UserRole==Role.Admin)
+            if (UserCreads.UserRole == Role.Admin)
             {
-                Teacherfrm teacherfrm = new Teacherfrm();
-                teacherfrm.Dock = DockStyle.Fill;
+                Employefrm employefrm = new Employefrm();
+                employefrm.Dock = DockStyle.Fill;
                 this.Controls.Clear();
-                this.Controls.Add(teacherfrm);
+                this.Controls.Add(employefrm);
             }
             else
             {
@@ -45,9 +47,42 @@ namespace SchoolManagmentSystem_DevFayaz.PL.DashboardForms.UserControlForms
 
         private void EmployeDataGridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 0)
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
             {
-                
+
+                if (UserCreads.UserRole == Role.Admin)
+                {
+                    int EmployeId = Convert.ToInt32(EmployeDataGridview.Rows[e.RowIndex].Cells["Employe_Id"].Value);
+                    Employefrm employefrm = new Employefrm(EmployeId);
+                    employefrm.Dock = DockStyle.Fill;
+                    this.Controls.Clear();
+                    this.Controls.Add(employefrm);
+                }
+                else
+                {
+                    MessageBox.Show("You are not admin");
+                }
+
+            }
+
+            if (e.ColumnIndex == 1 && e.RowIndex >= 0)
+            {
+                if (UserCreads.UserRole == Role.Admin)
+                {
+                    DialogResult result = MessageBox.Show("Are you sure you want to delete this record?",
+                                                         "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        int employeid = Convert.ToInt32(EmployeDataGridview.Rows[e.RowIndex].Cells["Employe_Id"].Value);
+                        BLEmployes.Delete(employeid);
+                        Getdata();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("You are not admin");
+                }
             }
         }
     }
