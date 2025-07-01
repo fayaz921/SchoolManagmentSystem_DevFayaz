@@ -14,6 +14,5 @@ namespace SchoolManagmentSystem_DevFayaz.Custom_Classes
         public static Role UserRole { get; set; }
         public static string Message { get; set; }
         public static DateTime CreateAt { get; set; }
-
     }
 }
