@@ -103,6 +103,16 @@ namespace SchoolManagmentSystem_DevFayaz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap School_Managment_System_pic {
+            get {
+                object obj = ResourceManager.GetObject("School Managment System pic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2025_06_10_164147 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2025-06-10 164147", resourceCulture);

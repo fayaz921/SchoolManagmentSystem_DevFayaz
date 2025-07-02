@@ -50,6 +50,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.Controls.Add(this.btnloginfrm);
             this.guna2Panel1.Controls.Add(this.btnStudentFee);
             this.guna2Panel1.Controls.Add(this.btnlogdata);
@@ -264,13 +265,15 @@
             // 
             // PanelAdmindashboard
             // 
+            this.PanelAdmindashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
+            this.PanelAdmindashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelAdmindashboard.FillColor = System.Drawing.Color.Transparent;
             this.PanelAdmindashboard.FillColor2 = System.Drawing.Color.Transparent;
             this.PanelAdmindashboard.FillColor3 = System.Drawing.Color.Transparent;
             this.PanelAdmindashboard.FillColor4 = System.Drawing.Color.Transparent;
-            this.PanelAdmindashboard.Location = new System.Drawing.Point(3, 99);
+            this.PanelAdmindashboard.Location = new System.Drawing.Point(3, 108);
             this.PanelAdmindashboard.Name = "PanelAdmindashboard";
-            this.PanelAdmindashboard.Size = new System.Drawing.Size(1946, 910);
+            this.PanelAdmindashboard.Size = new System.Drawing.Size(1946, 901);
             this.PanelAdmindashboard.TabIndex = 15;
             // 
             // Admindashboard
@@ -278,10 +281,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.PanelAdmindashboard);
             this.Controls.Add(this.guna2Panel1);
+            this.DoubleBuffered = true;
             this.Name = "Admindashboard";
-            this.Size = new System.Drawing.Size(1946, 883);
+            this.Size = new System.Drawing.Size(1946, 910);
             this.guna2Panel1.ResumeLayout(false);
             this.Classmenustrip.ResumeLayout(false);
             this.Classmenustrip.PerformLayout();

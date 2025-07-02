@@ -90,6 +90,7 @@
             // 
             // SignUpPanel
             // 
+            this.SignUpPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
             this.SignUpPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(69)))));
             this.SignUpPanel.BorderThickness = 8;
             this.SignUpPanel.Controls.Add(this.panel7);

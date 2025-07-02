@@ -319,5 +319,8 @@
   <ItemGroup>
     <Folder Include="Shared\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\School Managment System pic.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

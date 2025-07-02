@@ -46,6 +46,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.Controls.Add(this.Classmenustrip);
             this.guna2Panel1.Controls.Add(this.btnStudentFee);
             this.guna2Panel1.Controls.Add(this.btnlogout);

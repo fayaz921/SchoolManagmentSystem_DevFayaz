@@ -240,6 +240,7 @@
             // 
             // PanelEmployedashboard
             // 
+            this.PanelEmployedashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
             this.PanelEmployedashboard.FillColor = System.Drawing.Color.Transparent;
             this.PanelEmployedashboard.FillColor2 = System.Drawing.Color.Transparent;
             this.PanelEmployedashboard.FillColor3 = System.Drawing.Color.Transparent;

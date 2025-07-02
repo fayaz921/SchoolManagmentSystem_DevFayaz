@@ -48,13 +48,15 @@
             // 
             // Paneldashboard
             // 
+            this.Paneldashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
+            this.Paneldashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Paneldashboard.FillColor = System.Drawing.Color.Transparent;
             this.Paneldashboard.FillColor2 = System.Drawing.Color.Transparent;
             this.Paneldashboard.FillColor3 = System.Drawing.Color.Transparent;
             this.Paneldashboard.FillColor4 = System.Drawing.Color.Transparent;
-            this.Paneldashboard.Location = new System.Drawing.Point(12, 68);
+            this.Paneldashboard.Location = new System.Drawing.Point(2, 68);
             this.Paneldashboard.Name = "Paneldashboard";
-            this.Paneldashboard.Size = new System.Drawing.Size(1946, 910);
+            this.Paneldashboard.Size = new System.Drawing.Size(1932, 883);
             this.Paneldashboard.TabIndex = 16;
             // 
             // Dashboardfrm
@@ -62,9 +64,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1946, 883);
             this.Controls.Add(this.Paneldashboard);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboardfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
