@@ -30,7 +30,7 @@ namespace SchoolManagmentSystem_DevFayaz.BL
         {
             SqlParameter[] prm = new SqlParameter[1];
             prm[0] = new SqlParameter("@type", StudentFeeEnums.Select);
-            return DataAccessLayer.GetData("Sp_Studentfee", prm);
+            return DataAccessLayer.GetData("Sp_Studentfee", prm);    
 
         }
 
