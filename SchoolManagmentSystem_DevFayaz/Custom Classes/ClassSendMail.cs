@@ -26,7 +26,7 @@ namespace SchoolManagmentSystem_DevFayaz.Custom_Classes
                 SmtpClient smtpClient = new SmtpClient();
                 smtpClient.Host = "smtp.gmail.com";
                 smtpClient.Port = 587;
-                smtpClient.Credentials = new NetworkCredential(from, "mlwv owot maqz vmuq");
+                smtpClient.Credentials = new NetworkCredential(from, "your app password");
                 smtpClient.EnableSsl = true;
                 smtpClient.Send(mailMessage);
                 return 1;
